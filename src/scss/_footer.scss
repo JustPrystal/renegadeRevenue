@@ -1,0 +1,32 @@
+footer{
+    background-color: #222222;
+    .inner{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 50px 40px;
+        display: flex;
+        justify-content: center;
+        .content{
+            text-align: center;
+            text-transform: uppercase;
+            .copyright-and-name{
+                p{
+                    color: #fff;
+                    span{
+                        display: inline-block;
+                        transform: translateY(-10%);
+                    }
+                }
+            }
+            .links{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    border-right: 1px solid #fff;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }    
+}
