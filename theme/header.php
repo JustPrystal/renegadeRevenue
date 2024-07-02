@@ -35,4 +35,21 @@
     }
   ?>">
 
+
+  <?php 
+    $header = get_field('header', 'option');
+  ?>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo-wrap">
+        <img src=<?php echo $header['logo']['url'] ?> alt="logo" class="logo">
+      </a>
+      <div class="header-links">
+        <a href="" class="link"></a>
+      </div>
+    </div>
+  </header>
+
+  
   <div class="all">

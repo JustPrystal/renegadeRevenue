@@ -3,6 +3,8 @@
     outline:none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin:0;
+    padding:0;
   }
   sup, sub {
     vertical-align: baseline;
@@ -22,7 +24,10 @@ html, body {
 }
 body {
     position:relative;
-    
+}
+
+a{
+  display: block;
 }
 
 

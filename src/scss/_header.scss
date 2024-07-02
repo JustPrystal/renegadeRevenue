@@ -1,0 +1,40 @@
+header{
+    padding: 0 20px;
+
+    .container{
+        max-width: 1800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo-wrap{
+            max-width: 120px;
+
+            .logo{
+                width: 100%;
+            }
+        }
+        .header-links{
+            max-width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .link{
+                margin-right: 20px;
+                font-size: 20px;
+                border-bottom: 2px solid transparent;
+                transition: all 0.4s ease;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                &:hover{
+                    border-bottom: 2px solid #cfdd01;
+                }
+            }
+        }
+    }
+}
