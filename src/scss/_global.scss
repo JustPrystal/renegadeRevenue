@@ -16,19 +16,22 @@
   }
 
 html, body { 
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
   
     
   
 }
-body {
-    position:relative;
-}
 
 a{
   display: block;
+  text-decoration: none;
 }
+
+body {
+  position:relative;
+}
+
 
 
 

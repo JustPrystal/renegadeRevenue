@@ -38,18 +38,21 @@
 
   <?php 
     $header = get_field('header', 'option');
+    // echo '<pre>';
+    // var_dump($header);
+    // echo '</pre>';
   ?>
 
   <header>
     <div class="container">
-      <a href="/" class="logo-wrap">
+      <a href="/home" class="logo-wrap">
         <img src=<?php echo $header['logo']['url'] ?> alt="logo" class="logo">
       </a>
       <div class="header-links">
-        <a href="" class="link"></a>
+        <?php foreach($header['header-links'] as $link){ ?>
+          <a href=<?php echo $link['link']['url']; ?> class="link"><?php echo $link['link']['title']; ?></a>
+        <?php } ?>
       </div>
     </div>
   </header>
-
-  
-  <div class="all">
+  <div class="all"> 
