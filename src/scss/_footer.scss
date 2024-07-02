@@ -20,11 +20,19 @@ footer{
             }
             .links{
                 a{
+                    display: inline-block;
                     color: #fff;
                     text-decoration: none;
                     border-right: 1px solid #fff;
                     padding-left: 10px;
                     padding-right: 10px;
+                    &:first-child{
+                        padding-left: 0px;
+                    }
+                    &:last-child{
+                        padding-right: 0px;
+                        border-right: unset;
+                    }
                 }
             }
         }

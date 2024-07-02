@@ -44,68 +44,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                "layout_6684417be5f64": {
-                    "key": "layout_6684417be5f64",
-                    "name": "header",
-                    "label": "Header",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_66844186e5f65",
-                            "label": "Fields",
-                            "name": "fields",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_6684406c82e4c"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_6684428008718": {
-                    "key": "layout_6684428008718",
-                    "name": "banner",
-                    "label": "Banner",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6684428508719",
-                            "label": "Fields",
-                            "name": "fields",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_6684420e8de44"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -141,5 +79,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1719943832
+    "modified": 1640180775
 }
