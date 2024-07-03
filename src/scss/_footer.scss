@@ -20,12 +20,14 @@ footer{
                     span{
                         padding: 0px 5px;
                     }
+                    @include responsive(xs){
+                        font-size: 18px;
+                    }
                 }
             }
             .links{
                 .link{
                     display: inline-block;
-                    color: #fff;
                     text-decoration: none;
                     border-right: 1px solid;
                     border-color: $white;
@@ -42,6 +44,9 @@ footer{
                     &:last-child{
                         padding-right: 0px;
                         border-right: unset;
+                    }
+                    @include responsive(xs){
+                        font-size: 18px;
                     }
                 }
             }
