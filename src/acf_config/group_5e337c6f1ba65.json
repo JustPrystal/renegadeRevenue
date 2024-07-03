@@ -45,8 +45,13 @@
                     "min": "",
                     "max": ""
                 },
+<<<<<<< HEAD
                 "layout_6684428008718": {
                     "key": "layout_6684428008718",
+=======
+                "layout_66848bd596001": {
+                    "key": "layout_66848bd596001",
+>>>>>>> 0cfc92099f45d4ac289bc20f4e8ec5968d30de56
                     "name": "banner",
                     "label": "Banner",
                     "display": "block",
@@ -76,6 +81,7 @@
                     "min": "",
                     "max": ""
                 },
+<<<<<<< HEAD
                 "layout_66849739a3718": {
                     "key": "layout_66849739a3718",
                     "name": "about",
@@ -84,6 +90,16 @@
                     "sub_fields": [
                         {
                             "key": "field_66849740a3719",
+=======
+                "layout_6684920e6afa7": {
+                    "key": "layout_6684920e6afa7",
+                    "name": "ways_to_work",
+                    "label": "Ways To Work",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66849235e4145",
+>>>>>>> 0cfc92099f45d4ac289bc20f4e8ec5968d30de56
                             "label": "Fields",
                             "name": "fields",
                             "type": "clone",
@@ -96,6 +112,7 @@
                                 "id": ""
                             },
                             "clone": [
+<<<<<<< HEAD
                                 "group_668496f5d2602"
                             ],
                             "display": "seamless",
@@ -221,6 +238,9 @@
                             },
                             "clone": [
                                 "group_6685abe9e5317"
+=======
+                                "group_6684762bf156d"
+>>>>>>> 0cfc92099f45d4ac289bc20f4e8ec5968d30de56
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -265,5 +285,9 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
+<<<<<<< HEAD
     "modified": 1720036424
+=======
+    "modified": 1719964285
+>>>>>>> 0cfc92099f45d4ac289bc20f4e8ec5968d30de56
 }

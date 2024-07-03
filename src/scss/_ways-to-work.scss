@@ -1,0 +1,200 @@
+.ways-to-work{
+    background: linear-gradient(180deg, #cfdd01 35.1%, white 35.1%, white 100%);
+    padding: 20px 40px 100px 40px;
+    @include responsive(md){
+        background: linear-gradient(180deg, #cfdd01 100%, white 100%, white 100%);
+    }
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        .inner{
+            .heading{
+                font-size: 36px;
+                margin-bottom: 50px;
+                font-family: 'Neue-Black';
+                @include responsive(sm){
+                    font-size: 30px;
+                }
+                @include responsive(xs){
+                    font-size: 24px;
+                    margin-bottom: 40px;
+                }
+            }
+            .ways{
+                margin-left: 20px;
+                margin-bottom: 60px;
+                @include responsive(md){
+                    margin-left: 0px;
+                }
+                @include responsive(xs){
+                    margin-bottom: 50px;
+                }
+                .boxes{ //accordian
+                    display: flex;
+                    justify-content: space-between;
+                    @include responsive(md){
+                        display: block;
+                        background-color: $green;
+                    }
+                    .content-box{
+                        width: calc(33.3% - 50px);
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        background-color: $white;
+                        border: 1px solid $black;
+                        padding: 15px 5px 5px 15px;
+                        @include responsive(md){
+                            margin-bottom: 20px;
+                            border: unset;
+                            display: block;
+                            width: unset;
+                            padding: unset;
+                            // position: relative;
+                            &.active{
+                                .heading-wrap{
+                                    &::before{
+                                        content: "-";
+                                    }
+                                }
+                                .content-wrap{
+                                    height: 100%;
+                                    padding-top: 10px;
+                                    @include responsive(xs){
+                                        padding-top: 0px;
+                                    }
+                                }
+                            }
+
+                        }
+                        .heading-wrap{
+                            @include responsive(md){   
+                                text-align: center;
+                                position: relative;
+                                padding: 20px;
+                                cursor: pointer;
+                                &::before{
+                                    content: "+";
+                                    position: absolute;
+                                    color: $black;
+                                    top: 50%;
+                                    right: 20px;
+                                    transform: translateY(-50%);
+                                    font-size: 1.5em;
+                                }
+                            }
+                            .content-heading{
+                                font-size: 28px;
+                                position: relative;
+                                color: $black;
+                                font-family: 'Neue-Black';
+                                text-transform: uppercase;
+                                display: inline-block;
+                                z-index: 1;
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    display: block;
+                                    width: 95%;
+                                    height: 45%;
+                                    background-color: $green;
+                                    z-index: -1;
+                                    top: 45%;
+                                    left: -1px;
+                                }
+                                @include responsive(sm){
+                                    font-size: 26px;
+                                }
+                                @include responsive(xs){
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                        .content-wrap{
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            gap: 20px;
+                            @include responsive(md){
+                                height: 0;
+                                overflow: hidden;
+                                transition: ease 0.15s;
+                                overflow-y: auto;
+                            }
+                            .text{
+                                font-size: 18px;
+                                color: $black;
+                                font-family: 'Mukta';
+                                font-weight: 600;
+                                @include responsive(md){
+                                    margin: 0px 20px;
+                                }
+                                @include responsive(xs){
+                                    font-size: 14px;
+                                }
+                                &:last-child{
+                                    margin-top: auto;
+                                    @include responsive(md){
+                                        margin-top: 0px;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .schedule{
+                text-align: center;
+                p{
+                    color: $black;
+                    font-size: 30px;
+                    font-family: 'Neue-Black';
+                    margin-bottom: 60px;
+                    @include responsive(md){
+                        font-size: 28px;
+                    }
+                    @include responsive(sm){
+                        font-size: 26px;
+                        margin-bottom: 45px;
+                    }
+                    @include responsive(xs){
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    font-family: 'Neue-Bold';
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 15px 30px;
+                    color: $black;
+                    border: 1px solid $black;
+                    background-color: $green;
+                    // max-width: fit-content;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: darken($color: $green, $amount: 5);
+                    }
+                    @include responsive(md){
+                        font-size: 26px;
+                        background-color: $white;
+                        &:hover{
+                            background-color: darken($color: $white, $amount: 5);
+                        }
+                    }
+                    @include responsive(sm){
+                        font-size: 24px;
+                    }
+                    @include responsive(xs){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

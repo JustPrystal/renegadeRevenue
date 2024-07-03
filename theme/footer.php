@@ -1,10 +1,6 @@
 <?php 
     $copyright = get_field('footer' , 'options')["copyright"];
     $links = get_field('footer' , 'options')["links"];
-    
-    // echo "<pre>";
-    //     var_dump($links);
-    // echo "</pre>";
 ?>
     <footer>
         <section class="inner">
@@ -29,7 +25,7 @@
 	</body>
 </html>
 
-    <!-- <?php foreach($links as $link){
-        var_dump($link["link"]["title"]);?>
-        <hr>
-    <?php } ?> -->
+<!-- <?php foreach($links as $link){
+    var_dump($link["link"]["title"]);?>
+    <hr>
+<?php } ?> -->
