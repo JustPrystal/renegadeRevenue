@@ -27,6 +27,9 @@
               include 'blocks/About.php';
               break;
             
+            case 'ways_to_work':
+              include 'blocks/Ways_to_work.php';
+              break;
           }
         }
       }

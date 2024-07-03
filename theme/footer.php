@@ -14,7 +14,7 @@
                 </div>
                 <div class="links">
                     <?php foreach($links as $link){?>
-                        <a href="<?php echo($link["link"]["url"]) ?>"><?php echo($link["link"]["title"]) ?></a>
+                        <a href="<?php echo($link["link"]["url"]) ?>" class="link"><?php echo($link["link"]["title"]) ?></a>
                     <?php } ?>
                 </div>
             </div>

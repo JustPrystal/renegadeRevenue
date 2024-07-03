@@ -45,14 +45,19 @@
                     "min": "",
                     "max": ""
                 },
+<<<<<<< HEAD
                 "layout_6684428008718": {
                     "key": "layout_6684428008718",
+=======
+                "layout_66848bd596001": {
+                    "key": "layout_66848bd596001",
+>>>>>>> 7eb8ecd5c35fe64b01ccbb03534aa7d43bea7ac4
                     "name": "banner",
                     "label": "Banner",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_6684428508719",
+                            "key": "field_66848be196002",
                             "label": "Fields",
                             "name": "fields",
                             "type": "clone",
@@ -76,6 +81,7 @@
                     "min": "",
                     "max": ""
                 },
+<<<<<<< HEAD
                 "layout_66849739a3718": {
                     "key": "layout_66849739a3718",
                     "name": "about",
@@ -84,6 +90,16 @@
                     "sub_fields": [
                         {
                             "key": "field_66849740a3719",
+=======
+                "layout_6684920e6afa7": {
+                    "key": "layout_6684920e6afa7",
+                    "name": "ways_to_work",
+                    "label": "Ways To Work",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66849235e4145",
+>>>>>>> 7eb8ecd5c35fe64b01ccbb03534aa7d43bea7ac4
                             "label": "Fields",
                             "name": "fields",
                             "type": "clone",
@@ -96,7 +112,11 @@
                                 "id": ""
                             },
                             "clone": [
+<<<<<<< HEAD
                                 "group_668496f5d2602"
+=======
+                                "group_6684762bf156d"
+>>>>>>> 7eb8ecd5c35fe64b01ccbb03534aa7d43bea7ac4
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -141,5 +161,9 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
+<<<<<<< HEAD
     "modified": 1719965527
+=======
+    "modified": 1719964285
+>>>>>>> 7eb8ecd5c35fe64b01ccbb03534aa7d43bea7ac4
 }
