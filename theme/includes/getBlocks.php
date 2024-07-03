@@ -23,6 +23,9 @@
             case 'banner':
               include 'blocks/Banner.php';
               break;
+            case 'about':
+              include 'blocks/About.php';
+              break;
             
           }
         }

@@ -1,11 +1,12 @@
 <?php 
+    $backgroundImage = $block['background-image'];
     $heading = $block['heading'];
     $description = $block['description'];
     $link = $block['button'];
-  
 ?>
 
 <div class="banner">
+    <img class="background" src=<?php echo $backgroundImage ?> alt="img">
     <div class="container">
         <div class="content-wrap">
             <h2 class="heading">

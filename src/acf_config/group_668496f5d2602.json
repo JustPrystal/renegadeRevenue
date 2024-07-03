@@ -1,11 +1,30 @@
 {
-    "key": "group_6684420e8de44",
-    "title": "Banner",
+    "key": "group_668496f5d2602",
+    "title": "About",
     "fields": [
         {
-            "key": "field_6684422860e71",
-            "label": "Background-Image",
-            "name": "background-image",
+            "key": "field_668496fc51317",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6684970951318",
+            "label": "Image",
+            "name": "image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -27,29 +46,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_6684423fa0c07",
-            "label": "Heading",
-            "name": "heading",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_66844246a0c08",
+            "key": "field_6684971551319",
             "label": "Description",
             "name": "description",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,13 +59,13 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
-            "key": "field_6684425da0c09",
+            "key": "field_6684971e5131a",
             "label": "Button",
             "name": "button",
             "type": "link",
@@ -97,5 +97,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1719961091
+    "modified": 1719968091
 }

@@ -45,37 +45,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_6684417be5f64": {
-                    "key": "layout_6684417be5f64",
-                    "name": "header",
-                    "label": "Header",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_66844186e5f65",
-                            "label": "Fields",
-                            "name": "fields",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_6684406c82e4c"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_6684428008718": {
                     "key": "layout_6684428008718",
                     "name": "banner",
@@ -97,6 +66,37 @@
                             },
                             "clone": [
                                 "group_6684420e8de44"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66849739a3718": {
+                    "key": "layout_66849739a3718",
+                    "name": "about",
+                    "label": "About",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66849740a3719",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_668496f5d2602"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -141,5 +141,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1719943832
+    "modified": 1719965527
 }

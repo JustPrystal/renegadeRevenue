@@ -1,9 +1,19 @@
 .banner{
+    max-width: 1920px;
+    margin: 0 auto;
     height: 70vh;
-    padding: 0 20px;
+    padding: 0 40px;
+    position: relative;
+    background-image: linear-gradient(to left, $white 40%, transparent);
+
+    .background{
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
 
     .container{
-        max-width: 1800px;
+        max-width: 1400px;
         margin: 0 auto;
         display: flex;
         justify-content: flex-end;
@@ -15,13 +25,13 @@
 
             .heading{
                 font-family: 'Neue-Black';
-                font-size: 100px;
+                font-size: 60px;
                 font-weight: 700;
                 margin-bottom: 20px;
             }
             .description{
                 font-family: 'Neue-Thin';
-                font-size: 50px;
+                font-size: 30px;
                 font-weight: 500;
                 margin-bottom: 30px;
 
@@ -34,8 +44,9 @@
 
                 .button{
                     font-family: 'Neue-Bold';
-                    font-size: 30px;
+                    font-size: 20px;
                     font-weight: 700;
+                    text-transform: uppercase;
                     padding: 15px 30px;
                     color: $black;
                     border: 2px solid $black;
