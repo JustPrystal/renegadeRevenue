@@ -26,10 +26,6 @@
             case 'about':
               include 'blocks/About.php';
               break;
-            
-            case 'ways_to_work':
-              include 'blocks/Ways_to_work.php';
-              break;
             case 'roadmap':
               include 'blocks/roadmap.php';
               break;
@@ -38,6 +34,9 @@
               break;
             case 'cta':
               include 'blocks/cta.php';
+              break;
+            case 'ways_to_work':
+              include 'blocks/Ways_to_work.php';
               break;
           }
         }

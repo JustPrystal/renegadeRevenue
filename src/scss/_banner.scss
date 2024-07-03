@@ -5,11 +5,38 @@
     padding: 0 40px;
     position: relative;
     background-image: linear-gradient(to left, $white 40%, transparent);
+    overflow: hidden;
+
+    @include responsive(md){
+        background-image: linear-gradient(to left, $white 20%, transparent);
+        padding: 0 20px;  
+        height: 60vh;             
+    }
+    @include responsive(sm){
+        background-image: linear-gradient(to left, $white 10%, transparent);
+    }
+
 
     .background{
         position: absolute;
         inset: 0;
         z-index: -1;
+
+        // @include responsive(xl){
+        //     left: -150px;
+        // }
+        // @include responsive(lg){
+        //     left: -200px;           
+        // }
+        // @include responsive(md){
+        //     inset: 0;   
+        // }
+        @include responsive(sm){
+            left: -100px;  
+        }
+        @include responsive(xs){
+            left: -200px;   
+        }
     }
 
     .container{
@@ -20,20 +47,98 @@
         align-items: flex-start;
         padding: 80px 0;
 
+        @include responsive(md){
+            justify-content: center;           
+        }
+
         .content-wrap{
             width: 60%;
 
+            @include responsive(sm){
+                width: 70%;
+            }
+            @include responsive(xs){
+                width: 90%;
+            }
+
             .heading{
                 font-family: 'Neue-Black';
-                font-size: 60px;
+                font-size: 80px;
                 font-weight: 700;
+                line-height: 110%;
                 margin-bottom: 20px;
+                position: relative;
+                z-index: 1;
+
+                @include responsive(xl){
+                    font-size: 70px;
+                }
+                @include responsive(lg){
+                    font-size: 60px;
+                }
+                @include responsive(md){
+                    font-size: 50px;   
+                }
+                @include responsive(sm){
+                    font-size: 40px;
+                }
+                @include responsive(sm){
+                    font-size: 35px;
+                }
+
+                .shade{
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 270px;
+                        height: 20%;
+                        background-color: #cfdd01;
+                        z-index: -1;
+                        top: 23%;
+                        left: 185px;
+
+                        @include responsive(xl){
+                            width: 240px;
+                            left: 160px;
+                        }
+                        @include responsive(lg){
+                            width: 210px;
+                            left: 135px;
+                        }
+                        @include responsive(md){
+                            width: 170px;
+                            left: 115px;
+                        }
+                        @include responsive(sm){
+                            width: 140px;
+                            left: 90px;
+                        }
+                    }
+                }
             }
             .description{
                 font-family: 'Neue-Thin';
-                font-size: 30px;
-                font-weight: 500;
+                font-size: 40px;
+                line-height: 110%;
                 margin-bottom: 30px;
+
+                @include responsive(xl){
+                    font-size: 35px;
+                }
+                @include responsive(lg){
+                    font-size: 30px;
+                }
+                @include responsive(md){
+                    font-size: 25px;   
+                }
+                @include responsive(sm){
+                    font-size: 20px;
+                }
+                @include responsive(sm){
+                    font-size: 18px;
+                }
 
                 span{
                     font-family: 'Neue-Black';
@@ -56,6 +161,14 @@
 
                     &:hover{
                         background-color: darken($color: $green, $amount: 5);
+                    }
+
+                    @include responsive(sm){
+                        font-size: 18px;
+                        padding: 10px 20px;
+                    }
+                    @include responsive(sm){
+                        font-size: 16px;
                     }
                 }
             }

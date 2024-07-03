@@ -1,6 +1,10 @@
 .fullwidth-content{
     padding: 50px 40px 30px;
 
+    @include responsive(sm){
+        padding: 30px 20px;       
+    }
+
     .container{
         max-width: 1400px;
         margin: 0 auto;
@@ -12,19 +16,56 @@
             font-size: 60px;
             font-weight: 700;
             margin-bottom: 20px;
+            
+            @include responsive(lg){
+                font-size: 50px;
+            }
+            @include responsive(md){
+                font-size: 40px;       
+            }
+            @include responsive(sm){
+                font-size: 35px;       
+            }
+            @include responsive(xs){
+                font-size: 30px;       
+            }
         }
         .description{
-            align-self: center;
-            width: 60%;
+            width: 70%;
+            transform: translateX(250px);
+
+            @include responsive(lg){
+                transform: translateX(200px);
+            }
+            @include responsive(md){
+                transform: translateX(100px);
+            }
+            @include responsive(sm){
+                transform: translateX(0px);
+                width: 100%;
+            }
 
             p{
                 font-family: 'Mukta';
                 font-size: 30px;
-                font-weight: 500;
+                line-height: 110%;
                 margin-bottom: 30px;
 
                 &:last-child{
                     margin-bottom: 0;
+                }
+
+                @include responsive(lg){
+                    font-size: 25px;
+                }
+                @include responsive(md){
+                    font-size: 20px;   
+                }
+                @include responsive(sm){
+                    font-size: 18px;   
+                }
+                @include responsive(xs){
+                    font-size: 16px;   
                 }
             }
         }

@@ -16,17 +16,43 @@
                 font-size: 60px;
                 font-weight: 700;
                 margin-bottom: 20px;
+
+                @include responsive(lg){
+                    font-size: 50px;
+                }
+                @include responsive(md){
+                    font-size: 40px;       
+                }
+                @include responsive(sm){
+                    font-size: 35px;       
+                }
+                @include responsive(xs){
+                    font-size: 30px;       
+                }
             }
             .description{
 
                 p{
                     font-family: 'Mukta';
                     font-size: 30px;
-                    font-weight: 500;
+                    line-height: 110%;
                     margin-bottom: 30px;
 
                     &:last-child{
                         margin-bottom: 0;
+                    }
+
+                    @include responsive(lg){
+                        font-size: 25px;
+                    }
+                    @include responsive(md){
+                        font-size: 20px;   
+                    }
+                    @include responsive(sm){
+                        font-size: 18px;   
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;   
                     }
                 }
             }
@@ -36,6 +62,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            @include responsive(sm){
+                align-items: center;
+            }
 
             .tenant{
                 margin-bottom: 30px;
@@ -47,32 +77,76 @@
                     margin-bottom: 0;
                 }
 
+                @include responsive(sm){
+                    width: 100%;
+                }
+
                 .heading{
                     font-family: 'Neue-Black';
-                    font-size: 30px;
+                    font-size: 40px;
                     font-weight: 700;
                     margin-bottom: 30px;
                     align-self: flex-end;
                     border-bottom: 1px solid $black;
+                    position: relative;
+                    z-index: 1;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 99%;
+                        height: 40%;
+                        background-color: #cfdd01;
+                        z-index: -1;
+                        top: 45%;
+                    }
+
+                    @include responsive(lg){
+                        font-size: 35px;
+                    }
+                    @include responsive(md){
+                        font-size: 30px;       
+                    }
+                    @include responsive(sm){
+                        font-size: 25px;  
+                        align-self: center;     
+                    }
+                    @include responsive(xs){
+                        font-size: 20px;       
+                    }
                 }
                 .description{
                     font-family: 'Mukta';
-                    font-size: 20px;
-                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 110%;
+
+                    @include responsive(lg){
+                        font-size: 20px;
+                    }
+                    @include responsive(md){
+                        font-size: 18px;   
+                    }
+                    @include responsive(sm){
+                        font-size: 16px;   
+                    }
+                    @include responsive(xs){
+                        font-size: 14px;   
+                    }
                 }
             }
-            .triangle{
-                width: 0;
-                height: 0;
-                border-left: 400px solid transparent;
-                border-right: 400px solid transparent;
-                border-bottom: 700px solid $green;
-                background-image: linear-gradient(to bottom, $green 40%, transparent) !important;
-                position: absolute;
-                bottom: 10px;
-                left: -100px;
-                z-index: -1;
-            }
+            // .triangle{
+            //     width: 0;
+            //     height: 0;
+            //     border-left: 400px solid transparent;
+            //     border-right: 400px solid transparent;
+            //     border-bottom: 700px solid $green;
+            //     background-image: linear-gradient(to bottom, $green 40%, transparent) !important;
+            //     position: absolute;
+            //     bottom: 10px;
+            //     left: -100px;
+            //     z-index: -1;
+            // }
         }
     }
 }
