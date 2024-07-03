@@ -30,6 +30,15 @@
             case 'ways_to_work':
               include 'blocks/Ways_to_work.php';
               break;
+            case 'roadmap':
+              include 'blocks/roadmap.php';
+              break;
+            case 'fullwidth-content':
+              include 'blocks/fullwidth-content.php';
+              break;
+            case 'cta':
+              include 'blocks/cta.php';
+              break;
           }
         }
       }

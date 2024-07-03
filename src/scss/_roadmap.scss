@@ -1,0 +1,78 @@
+.roadmap{
+    padding: 50px 40px;
+    
+
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .top-wrap{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+
+            .heading{
+                font-family: 'Neue-Black';
+                font-size: 60px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .description{
+
+                p{
+                    font-family: 'Mukta';
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .tenants-wrap{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .tenant{
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                .heading{
+                    font-family: 'Neue-Black';
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    align-self: flex-end;
+                    border-bottom: 1px solid $black;
+                }
+                .description{
+                    font-family: 'Mukta';
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .triangle{
+                width: 0;
+                height: 0;
+                border-left: 400px solid transparent;
+                border-right: 400px solid transparent;
+                border-bottom: 700px solid $green;
+                background-image: linear-gradient(to bottom, $green 40%, transparent) !important;
+                position: absolute;
+                bottom: 10px;
+                left: -100px;
+                z-index: -1;
+            }
+        }
+    }
+}
