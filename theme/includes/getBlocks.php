@@ -38,6 +38,9 @@
             case 'ways_to_work':
               include 'blocks/Ways_to_work.php';
               break;
+            case 'problems_solved':
+              include 'blocks/Problems_solved.php';
+              break;  
           }
         }
       }

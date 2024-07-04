@@ -1,0 +1,144 @@
+.problems{
+    background-color: $white;
+    padding: 80px 40px 40px 40px;
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        .inner{
+            .heading{
+                font-size: 36px;
+                margin-bottom: 50px;
+                color: $black;
+                font-family: 'Neue-Black';
+                @include responsive(sm){
+                    font-size: 30px;
+                }
+                @include responsive(xs){
+                    font-size: 24px;
+                    margin-bottom: 40px;
+                }
+            }
+            .slider{
+                margin-left: 20px;
+                @include responsive(md){
+                    margin-left: 0px;
+                }
+                .slider-wrapper{  //accordian
+                    display: flex;
+                    // flex-wrap: wrap; //remove
+                    justify-content: space-between;
+                    @include responsive(md){
+                        display: block;
+                        background-color: $white;
+                    }
+                    .slide{ //content-box
+                        width: calc(33.3% - 50px);
+                        background-color: $white;
+                        border: 2px solid $red;
+                        padding: 15px 5px 5px 15px;
+                        @include responsive(md){
+                            margin-bottom: 20px;
+                            width: unset;
+                            padding: unset;
+                        }
+                        .problem-and-heading-wrap{
+                            margin-bottom: 20px;
+                            @include responsive(md){   
+                                position: relative;
+                                padding: 20px;
+                                margin-bottom: 0px;
+                                cursor: pointer;
+                                &::before{
+                                    content: "+";
+                                    position: absolute;
+                                    color: $black;
+                                    top: 50%;
+                                    right: 20px;
+                                    transform: translateY(-50%);
+                                    font-size: 1.5em;
+                                }
+                            }
+                            .problem-span-wrap{
+                                margin-bottom: 10px;
+                                .problem-span{
+                                    font-size: 20px;
+                                    color: $black;
+                                    font-family: 'Neue-Med';
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                    position: relative;
+                                    z-index: 1;
+                                    &::before{
+                                        content: "";
+                                        position: absolute;
+                                        display: block;
+                                        width: 102%;
+                                        height: 40%;
+                                        background-color: $red;
+                                        z-index: -1;
+                                        top: 45%;
+                                        left: -1px;
+                                    }
+                                    @include responsive(sm){
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                            .heading-wrap{
+                                .content-heading{
+                                    font-size: 28px;
+                                    color: $black;
+                                    font-family: 'Neue-Black';
+                                    text-transform: uppercase;
+                                    @include responsive(sm){
+                                        font-size: 26px;
+                                    }
+                                    @include responsive(xs){
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .content-wrap{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            @include responsive(md){
+                                height: 0;
+                                overflow: hidden;
+                                transition: ease 0.15s;
+                                overflow-y: auto;
+                            }
+                            .text{
+                                font-size: 18px;
+                                color: $black;
+                                font-family: 'Mukta';
+                                font-weight: 600;
+                                @include responsive(lg){
+                                    font-size: 16px;
+                                }
+                                @include responsive(md){
+                                    margin: 0px 20px;
+                                }
+                                @include responsive(xs){
+                                    font-size: 14px;
+                                    margin: 0px 15px;
+                                }
+                                &:last-child{
+                                    @include responsive(md){
+                                        margin-bottom: 20px;
+                                    }
+                                    @include responsive(xs){
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
