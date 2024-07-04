@@ -1,8 +1,8 @@
 .ways-to-work{
-    background: linear-gradient(180deg, #cfdd01 35.1%, white 35.1%, white 100%);
+    background: linear-gradient(180deg, var(--green) 35.1%, var(--white) 35.1%, var(--white) 100%);
     padding: 20px 40px 100px 40px;
     @include responsive(md){
-        background: linear-gradient(180deg, #cfdd01 100%, white 100%, white 100%);
+        background: linear-gradient(180deg, var(--green) 100%, var(--white) 100%, var(--white) 100%);
     }
     .container{
         max-width: 1440px;
@@ -13,7 +13,7 @@
             .heading{
                 font-size: 36px;
                 margin-bottom: 50px;
-                color: $black;
+                color: var(--black);
                 font-family: 'Neue-Black';
                 @include responsive(sm){
                     font-size: 30px;
@@ -37,15 +37,15 @@
                     justify-content: space-between;
                     @include responsive(md){
                         display: block;
-                        background-color: $green;
+                        background: var(--green);
                     }
                     .content-box{
                         width: calc(33.3% - 50px);
                         display: flex;
                         flex-direction: column;
                         gap: 20px;
-                        background-color: $white;
-                        border: 1px solid $black;
+                        background: var(--white);
+                        border: 1px solid var(--black);
                         padding: 15px 5px 5px 15px;
                         @include responsive(md){
                             margin-bottom: 20px;
@@ -82,7 +82,7 @@
                                 &::before{
                                     content: "+";
                                     position: absolute;
-                                    color: $black;
+                                    color: var(--black);
                                     top: 50%;
                                     right: 20px;
                                     transform: translateY(-50%);
@@ -92,7 +92,7 @@
                             .content-heading{
                                 font-size: 30px;
                                 position: relative;
-                                color: $black;
+                                color: var(--black);
                                 font-family: 'Neue-Black';
                                 text-transform: uppercase;
                                 display: inline-block;
@@ -103,7 +103,7 @@
                                     display: block;
                                     width: 95%;
                                     height: 45%;
-                                    background-color: $green;
+                                    background: var(--green);
                                     z-index: -1;
                                     top: 45%;
                                     left: -1px;
@@ -175,7 +175,7 @@
             .schedule{
                 text-align: center;
                 p{
-                    color: $black;
+                    color: var(--black);
                     font-size: 30px;
                     font-family: 'Neue-Black';
                     margin-bottom: 60px;
@@ -198,20 +198,20 @@
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
-                    color: $black;
-                    border: 1px solid $black;
-                    background-color: $green;
+                    color: var(--black);
+                    border: 1px solid var(--black);
+                    background: var(--green);
                     // max-width: fit-content;
                     transition: all 0.3s ease;
-                    &:hover{
-                        background-color: darken($color: $green, $amount: 5);
-                    }
+                    // &:hover{
+                    //     background: darken($color: var(--green), $amount: 5);
+                    // }
                     @include responsive(md){
                         font-size: 26px;
-                        background-color: $white;
-                        &:hover{
-                            background-color: darken($color: $white, $amount: 5);
-                        }
+                        background: var(--white);
+                        // &:hover{
+                        //     background: darken($color: var(--white), $amount: 5);
+                        // }
                     }
                     @include responsive(sm){
                         font-size: 24px;

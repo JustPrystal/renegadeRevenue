@@ -39,7 +39,7 @@
   <?php 
     $header = get_field('header', 'option');
   ?>
-<div class="mode dark">
+<div class="mode">
     <div class="frame">
         <div class="icon"></div>
     </div>
@@ -64,13 +64,23 @@
   <script>
     $(".mode").click(function(){
       $(this).toggleClass("dark");
+      if($(this).hasClass("dark")){
+        document.documentElement.style.setProperty('--green', '#1596b3');
+        document.documentElement.style.setProperty('--white', '#333333');
+        document.documentElement.style.setProperty('--black', '#ffffff');
+      }else{
+        document.documentElement.style.setProperty('--green', '#cfdd01');
+        document.documentElement.style.setProperty('--white', '#ffffff');
+        document.documentElement.style.setProperty('--black', '#000000');
+      }
     })
-    function toggleClasses() {
+    $(".menu-wrap").click(function(){
+      $("body").toggleClass("no-scroll");
+    })
       const links = document.getElementById('header-links');
-      const body = document.getElementsByTagName('body');
       const menu = document.getElementById('menu-wrap');
+    function toggleClasses() {
       links.classList.toggle('active');
-      body.classList.toggle('no-scroll');
       menu.classList.toggle('cross');
     }
   </script>

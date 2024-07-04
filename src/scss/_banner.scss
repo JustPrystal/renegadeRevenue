@@ -1,23 +1,27 @@
 .banner{
+    height: 70vh;
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 40px;
     position: relative;
-    background-image: linear-gradient(to left, $white 40%, transparent);
+    background-image: linear-gradient(to left, var(--white) 40%, transparent);
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    color: var(--black);
     overflow: hidden;
-    border-top: 2px solid $black;
-    border-bottom: 2px solid $black;
+    
 
     @include responsive(md){
-        background-image: linear-gradient(to left, $white 20%, transparent);
+        background-image: linear-gradient(to left, var(--white) 20%, transparent);
         padding: 0 20px;           
     }
     @include responsive(sm){
-        background-image: linear-gradient(to left, $white 10%, transparent);
-        height: 70vh;
+        background-image: linear-gradient(to top, var(--white) 10%, transparent);
     }
     @include responsive(xs){
-        background-image: linear-gradient(to left, $white 5%, transparent);
+        padding: 0 10px;
+        height: 80vh;
+        background-image: linear-gradient(to top, rgba(255,255,255,0.8) 30%, transparent);
     }
 
 
@@ -26,21 +30,20 @@
         position: absolute;
         inset: 0;
         z-index: -1;
+        object-position: center center;
+        object-fit: fill;
 
-        // @include responsive(xl){
-        //     left: -150px;
-        // }
-        // @include responsive(lg){
-        //     left: -200px;           
-        // }
-        // @include responsive(md){
-        //     inset: 0;   
-        // }
-        // @include responsive(sm){
-        //     left: 200px;  
-        // }
+        @include responsive(xl){
+            object-position: -150px center; 
+        }
+        @include responsive(lg){
+            object-position: -200px center;            
+        }
+        @include responsive(sm){
+            object-position: -250px center;   
+        }
         @include responsive(xs){
-            left: -150px;   
+            object-position: -350px center;   
         }
     }
 
@@ -54,11 +57,13 @@
         height: 100%;
 
         @include responsive(md){
-            align-items: flex-end;
-            justify-content: center;    
-            padding: 50px 0;       
+            padding: 50px 0;     
+            align-items: center;
+            justify-content: flex-start;  
         }
         @include responsive(sm){
+            align-items: flex-end;
+            justify-content: flex-start;    
             padding: 30px 0;
         }
 
@@ -66,10 +71,11 @@
             width: 60%;
 
             @include responsive(sm){
-                width: 70%;
+                width: 80%;
+                padding-top: 200px;
             }
             @include responsive(xs){
-                width: 90%;
+                width: 100%;
             }
 
             .heading{
@@ -105,7 +111,7 @@
                         display: block;
                         width: 245px;
                         height: 30%;
-                        background-color: $green;
+                        background: var(--green);
                         z-index: -1;
                         top: 60%;
                         left: -10px;
@@ -168,15 +174,15 @@
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
-                    color: $black;
-                    border: 2px solid $black;
-                    background-color: $green;
+                    color: var(--black);
+                    border: 2px solid var(--black);
+                    background: var(--green);
                     max-width: fit-content;
                     transition: all 0.4s ease;
 
-                    &:hover{
-                        background-color: darken($color: $green, $amount: 5);
-                    }
+                    // &:hover{
+                    //     background: darken($color: $green, $amount: 5);
+                    // }
 
                     @include responsive(sm){
                         font-size: 18px;

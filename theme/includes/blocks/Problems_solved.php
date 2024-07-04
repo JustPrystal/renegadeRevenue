@@ -20,9 +20,7 @@
                                 </div>
                             </div>
                             <div class="content-wrap">
-                                <?php foreach($box["content"] as $text){?>
-                                        <p class="text"><?php echo($text["text"]) ?></p>    
-                                <?php } ?>
+                                <p class="text"><?php echo($box["content"]) ?></p>    
                             </div>
                         </div>
                     <?php } ?>
@@ -33,15 +31,11 @@
 </section>
 
 <script>
-
-    const swiper = new Swiper('.slider', {
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    
-    slidesPerView: 3,
-    
-});
+    $(document).ready(function(){
+        const swiper = new Swiper('.slider', {
+            // Add your Swiper options here
+            slidesPerView: 1,
+            spaceBetween: 10,
+        });
+    })
 </script>

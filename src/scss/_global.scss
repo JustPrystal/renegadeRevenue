@@ -38,19 +38,21 @@ body {
   cursor: pointer;
   bottom: 20px;
   right: 20px;
-  background-color: $black;
+  background: var(--black);
+  transition: 200ms ease-in-out;
   border-radius: 20px;
   .frame{
     margin: 4px;
     padding: 4px;
-    background-color: $green;
+    background: var(--green);
     width: 60px;
+    transition: 200ms ease-in-out;
     border-radius: 16px;
     .icon{
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: $black;
+      background: var(--black);
       transition: 200ms ease-in-out;
       position: relative;
       overflow: hidden;
@@ -59,7 +61,7 @@ body {
         content: "";
         position: absolute;
         inset: 0;
-        background-color: $green;
+        background: var(--green);
         border-radius: 50%;    
         transform: translate(100%, -100%);  
       }
@@ -68,7 +70,7 @@ body {
   &.dark{
     .frame{
       .icon{
-        transform: translateX(30px);
+        transform: translateX(31px);
 
         &::after{
           transform: translate(5px, -5px);  
@@ -77,20 +79,14 @@ body {
     }
 
   }
-  &:hover{
-    &.dark{
-      .frame{
-        .icon{
-          transform: translateX(28px);
-        }
-      }
-    }
-    .frame{
-      .icon{
-        transform: translateX(2px);
-      }
-    }
-  }
+  // &:hover{
+  //   background: transparentize($color: var(--black), $amount: 0.4);
+  //   .frame{
+  //     .icon{
+  //       background: transparentize($color: var(--black), $amount: 0.4);
+  //     }
+  //   }
+  // }
 }
 
 
