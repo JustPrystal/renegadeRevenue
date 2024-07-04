@@ -1,5 +1,6 @@
 .roadmap{
     padding: 50px 40px;
+    background: var(--white);
     
     @include responsive(sm){
         padding: 30px 20px;       
@@ -93,7 +94,7 @@
                     font-weight: 700;
                     margin-bottom: 30px;
                     align-self: flex-end;
-                    border-bottom: 1px solid $black;
+                    border-bottom: 1px solid var(--black);
                     position: relative;
                     z-index: 1;
 
@@ -103,7 +104,7 @@
                         display: block;
                         width: 99%;
                         height: 40%;
-                        background: $green;
+                        background: var(--green);
                         z-index: -1;
                         top: 45%;
                     }
@@ -147,8 +148,8 @@
             //     height: 0;
             //     border-left: 400px solid transparent;
             //     border-right: 400px solid transparent;
-            //     border-bottom: 700px solid $green;
-            //     background-image: linear-gradient(to bottom, $green 40%, transparent) !important;
+            //     border-bottom: 700px solid var(--green);
+            //     background-image: linear-gradient(to bottom, var(--green) 40%, transparent) !important;
             //     position: absolute;
             //     bottom: 10px;
             //     left: -100px;
