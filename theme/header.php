@@ -17,7 +17,6 @@
     <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    
     <?php wp_head();?>    
     <meta name="author" content="<?php bloginfo('name'); ?>" />
     
@@ -74,13 +73,12 @@
         document.documentElement.style.setProperty('--black', '#000000');
       }
     })
-    $(".menu-wrap").click(function(){
-      $("body").toggleClass("no-scroll");
-    })
-      const links = document.getElementById('header-links');
-      const menu = document.getElementById('menu-wrap');
     function toggleClasses() {
+      const links = document.getElementById('header-links');
+      const body = document.getElementsByTagName('body');
+      const menu = document.getElementById('menu-wrap');
       links.classList.toggle('active');
+      body.classList.toggle('no-scroll');
       menu.classList.toggle('cross');
     }
   </script>
