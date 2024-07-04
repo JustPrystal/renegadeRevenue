@@ -19,6 +19,7 @@
                 font-size: 50px;
                 font-weight: 700;
                 margin-bottom: 20px;
+                color: var(--black);
 
                 @include responsive(lg){
                     font-size: 45px;
@@ -40,6 +41,7 @@
                     font-size: 30px;
                     line-height: 110%;
                     margin-bottom: 30px;
+                    color: var(--black);
 
                     &:last-child{
                         margin-bottom: 0;
@@ -85,6 +87,7 @@
                 }
 
                 .heading{
+                    color: var(--black);
                     font-family: 'Neue-Black';
                     font-size: 40px;
                     font-weight: 700;
@@ -100,7 +103,7 @@
                         display: block;
                         width: 99%;
                         height: 40%;
-                        background-color: #cfdd01;
+                        background: $green;
                         z-index: -1;
                         top: 45%;
                     }
@@ -123,6 +126,7 @@
                     font-family: 'Mukta';
                     font-size: 25px;
                     line-height: 110%;
+                    color: var(--black);
 
                     @include responsive(lg){
                         font-size: 20px;

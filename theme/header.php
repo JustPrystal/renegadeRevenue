@@ -74,8 +74,8 @@
         document.documentElement.style.setProperty('--black', '#000000');
       }
     })
-    $("body").click(function(){
-      $(this).toggleClass("no-scroll");
+    $(".menu-wrap").click(function(){
+      $("body").toggleClass("no-scroll");
     })
       const links = document.getElementById('header-links');
       const menu = document.getElementById('menu-wrap');
