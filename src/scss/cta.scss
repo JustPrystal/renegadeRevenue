@@ -1,5 +1,10 @@
 .cta{
     padding: 50px 40px;
+
+    @include responsive(sm){
+        padding: 30px 20px;
+    }
+
     .container{
         max-width: 1400px;
         margin: 0 auto;
@@ -8,9 +13,22 @@
 
         .heading{
             font-family: 'Neue-Black';
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 700;
             margin-bottom: 20px;
+
+            @include responsive(lg){
+                font-size: 45px;
+            }
+            @include responsive(md){
+                font-size: 40px;       
+            }
+            @include responsive(sm){
+                font-size: 35px;       
+            }
+            @include responsive(xs){
+                font-size: 30px;       
+            }
         }
         .content-wrap{
             background-color: $lightBlack;
@@ -19,6 +37,18 @@
             flex-direction: column;
             width: 70%;
             transform: translateX(200px);
+
+            @include responsive(lg){
+                transform: translateX(150px);
+            }
+            // @include responsive(md){
+            //     transform: translateX(50px);
+            // }
+            @include responsive(sm){
+                transform: translateX(0px);
+                width: 100%;
+                padding: 20px 20px 80px;
+            }
 
             .description{
 
@@ -32,12 +62,29 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
+
+                    @include responsive(lg){
+                        font-size: 25px;
+                    }
+                    @include responsive(md){
+                        font-size: 20px;   
+                    }
+                    @include responsive(sm){
+                        font-size: 18px;   
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;   
+                    }
                 }
             }
             .button-image-wrap{
                 margin-top: 30px;
                 align-self: center;
                 position: relative;
+
+                @include responsive(sm){
+                    align-self: flex-start;
+                }
 
                 .button{
                     font-family: 'Neue-Bold';
@@ -55,12 +102,28 @@
                     &:hover{
                         background-color: $green;
                     }
+
+                    @include responsive(sm){
+                        font-size: 18px;
+                        padding: 10px 20px;
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;
+                    }
                 }
                 .image-wrap{
                     width: 100%;
                     position: absolute;
                     bottom: -90px;
                     right: -170px;
+
+                    @include responsive(sm){
+                        bottom: -80px;
+                        right: -140px;
+                    }
+                    @include responsive(xs){
+                        right: -130px;
+                    }
     
                     .image{
                         width: 100%;

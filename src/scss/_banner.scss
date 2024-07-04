@@ -63,7 +63,7 @@
 
             .heading{
                 font-family: 'Neue-Black';
-                font-size: 80px;
+                font-size: 70px;
                 font-weight: 700;
                 line-height: 110%;
                 margin-bottom: 20px;
@@ -71,18 +71,18 @@
                 z-index: 1;
 
                 @include responsive(xl){
-                    font-size: 70px;
-                }
-                @include responsive(lg){
                     font-size: 60px;
                 }
+                @include responsive(lg){
+                    font-size: 50px;
+                }
                 @include responsive(md){
-                    font-size: 50px;   
+                    font-size: 40px;   
                 }
                 @include responsive(sm){
-                    font-size: 40px;
+                    font-size: 30px;
                 }
-                @include responsive(sm){
+                @include responsive(xs){
                     font-size: 35px;
                 }
 
@@ -136,7 +136,7 @@
                 @include responsive(sm){
                     font-size: 20px;
                 }
-                @include responsive(sm){
+                @include responsive(xs){
                     font-size: 18px;
                 }
 
@@ -167,7 +167,7 @@
                         font-size: 18px;
                         padding: 10px 20px;
                     }
-                    @include responsive(sm){
+                    @include responsive(xs){
                         font-size: 16px;
                     }
                 }

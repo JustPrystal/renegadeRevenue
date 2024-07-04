@@ -1,6 +1,9 @@
 .roadmap{
     padding: 50px 40px;
     
+    @include responsive(sm){
+        padding: 30px 20px;       
+    }
 
     .container{
         max-width: 1400px;
@@ -13,12 +16,12 @@
 
             .heading{
                 font-family: 'Neue-Black';
-                font-size: 60px;
+                font-size: 50px;
                 font-weight: 700;
                 margin-bottom: 20px;
 
                 @include responsive(lg){
-                    font-size: 50px;
+                    font-size: 45px;
                 }
                 @include responsive(md){
                     font-size: 40px;       

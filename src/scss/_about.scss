@@ -3,6 +3,10 @@
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(207,221,1,1) 0.1%, rgba(207,221,1,1) 58.9%, rgba(0,0,0,1) 59%, rgba(255,255,255,1) 59.1%, rgba(255,255,255,1) 100%);
 
+    @include responsive(sm){
+        padding: 0 20px;
+    }
+
     .container{
         max-width: 1400px;
         margin: 0 auto;
@@ -10,16 +14,52 @@
         display: flex;
         justify-content: space-between;
 
+        @include responsive(md){
+            padding: 70px 0;
+        }
+        @include responsive(sm){
+            padding: 50px 0;
+        }
+        @include responsive(xs){
+            flex-wrap: wrap;
+            padding: 30px 0;
+        }
+
         .image-text-column{
             display: flex;
             flex-direction: column;
             width: 55%;
+
+            @include responsive(xs){
+                width: 100%;
+            }
+
             .heading{
                 margin-bottom: 30px;
                 font-family: 'Neue-Black';
                 font-size: 50px;
                 font-weight: 700;
                 transform: translateX(-10%);
+
+                @media(max-width:1640px){
+                    transform: translateX(-5%);
+                }
+                @include responsive(xl){
+                    transform: translateX(0);
+                }
+                @include responsive(lg){
+                    font-size: 45px;
+                }
+                @include responsive(md){
+                    font-size: 40px;       
+                }
+                @include responsive(sm){
+                    font-size: 35px;       
+                }
+                @include responsive(xs){
+                    font-size: 30px;
+                    text-align: center;       
+                }
             }
 
             .image-wrap{
@@ -37,26 +77,62 @@
             flex-direction: column;
             padding-left: 100px;
 
+            @include responsive(lg){
+                padding-left: 75px;
+            }
+            @include responsive(md){
+                padding-left: 50px;
+            }
+            @include responsive(sm){
+                padding-left: 30px;
+            }
+            @include responsive(xs){
+                width: 100%;
+                padding-left: 0;
+            }
+
             .description{
                 background-color: $white;
                 padding: 30px 20px;
                 border: 2px solid $black;
 
+                @include responsive(md){
+                    padding: 15px 10px;
+                }
+
                 p{
                     margin-bottom: 20px;
                     font-family: 'Mukta';
-                    font-size: 26px;
+                    font-size: 30px;
                     font-weight: 300;
                     line-height: 120%;
 
                     &:last-child{
                         margin-bottom: 0;
                     }
+
+                    @include responsive(lg){
+                        font-size: 25px;
+                    }
+                    @include responsive(md){
+                        font-size: 20px;   
+                    }
+                    @include responsive(sm){
+                        font-size: 18px;   
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;   
+                    }
                 }
             }
             .button-wrap{
                 margin-top: 30px;
                 margin-left: 20px;
+
+                @include responsive(xs){
+                    margin: 30px auto 0;
+                }
+
                 .button{
                     font-family: 'Neue-Bold';
                     font-size: 20px;
@@ -71,6 +147,14 @@
 
                     &:hover{
                         background-color: darken($color: $green, $amount: 5);
+                    }
+
+                    @include responsive(sm){
+                        font-size: 18px;
+                        padding: 10px 20px;
+                    }
+                    @include responsive(xs){
+                        font-size: 16px;
                     }
                 }
             }
