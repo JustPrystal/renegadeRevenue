@@ -14,22 +14,22 @@
 
         .heading{
             font-family: 'Neue-Black';
-            font-size: 50px;
+            font-size: 48px;
             font-weight: 700;
             margin-bottom: 20px;
             color: var(--black);
 
             @include responsive(lg){
-                font-size: 45px;
+                font-size: 44px;
             }
             @include responsive(md){
                 font-size: 40px;       
             }
             @include responsive(sm){
-                font-size: 35px;       
+                font-size: 36px;       
             }
             @include responsive(xs){
-                font-size: 30px;       
+                font-size: 32px;       
             }
         }
         .content-wrap{
@@ -43,20 +43,17 @@
             @include responsive(lg){
                 transform: translateX(150px);
             }
-            // @include responsive(md){
-            //     transform: translateX(50px);
-            // }
             @include responsive(sm){
                 transform: translateX(0px);
                 width: 100%;
-                padding: 20px 20px 80px;
+                padding: 20px 20px 65px;
             }
 
             .description{
 
                 p{
                     font-family: 'Mukta';
-                    font-size: 30px;
+                    font-size: 28px;
                     line-height: 110%;
                     margin-bottom: 30px;
                     color: $white;
@@ -66,7 +63,7 @@
                     }
 
                     @include responsive(lg){
-                        font-size: 25px;
+                        font-size: 24px;
                     }
                     @include responsive(md){
                         font-size: 20px;   
@@ -90,7 +87,7 @@
 
                 .button{
                     font-family: 'Neue-Bold';
-                    font-size: 20px;
+                    font-size: 24px;
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
@@ -105,26 +102,32 @@
                         background: var(--green);
                     }
 
+                    @include responsive(md){
+                        font-size: 20px;
+                    }
                     @include responsive(sm){
-                        font-size: 18px;
+                        font-size: 16px;
                         padding: 10px 20px;
                     }
                     @include responsive(xs){
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
                 .image-wrap{
                     width: 100%;
                     position: absolute;
                     bottom: -90px;
-                    right: -170px;
+                    right: -190px;
 
+                    @include responsive(md){
+                        right: -170px;
+                    }
                     @include responsive(sm){
-                        bottom: -80px;
-                        right: -140px;
+                        bottom: -65px;
+                        right: -130px;
                     }
                     @include responsive(xs){
-                        right: -130px;
+                        right: -120px;
                     }
     
                     .image{

@@ -72,7 +72,7 @@
       .link {
         margin-right: 20px;
         font-family: "Neue-Bold";
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
         color: var(--black);
         border-bottom: 2px solid transparent;
@@ -99,7 +99,7 @@
         }
 
         @include responsive(md) {
-          font-size: 18px;
+          font-size: 20px;
           margin-right: 15px;
         }
       }
