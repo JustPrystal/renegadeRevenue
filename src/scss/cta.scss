@@ -1,5 +1,6 @@
 .cta{
     padding: 50px 40px;
+    background: var(--white);
 
     @include responsive(sm){
         padding: 30px 20px;
@@ -16,6 +17,7 @@
             font-size: 50px;
             font-weight: 700;
             margin-bottom: 20px;
+            color: var(--black);
 
             @include responsive(lg){
                 font-size: 45px;
@@ -31,7 +33,7 @@
             }
         }
         .content-wrap{
-            background-color: $lightBlack;
+            background: $lightBlack;
             padding: 30px 30px 90px;
             display: flex;
             flex-direction: column;
@@ -57,7 +59,7 @@
                     font-size: 30px;
                     line-height: 110%;
                     margin-bottom: 30px;
-                    color: $white;
+                    color: var(--white);
 
                     &:last-child{
                         margin-bottom: 0;
@@ -92,15 +94,15 @@
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
-                    color: $black;
-                    border: 2px solid $green;
-                    background-color: $white;
+                    color: var(--black);
+                    border: 2px solid var(--green);
+                    background: var(--white);
                     max-width: fit-content;
                     transition: all 0.4s ease;
                     align-self: center;
     
                     &:hover{
-                        background-color: $green;
+                        background: var(--green);
                     }
 
                     @include responsive(sm){

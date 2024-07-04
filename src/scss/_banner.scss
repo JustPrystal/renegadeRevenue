@@ -8,6 +8,7 @@
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     color: var(--black);
+    overflow: hidden;
     
 
     @include responsive(md){
@@ -15,7 +16,7 @@
         padding: 0 20px;           
     }
     @include responsive(sm){
-        background-image: linear-gradient(to left, var(--white) 10%, transparent);
+        background-image: linear-gradient(to top, var(--white) 10%, transparent);
     }
     @include responsive(xs){
         padding: 0 10px;
@@ -29,21 +30,20 @@
         position: absolute;
         inset: 0;
         z-index: -1;
+        object-position: center center;
+        object-fit: fill;
 
         @include responsive(xl){
-            left: -150px;
+            object-position: -150px center; 
         }
         @include responsive(lg){
-            left: -200px;           
+            object-position: -200px center;            
         }
-        // @include responsive(md){
-        //     inset: 0;   
-        // }
-        // @include responsive(sm){
-        //     left: -200px;  
-        // }
+        @include responsive(sm){
+            object-position: -250px center;   
+        }
         @include responsive(xs){
-            left: -350px;   
+            object-position: -350px center;   
         }
     }
 
@@ -180,9 +180,9 @@
                     max-width: fit-content;
                     transition: all 0.4s ease;
 
-                    &:hover{
-                        background: darken($color: $green, $amount: 5);
-                    }
+                    // &:hover{
+                    //     background: darken($color: $green, $amount: 5);
+                    // }
 
                     @include responsive(sm){
                         font-size: 18px;

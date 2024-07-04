@@ -1,5 +1,6 @@
 .fullwidth-content{
     padding: 50px 40px 30px;
+    background: var(--white);
 
     @include responsive(sm){
         padding: 30px 20px;       
@@ -16,6 +17,7 @@
             font-size: 50px;
             font-weight: 700;
             margin-bottom: 20px;
+            color: var(--black);
             
             @include responsive(lg){
                 font-size: 45px;
@@ -50,6 +52,7 @@
                 font-size: 30px;
                 line-height: 110%;
                 margin-bottom: 30px;
+                color: var(--black);
 
                 &:last-child{
                     margin-bottom: 0;
