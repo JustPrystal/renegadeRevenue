@@ -19,9 +19,9 @@
         }
         @include responsive(sm){
             padding: 50px 0;
+            flex-wrap: wrap;
         }
         @include responsive(xs){
-            flex-wrap: wrap;
             padding: 30px 0;
         }
 
@@ -30,7 +30,7 @@
             flex-direction: column;
             width: 55%;
 
-            @include responsive(xs){
+            @include responsive(sm){
                 width: 100%;
             }
 
@@ -55,10 +55,11 @@
                 }
                 @include responsive(sm){
                     font-size: 35px;       
+                    text-align: center;  
+                    margin-bottom: 20px;     
                 }
                 @include responsive(xs){
                     font-size: 30px;
-                    text-align: center;       
                 }
             }
 
@@ -84,11 +85,9 @@
                 padding-left: 50px;
             }
             @include responsive(sm){
-                padding-left: 30px;
-            }
-            @include responsive(xs){
-                width: 100%;
+                // padding-left: 30px;
                 padding-left: 0;
+                width: 100%;
             }
 
             .description{
@@ -129,8 +128,8 @@
                 margin-top: 30px;
                 margin-left: 20px;
 
-                @include responsive(xs){
-                    margin: 30px auto 0;
+                @include responsive(sm){
+                    margin: 20px auto 0;
                 }
 
                 .button{

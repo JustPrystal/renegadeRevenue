@@ -1,23 +1,28 @@
 .banner{
     max-width: 1920px;
     margin: 0 auto;
-    height: 70vh;
     padding: 0 40px;
     position: relative;
     background-image: linear-gradient(to left, $white 40%, transparent);
     overflow: hidden;
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
 
     @include responsive(md){
         background-image: linear-gradient(to left, $white 20%, transparent);
-        padding: 0 20px;  
-        height: 60vh;             
+        padding: 0 20px;           
     }
     @include responsive(sm){
         background-image: linear-gradient(to left, $white 10%, transparent);
+        height: 70vh;
+    }
+    @include responsive(xs){
+        background-image: linear-gradient(to left, $white 5%, transparent);
     }
 
 
     .background{
+        height: 100%;
         position: absolute;
         inset: 0;
         z-index: -1;
@@ -31,11 +36,11 @@
         // @include responsive(md){
         //     inset: 0;   
         // }
-        @include responsive(sm){
-            left: -100px;  
-        }
+        // @include responsive(sm){
+        //     left: 200px;  
+        // }
         @include responsive(xs){
-            left: -200px;   
+            left: -150px;   
         }
     }
 
@@ -46,9 +51,15 @@
         justify-content: flex-end;
         align-items: flex-start;
         padding: 80px 0;
+        height: 100%;
 
         @include responsive(md){
-            justify-content: center;           
+            align-items: flex-end;
+            justify-content: center;    
+            padding: 50px 0;       
+        }
+        @include responsive(sm){
+            padding: 30px 0;
         }
 
         .content-wrap{
@@ -67,8 +78,6 @@
                 font-weight: 700;
                 line-height: 110%;
                 margin-bottom: 20px;
-                position: relative;
-                z-index: 1;
 
                 @include responsive(xl){
                     font-size: 60px;
@@ -87,33 +96,39 @@
                 }
 
                 .shade{
+                    position: relative;
+                    z-index: 1;
 
                     &::before{
                         content: "";
                         position: absolute;
                         display: block;
-                        width: 270px;
-                        height: 20%;
-                        background-color: #cfdd01;
+                        width: 245px;
+                        height: 30%;
+                        background-color: $green;
                         z-index: -1;
-                        top: 23%;
-                        left: 185px;
+                        top: 60%;
+                        left: -10px;
 
                         @include responsive(xl){
-                            width: 240px;
-                            left: 160px;
+                            width: 210px;
+                            left: -10px;
                         }
                         @include responsive(lg){
-                            width: 210px;
-                            left: 135px;
+                            width: 175px;
+                            left: -5px;
                         }
                         @include responsive(md){
-                            width: 170px;
-                            left: 115px;
+                            width: 140px;
+                            left: -5px;
                         }
                         @include responsive(sm){
-                            width: 140px;
-                            left: 90px;
+                            width: 105px;
+                            left: -5px;
+                        }
+                        @include responsive(xs){
+                            width: 120px;
+                            left: -3px;
                         }
                     }
                 }

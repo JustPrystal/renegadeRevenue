@@ -54,6 +54,11 @@
           <a href=<?php echo $link['link']['url']; ?> class="link"><?php echo $link['link']['title']; ?></a>
         <?php } ?>
       </div>
+      <div class="menu-wrap">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
   <div class="all"> 
