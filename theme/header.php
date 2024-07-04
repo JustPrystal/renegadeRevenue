@@ -65,12 +65,13 @@
     $(".mode").click(function(){
       $(this).toggleClass("dark");
     })
-    function toggleClasses() {
+    $("body").click(function(){
+      $(this).toggleClass("no-scroll");
+    })
       const links = document.getElementById('header-links');
-      const body = document.getElementsByTagName('body');
       const menu = document.getElementById('menu-wrap');
+    function toggleClasses() {
       links.classList.toggle('active');
-      body.classList.toggle('no-scroll');
       menu.classList.toggle('cross');
     }
   </script>
