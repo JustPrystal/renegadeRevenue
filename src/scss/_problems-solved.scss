@@ -7,6 +7,7 @@
         display: flex;
         justify-content: center;
         .inner{
+            position: relative;
             .heading{
                 font-size: 36px;
                 margin-bottom: 50px;
@@ -21,29 +22,39 @@
                 }
             }
             .slider{
-                margin-left: 20px;
+                cursor: grab;
+                &:active{
+                    cursor: grabbing;
+                }
+                &.swiper {
+                    width: 100%;
+                    max-width: 1440px;
+                }
                 @include responsive(md){
                     margin-left: 0px;
                 }
                 .slider-wrapper{  //accordian
                     display: flex;
-                    // flex-wrap: wrap; //remove
+                    align-items: stretch;
                     justify-content: space-between;
                     @include responsive(md){
                         display: block;
                         background-color: $white;
                     }
                     .slide{ //content-box
-                        width: calc(33.3% - 50px);
+                        // width: calc(33.3% - 50px);
+                        height: auto;
                         background-color: $white;
                         border: 2px solid $red;
-                        padding: 15px 5px 5px 15px;
+                        user-select: none;
+                        padding: 15px;
                         @include responsive(md){
                             margin-bottom: 20px;
                             width: unset;
                             padding: unset;
                         }
                         .problem-and-heading-wrap{
+                            user-select: none;
                             margin-bottom: 20px;
                             @include responsive(md){   
                                 position: relative;
@@ -62,8 +73,10 @@
                             }
                             .problem-span-wrap{
                                 margin-bottom: 10px;
+                                
                                 .problem-span{
                                     font-size: 20px;
+                                    user-select: none;
                                     color: $black;
                                     font-family: 'Neue-Med';
                                     font-weight: 600;
@@ -89,6 +102,7 @@
                             .heading-wrap{
                                 .content-heading{
                                     font-size: 28px;
+                                    user-select: none;
                                     color: $black;
                                     font-family: 'Neue-Black';
                                     text-transform: uppercase;
@@ -107,6 +121,7 @@
                             gap: 20px;
                             font-family: 'Mukta';
                             font-size: 18px;
+                            user-select: none;
                             color: $black;
                             font-weight: 600;
                             @include responsive(md){
@@ -117,6 +132,24 @@
                             }
                         }
                     }
+                }
+            }
+            .slider-arrow{
+                position: absolute;
+                top: 50%;
+                width: 50px;
+                transform: translateY(calc(-50% + 45px));
+                z-index: 1;
+                cursor: pointer;
+                &.swiper-button-disabled{
+                    cursor: default;
+                    opacity: 0.5;
+                }
+                &.next{
+                    left: 100%;
+                }
+                &.prev{
+                    right: 100%;
                 }
             }
         }

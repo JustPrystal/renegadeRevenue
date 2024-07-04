@@ -13,7 +13,7 @@
 			[
 				"name" => 'swiper.css', 
 				"type" => 'css',
-				"path" => 'https://unpkg.com/swiper/swiper-bundle.min.css',
+				"path" => 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
 				"version" => '11.1.4'
 			],
 			[
@@ -33,8 +33,15 @@
 			[
 				"name" => 'swiper.js', 
 				"type" => 'js',
-				"path" => 'https://unpkg.com/swiper/swiper-bundle.min.js',
+				"path" => 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
 				"version" => '11.1.4',
+				"loadInFooter" => false
+			],
+			[
+				"name" => 'custom.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/includes/custom.js',
+				"version" => '0.0.1',
 				"loadInFooter" => false
 			]
 		];
