@@ -136,7 +136,7 @@
                 .button{
                     color: var(--black);
                     font-family: 'Neue-Bold';
-                    font-size: 20px;
+                    font-size: 24px;
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
@@ -149,13 +149,15 @@
                     // &:hover{
                     //     background: darken($color: $green, $amount: 5);
                     // }
-
+                    @include responsive(md){
+                        font-size: 20px;
+                    }
                     @include responsive(sm){
-                        font-size: 18px;
+                        font-size: 16px;
                         padding: 10px 20px;
                     }
                     @include responsive(xs){
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }

@@ -17,29 +17,29 @@
 
             .heading{
                 font-family: 'Neue-Black';
-                font-size: 50px;
+                font-size: 48px;
                 font-weight: 700;
                 margin-bottom: 20px;
                 color: var(--black);
 
                 @include responsive(lg){
-                    font-size: 45px;
+                    font-size: 44px;
                 }
                 @include responsive(md){
                     font-size: 40px;       
                 }
                 @include responsive(sm){
-                    font-size: 35px;       
+                    font-size: 36px;       
                 }
                 @include responsive(xs){
-                    font-size: 30px;       
+                    font-size: 32px;       
                 }
             }
             .description{
 
                 p{
                     font-family: 'Mukta';
-                    font-size: 30px;
+                    font-size: 28px;
                     line-height: 110%;
                     margin-bottom: 30px;
                     color: var(--black);
@@ -49,7 +49,7 @@
                     }
 
                     @include responsive(lg){
-                        font-size: 25px;
+                        font-size: 24px;
                     }
                     @include responsive(md){
                         font-size: 20px;   
@@ -141,7 +141,7 @@
                 .heading{
                     color: var(--black);
                     font-family: 'Neue-Black';
-                    font-size: 40px;
+                    font-size: 36px;
                     font-weight: 700;
                     width: max-content;
                     align-self: flex-end;
@@ -160,13 +160,13 @@
                     }
 
                     @include responsive(lg){
-                        font-size: 35px;
+                        font-size: 32px;
                     }
                     @include responsive(md){
-                        font-size: 30px;       
+                        font-size: 28px;       
                     }
                     @include responsive(sm){
-                        font-size: 25px;  
+                        font-size: 24px;  
                         align-self: center;     
                     }
                     @include responsive(xs){
@@ -175,7 +175,7 @@
                 }
                 .description{
                     font-family: 'Mukta';
-                    font-size: 22px;
+                    font-size: 24px;
                     line-height: 110%;
                     color: var(--black);
                     max-width: 900px;
@@ -184,28 +184,13 @@
                         font-size: 20px;
                     }
                     @include responsive(md){
-                        font-size: 18px;   
-                    }
-                    @include responsive(sm){
                         font-size: 16px;   
                     }
-                    @include responsive(xs){
+                    @include responsive(sm){
                         font-size: 14px;   
                     }
                 }
             }
-            // .triangle{
-            //     width: 0;
-            //     height: 0;
-            //     border-left: 400px solid transparent;
-            //     border-right: 400px solid transparent;
-            //     border-bottom: 700px solid var(--green);
-            //     background-image: linear-gradient(to bottom, var(--green) 40%, transparent) !important;
-            //     position: absolute;
-            //     bottom: 10px;
-            //     left: -100px;
-            //     z-index: -1;
-            // }
         }
     }
 }

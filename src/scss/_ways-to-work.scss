@@ -1,37 +1,164 @@
-.ways-to-work{
-    background: linear-gradient(180deg, var(--green) 35.1%, var(--white) 35.1%, var(--white) 100%);
-    padding: 20px 40px 100px 40px;
-    @include responsive(md){
-        background: linear-gradient(180deg, var(--green) 100%, var(--white) 100%, var(--white) 100%);
-    }
-    .container{
-        max-width: 1440px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        .inner{
-            .heading{
-                font-size: 36px;
-                margin-bottom: 50px;
-                color: var(--black);
-                font-family: 'Neue-Black';
-                @include responsive(sm){
-                    font-size: 30px;
+.ways-to-work {
+  background: linear-gradient(
+    180deg,
+    var(--green) 35.1%,
+    var(--white) 35.1%,
+    var(--white) 100%
+  );
+  padding: 20px 40px 100px 40px;
+  @include responsive(md) {
+    background: linear-gradient(
+      180deg,
+      var(--green) 100%,
+      var(--white) 100%,
+      var(--white) 100%
+    );
+  }
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    .inner {
+      .heading {
+        font-size: 48px;
+        margin-bottom: 50px;
+        color: var(--black);
+        font-family: "Neue-Black";
+        @include responsive(lg) {
+          font-size: 44px;
+        }
+        @include responsive(md) {
+          font-size: 40px;
+        }
+        @include responsive(sm) {
+          font-size: 36px;
+        }
+        @include responsive(xs) {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+      }
+      .ways {
+        margin-left: 20px;
+        margin-bottom: 60px;
+        @include responsive(md) {
+          margin-left: 0px;
+        }
+        @include responsive(xs) {
+          margin-bottom: 50px;
+        }
+        .boxes {
+          //accordian
+          display: flex;
+          justify-content: space-between;
+          @include responsive(md) {
+            display: block;
+            background: var(--green);
+          }
+          .content-box {
+            width: calc(33.3% - 50px);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: var(--white);
+            border: 1px solid var(--black);
+            padding: 15px 5px 5px 15px;
+            @include responsive(md) {
+              margin-bottom: 20px;
+              border: unset;
+              display: block;
+              width: unset;
+              padding: unset;
+              // position: relative;
+              &.active {
+                .heading-wrap {
+                  &::before {
+                    content: "-";
+                  }
                 }
-                @include responsive(xs){
-                    font-size: 24px;
-                    margin-bottom: 40px;
+                .content-wrap {
+                  height: 100%;
+                  padding-top: 10px;
+                  @include responsive(xs) {
+                    padding-top: 0px;
+                  }
                 }
+                .price-wrap {
+                  height: 100%;
+                }
+              }
             }
-            .ways{
-                margin-left: 20px;
-                margin-bottom: 60px;
-                @include responsive(md){
-                    margin-left: 0px;
+            .heading-wrap {
+              @include responsive(md) {
+                text-align: center;
+                position: relative;
+                padding: 20px;
+                cursor: pointer;
+                &::before {
+                  content: "+";
+                  position: absolute;
+                  color: var(--black);
+                  top: 50%;
+                  right: 20px;
+                  transform: translateY(-50%);
+                  font-size: 1.5em;
                 }
-                @include responsive(xs){
-                    margin-bottom: 50px;
+              }
+              .content-heading {
+                font-size: 36px;
+                position: relative;
+                color: var(--black);
+                font-family: "Neue-Black";
+                text-transform: uppercase;
+                display: inline-block;
+                z-index: 1;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  width: 95%;
+                  height: 45%;
+                  background: var(--green);
+                  z-index: -1;
+                  top: 45%;
+                  left: -1px;
                 }
+                @include responsive(lg) {
+                  font-size: 32px;
+                }
+                @include responsive(md) {
+                  font-size: 28px;
+                }
+                @include responsive(sm) {
+                  font-size: 24px;
+                }
+                @include responsive(xs) {
+                  font-size: 20px;
+                }
+              }
+            }
+            .content-wrap {
+              p {
+                font-size: 24px;
+                color: $black;
+                font-family: "Mukta";
+                line-height: 120%;
+                font-weight: 600;
+                margin-bottom: 20px;
+                @include responsive(lg) {
+                  font-size: 20px;
+                }
+                @include responsive(md) {
+                  font-size: 16px;
+                  margin: 0px 20px;
+                  height: 0;
+                  overflow: hidden;
+                  transition: ease 0.15s;
+                  overflow-y: auto;
+                }
+                @include responsive(sm) {
+                  font-size: 14px;
                 .boxes{ //accordian
                     display: flex;
                     justify-content: space-between;
@@ -169,56 +296,97 @@
                         }
                     }
                 }
-            }
-            .schedule{
-                text-align: center;
-                p{
-                    color: var(--black);
-                    font-size: 30px;
-                    font-family: 'Neue-Black';
-                    margin-bottom: 60px;
-                    @include responsive(md){
-                        font-size: 28px;
-                    }
-                    @include responsive(sm){
-                        font-size: 26px;
-                        margin-bottom: 45px;
-                    }
-                    @include responsive(xs){
-                        font-size: 20px;
-                        margin-bottom: 40px;
-                    }
+                @include responsive(xs) {
+                  font-size: 14px;
+                  margin: 0px 15px;
                 }
-                a{
-                    display: inline-block;
-                    font-family: 'Neue-Bold';
-                    font-size: 30px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    padding: 15px 30px;
-                    color: var(--black);
-                    border: 1px solid var(--black);
-                    background: var(--green);
-                    // max-width: fit-content;
-                    transition: all 0.3s ease;
-                    // &:hover{
-                    //     background: darken($color: var(--green), $amount: 5);
-                    // }
-                    @include responsive(md){
-                        font-size: 26px;
-                        background: var(--white);
-                        // &:hover{
-                        //     background: darken($color: var(--white), $amount: 5);
-                        // }
-                    }
-                    @include responsive(sm){
-                        font-size: 24px;
-                    }
-                    @include responsive(xs){
-                        font-size: 18px;
-                    }
-                }
+              }
             }
+            .price-wrap {
+              margin-top: auto;
+              @include responsive(md) {
+                height: 0;
+                overflow: hidden;
+                transition: ease 0.15s;
+                overflow-y: auto;
+                margin: 0px 20px;
+              }
+              @include responsive(xs) {
+                margin: 0px 15px;
+              }
+              .price {
+                font-size: 24px;
+                color: $black;
+                font-family: "Mukta";
+                font-weight: 600;
+                @include responsive(lg) {
+                  font-size: 20px;
+                }
+                @include responsive(md) {
+                  margin-bottom: 20px;
+                  font-size: 16px;
+                }
+                @include responsive(xs) {
+                  font-size: 14px;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
         }
+      }
+      .schedule {
+        text-align: center;
+        p {
+          color: var(--black);
+          font-size: 36px;
+          font-family: "Neue-Black";
+          margin-bottom: 60px;
+          @include responsive(lg){
+            font-size: 32px;
+          }
+          @include responsive(md) {
+            font-size: 28px;
+          }
+          @include responsive(sm) {
+            font-size: 24px;
+            margin-bottom: 45px;
+          }
+          @include responsive(xs) {
+            font-size: 20px;
+            margin-bottom: 40px;
+          }
+        }
+        a {
+          display: inline-block;
+          font-family: "Neue-Bold";
+          font-size: 32px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 15px 30px;
+          color: var(--black);
+          border: 1px solid var(--black);
+          background: var(--green);
+          // max-width: fit-content;
+          transition: all 0.3s ease;
+          // &:hover{
+          //     background: darken($color: var(--green), $amount: 5);
+          // }
+          @include responsive(md) {
+            font-size: 28px;
+            background: var(--white);
+            // &:hover{
+            //     background: darken($color: var(--white), $amount: 5);
+            // }
+          }
+          @include responsive(sm) {
+            font-size: 24px;
+          }
+          @include responsive(xs) {
+            font-size: 20px;
+          }
+        }
+      }
     }
+  }
 }

@@ -14,22 +14,22 @@
 
         .heading{
             font-family: 'Neue-Black';
-            font-size: 50px;
+            font-size: 48px;
             font-weight: 700;
             margin-bottom: 20px;
             color: var(--black);
             
             @include responsive(lg){
-                font-size: 45px;
+                font-size: 44px;
             }
             @include responsive(md){
                 font-size: 40px;       
             }
             @include responsive(sm){
-                font-size: 35px;       
+                font-size: 36px;       
             }
             @include responsive(xs){
-                font-size: 30px;       
+                font-size: 32px;       
             }
         }
         .description{
@@ -49,7 +49,7 @@
 
             p{
                 font-family: 'Mukta';
-                font-size: 30px;
+                font-size: 28px;
                 line-height: 110%;
                 margin-bottom: 30px;
                 color: var(--black);
@@ -59,7 +59,7 @@
                 }
 
                 @include responsive(lg){
-                    font-size: 25px;
+                    font-size: 24px;
                 }
                 @include responsive(md){
                     font-size: 20px;   

@@ -80,25 +80,25 @@
 
             .heading{
                 font-family: 'Neue-Black';
-                font-size: 70px;
+                font-size: 68px;
                 font-weight: 700;
                 line-height: 110%;
                 margin-bottom: 20px;
 
                 @include responsive(xl){
-                    font-size: 60px;
+                    font-size: 64px;
                 }
                 @include responsive(lg){
-                    font-size: 50px;
+                    font-size: 60px;
                 }
                 @include responsive(md){
-                    font-size: 40px;   
+                    font-size: 56px;   
                 }
                 @include responsive(sm){
-                    font-size: 30px;
+                    font-size: 52px;
                 }
                 @include responsive(xs){
-                    font-size: 35px;
+                    font-size: 48px;
                 }
 
                 .shade{
@@ -146,19 +146,19 @@
                 margin-bottom: 30px;
 
                 @include responsive(xl){
-                    font-size: 35px;
+                    font-size: 36px;
                 }
                 @include responsive(lg){
-                    font-size: 30px;
+                    font-size: 32px;
                 }
                 @include responsive(md){
-                    font-size: 25px;   
+                    font-size: 28px;   
                 }
                 @include responsive(sm){
-                    font-size: 20px;
+                    font-size: 24px;
                 }
                 @include responsive(xs){
-                    font-size: 18px;
+                    font-size: 20px;
                 }
 
                 span{
@@ -170,7 +170,7 @@
 
                 .button{
                     font-family: 'Neue-Bold';
-                    font-size: 20px;
+                    font-size: 24px;
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
@@ -183,7 +183,9 @@
                     // &:hover{
                     //     background: darken($color: $green, $amount: 5);
                     // }
-
+                    @include responsive(md){
+                        font-size: 20px;
+                    }
                     @include responsive(sm){
                         font-size: 18px;
                         padding: 10px 20px;
