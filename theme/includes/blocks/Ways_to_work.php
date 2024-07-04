@@ -21,7 +21,8 @@
                                 <h4 class="content-heading"><?php echo($box["box_heading"]) ?></h4>
                             </div>
                             <div class="content-wrap">
-                                <?php echo($box["content"]) ?>   
+                                <?php echo($box["content"]) ?> 
+                                <div class="read-more">Show More</div> 
                             </div>
                             <div class="price-wrap">
                                 <p class="price"><?php echo($box["price"]) ?></p>
@@ -37,11 +38,15 @@
         </div>
     </div>
 </section>
-
 <script>
-    $(document).ready(function() {
-        $('.content-box').click(function() {
-            $(this).toggleClass('active');
-        });
-    });
+
+    $(".read-more").click(function(){
+        $(this).parent(".content-wrap").toggleClass("open");
+        if($(this).parent(".content-wrap").hasClass("open")){
+            $(this).text("Show Less");
+        }else{
+            $(this).text("Show More");
+        }
+    })
+
 </script>

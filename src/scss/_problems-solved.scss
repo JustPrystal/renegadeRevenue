@@ -8,6 +8,7 @@
         justify-content: center;
         .inner{
             position: relative;
+            width: 100%;
             .heading{
                 font-size: 36px;
                 margin-bottom: 50px;
@@ -29,9 +30,13 @@
                 &.swiper {
                     width: 100%;
                     max-width: 1440px;
+                    margin: 0 auto;
+                    @media (max-width: 1500px){
+                        max-width: calc(100vw - 80px);
+                    }
                 }
                 @include responsive(md){
-                    margin-left: 0px;
+                    margin: 0px;
                 }
                 .slider-wrapper{  //accordian
                     display: flex;
@@ -51,24 +56,46 @@
                         @include responsive(md){
                             margin-bottom: 20px;
                             width: unset;
-                            padding: unset;
+                        }
+                        &.active{
+                            .problem-and-heading-wrap{
+                                @include responsive(md){
+                                    &::after{
+                                        transform: translateY(-50%) rotate(90deg);
+                                    }
+                                }
+                            }
                         }
                         .problem-and-heading-wrap{
                             user-select: none;
                             margin-bottom: 20px;
                             @include responsive(md){   
                                 position: relative;
-                                padding: 20px;
                                 margin-bottom: 0px;
+                                padding-right: 50px;
                                 cursor: pointer;
                                 &::before{
-                                    content: "+";
+                                    content: "";
                                     position: absolute;
                                     color: $black;
                                     top: 50%;
-                                    right: 20px;
+                                    right: 10px;
                                     transform: translateY(-50%);
-                                    font-size: 1.5em;
+                                    width: 30px;
+                                    height: 3px;
+                                    background-color: var(--black);
+                                }
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    color: $black;
+                                    transition: 300ms ease-in-out;
+                                    top: 50%;
+                                    right: 23px;
+                                    transform: translateY(-50%);
+                                    width: 3px;
+                                    height: 30px;
+                                    background-color: var(--black);
                                 }
                             }
                             .problem-span-wrap{
@@ -125,10 +152,7 @@
                             color: $black;
                             font-weight: 600;
                             @include responsive(md){
-                                height: 0;
-                                overflow: hidden;
-                                transition: ease 0.15s;
-                                overflow-y: auto;
+                                display: none;
                             }
                         }
                     }
@@ -141,6 +165,9 @@
                 transform: translateY(calc(-50% + 45px));
                 z-index: 1;
                 cursor: pointer;
+                @include responsive(md){
+                    display: none;
+                }
                 &.swiper-button-disabled{
                     cursor: default;
                     opacity: 0.5;

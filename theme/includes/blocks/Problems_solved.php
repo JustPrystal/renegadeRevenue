@@ -44,3 +44,13 @@
         </div>
     </div>
 </section>
+<script>
+    $(".slide.content-box").find(".problem-and-heading-wrap").click(function(){
+        if ($(window).width() < 991){
+            let currentSlide = $(this).parent(".slide");
+            currentSlide.toggleClass("active");
+            let answer = currentSlide.find(".content-wrap");
+            answer.stop().slideToggle();
+        }
+    })
+</script>

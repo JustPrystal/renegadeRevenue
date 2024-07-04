@@ -46,48 +46,18 @@
                         gap: 20px;
                         background: var(--white);
                         border: 1px solid var(--black);
-                        padding: 15px 5px 5px 15px;
+                        padding: 15px;
                         @include responsive(md){
                             margin-bottom: 20px;
-                            border: unset;
                             display: block;
                             width: unset;
-                            padding: unset;
-                            // position: relative;
-                            &.active{
-                                .heading-wrap{
-                                    &::before{
-                                        content: "-";
-                                    }
-                                }
-                                .content-wrap{
-                                    height: 100%;
-                                    padding-top: 10px;
-                                    @include responsive(xs){
-                                        padding-top: 0px;
-                                    }
-                                }
-                                .price-wrap{
-                                    height: 100%;
-                                }
-                            }
 
                         }
                         .heading-wrap{
                             @include responsive(md){   
                                 text-align: center;
                                 position: relative;
-                                padding: 20px;
-                                cursor: pointer;
-                                &::before{
-                                    content: "+";
-                                    position: absolute;
-                                    color: var(--black);
-                                    top: 50%;
-                                    right: 20px;
-                                    transform: translateY(-50%);
-                                    font-size: 1.5em;
-                                }
+                                margin-bottom: 20px;
                             }
                             .content-heading{
                                 font-size: 30px;
@@ -121,23 +91,51 @@
                         }
                         .content-wrap{
                             font-size: 20px;
-                            color: $black;
+                            color: var(--black);
                             font-family: 'Mukta';
-                            font-weight: 600;
                             margin-bottom: 20px;
+                            padding-bottom: 20px;
+                            .read-more{
+                                display: none;
+                                position: absolute;
+                                bottom: 0px;
+                                font-weight: 600;
+                                left: 0px;
+                                z-index: 1;
+                                text-decoration: underline;
+                            }
                             @include responsive(lg){
                                 font-size: 18px;
                             }
                             @include responsive(md){
-                                margin: 0px 20px;
-                                height: 0;
+                                font-weight: 500;
+                                margin-bottom: 0px;
+                                line-height: 120%;
+                                height: 80px;
                                 overflow: hidden;
-                                transition: ease 0.15s;
-                                overflow-y: auto;
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    inset: 0;
+                                    content: "";
+                                    background: linear-gradient(to top, var(--white) 30%, transparent);
+                                }
+                                .read-more{
+                                    display: block;
+                                }
+                                &.open{
+                                    height: auto;
+                                    overflow: visible;
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
                             }
                             @include responsive(xs){
                                 font-size: 14px;
-                                margin: 0px 15px;
+                            }
+                            p{
+                                margin-bottom: 20px;
                             }
                         }
                         .price-wrap{
