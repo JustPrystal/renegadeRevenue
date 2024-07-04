@@ -33,6 +33,26 @@ body {
   position:relative;
 }
 
-
+.mode{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: $black;
+  border-radius: 20px;
+  .frame{
+    margin: 4px;
+    padding: 4px;
+    background-color: $white;
+    width: 60px;
+    border-radius: 16px;
+    .icon{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $green
+      ;
+    }
+  }
+}
 
 
