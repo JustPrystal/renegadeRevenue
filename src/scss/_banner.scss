@@ -16,7 +16,7 @@
         padding: 0 20px;           
     }
     @include responsive(sm){
-        background-image: linear-gradient(to left, var(--white) 10%, transparent);
+        background-image: linear-gradient(to top, var(--white) 10%, transparent);
     }
     @include responsive(xs){
         padding: 0 10px;
