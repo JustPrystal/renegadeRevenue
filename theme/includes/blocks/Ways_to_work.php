@@ -21,9 +21,10 @@
                                 <h4 class="content-heading"><?php echo($box["box_heading"]) ?></h4>
                             </div>
                             <div class="content-wrap">
-                                <?php foreach($box["content"] as $text){?>
-                                    <p class="text"><?php echo($text["text"]) ?></p>    
-                                <?php } ?>
+                                <?php echo($box["content"]) ?>   
+                            </div>
+                            <div class="price-wrap">
+                                <p class="price"><?php echo($box["price"]) ?></p>
                             </div>
                         </div>
                     <?php } ?>
