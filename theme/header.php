@@ -39,7 +39,7 @@
   <?php 
     $header = get_field('header', 'option');
   ?>
-<div class="mode">
+<div class="mode dark">
     <div class="frame">
         <div class="icon"></div>
     </div>
@@ -62,6 +62,9 @@
     </div>
   </header>
   <script>
+    $(".mode").click(function(){
+      $(this).toggleClass("dark");
+    })
     function toggleClasses() {
       const links = document.getElementById('header-links');
       const body = document.getElementsByTagName('body');

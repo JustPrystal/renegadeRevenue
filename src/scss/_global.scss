@@ -35,6 +35,7 @@ body {
 
 .mode{
   position: fixed;
+  cursor: pointer;
   bottom: 20px;
   right: 20px;
   background-color: $black;
@@ -42,15 +43,52 @@ body {
   .frame{
     margin: 4px;
     padding: 4px;
-    background-color: $white;
+    background-color: $green;
     width: 60px;
     border-radius: 16px;
     .icon{
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: $green
-      ;
+      background-color: $black;
+      transition: 200ms ease-in-out;
+      position: relative;
+      overflow: hidden;
+      &::after{
+        transition: 300ms ease-in-out;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: $green;
+        border-radius: 50%;    
+        transform: translate(100%, -100%);  
+      }
+    }
+  }
+  &.dark{
+    .frame{
+      .icon{
+        transform: translateX(30px);
+
+        &::after{
+          transform: translate(5px, -5px);  
+        }
+      }
+    }
+
+  }
+  &:hover{
+    &.dark{
+      .frame{
+        .icon{
+          transform: translateX(28px);
+        }
+      }
+    }
+    .frame{
+      .icon{
+        transform: translateX(2px);
+      }
     }
   }
 }
