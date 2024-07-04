@@ -38,11 +38,12 @@
 
   <?php 
     $header = get_field('header', 'option');
-    // echo '<pre>';
-    // var_dump($header);
-    // echo '</pre>';
   ?>
-
+<div class="mode">
+    <div class="frame">
+        <div class="icon"></div>
+    </div>
+</div>
   <header>
     <div class="container">
       <a href="/home" class="logo-wrap">
