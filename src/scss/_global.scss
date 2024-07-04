@@ -35,6 +35,7 @@ body {
 
 .mode{
   position: fixed;
+  z-index: 1000;
   cursor: pointer;
   bottom: 20px;
   right: 20px;
