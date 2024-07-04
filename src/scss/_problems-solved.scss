@@ -105,35 +105,15 @@
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
+                            font-family: 'Mukta';
+                            font-size: 18px;
+                            color: $black;
+                            font-weight: 600;
                             @include responsive(md){
                                 height: 0;
                                 overflow: hidden;
                                 transition: ease 0.15s;
                                 overflow-y: auto;
-                            }
-                            .text{
-                                font-size: 18px;
-                                color: $black;
-                                font-family: 'Mukta';
-                                font-weight: 600;
-                                @include responsive(lg){
-                                    font-size: 16px;
-                                }
-                                @include responsive(md){
-                                    margin: 0px 20px;
-                                }
-                                @include responsive(xs){
-                                    font-size: 14px;
-                                    margin: 0px 15px;
-                                }
-                                &:last-child{
-                                    @include responsive(md){
-                                        margin-bottom: 20px;
-                                    }
-                                    @include responsive(xs){
-                                        margin-bottom: 15px;
-                                    }
-                                }
                             }
                         }
                     }

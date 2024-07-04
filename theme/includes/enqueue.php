@@ -11,6 +11,12 @@
 				"version" => '4.7.0_defer'
 			],
 			[
+				"name" => 'swiper.css', 
+				"type" => 'css',
+				"path" => 'https://unpkg.com/swiper/swiper-bundle.min.css',
+				"version" => '11.1.4'
+			],
+			[
 				"name" => 'style.css', 
 				"type" => 'css',
 				"path" => $templatedir . '/style.css',
@@ -25,24 +31,10 @@
 				"loadInFooter" => false
 			],
 			[
-				"name" => 'TweenMax.js', 
+				"name" => 'swiper.js', 
 				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js',
-				"version" => '2.1.2_defer',
-				"loadInFooter" => true
-			],
-			[
-				"name" => 'hammer.js', 
-				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js',
-				"version" => '2.0.8_defer',
-				"loadInFooter" => true
-			],
-			[
-				"name" => 'gsap.js', 
-				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js',
-				"version" => '1.0.0',
+				"path" => 'https://unpkg.com/swiper/swiper-bundle.min.js',
+				"version" => '11.1.4',
 				"loadInFooter" => false
 			]
 		];
