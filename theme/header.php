@@ -46,7 +46,8 @@
   <header class="desktop-header">
     <div class="container">
       <a href="/home" class="logo-wrap">
-        <img src=<?php echo $header['logo']['url'] ?> alt="logo" class="logo">
+        <img src="<?php echo $header['logo']['url'] ?>" alt="logo" class="logo">
+        <img src="<?php echo $header['dark_mode_logo']['url'] ?>" alt="logo" class="dark-mode-logo">
       </a>
       <div class="header-links" id="header-links">
         <?php foreach($header['header-links'] as $link){ ?>
@@ -63,6 +64,8 @@
   <script>
     $(".mode").click(function(){
       $(this).toggleClass("dark");
+      $(".dark-mode-logo").stop().fadeToggle()
+      $(".logo").stop().fadeToggle()
       if($(this).hasClass("dark")){
         document.documentElement.style.setProperty('--green', '#1596b3');
         document.documentElement.style.setProperty('--white', '#333333');
@@ -73,12 +76,13 @@
         document.documentElement.style.setProperty('--black', '#000000');
       }
     })
+    $(".menu-wrap").click(function(){
+      $("body").toggleClass("no-scroll");
+    })
     function toggleClasses() {
       const links = document.getElementById('header-links');
-      const body = document.getElementsByTagName('body');
       const menu = document.getElementById('menu-wrap');
       links.classList.toggle('active');
-      body.classList.toggle('no-scroll');
       menu.classList.toggle('cross');
     }
   </script>
