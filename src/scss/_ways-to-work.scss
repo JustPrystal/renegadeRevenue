@@ -13,6 +13,7 @@
             .heading{
                 font-size: 36px;
                 margin-bottom: 50px;
+                color: $black;
                 font-family: 'Neue-Black';
                 @include responsive(sm){
                     font-size: 30px;
@@ -128,17 +129,24 @@
                                 color: $black;
                                 font-family: 'Mukta';
                                 font-weight: 600;
+                                @include responsive(lg){
+                                    font-size: 16px;
+                                }
                                 @include responsive(md){
                                     margin: 0px 20px;
                                 }
                                 @include responsive(xs){
                                     font-size: 14px;
+                                    margin: 0px 15px;
                                 }
                                 &:last-child{
                                     margin-top: auto;
                                     @include responsive(md){
                                         margin-top: 0px;
                                         margin-bottom: 20px;
+                                    }
+                                    @include responsive(xs){
+                                        margin-bottom: 15px;
                                     }
                                 }
                             }
