@@ -44,21 +44,31 @@
         <div class="icon"></div>
     </div>
 </div>
-  <header>
+  <header class="desktop-header">
     <div class="container">
       <a href="/home" class="logo-wrap">
         <img src=<?php echo $header['logo']['url'] ?> alt="logo" class="logo">
       </a>
-      <div class="header-links">
+      <div class="header-links" id="header-links">
         <?php foreach($header['header-links'] as $link){ ?>
           <a href=<?php echo $link['link']['url']; ?> class="link"><?php echo $link['link']['title']; ?></a>
         <?php } ?>
       </div>
-      <div class="menu-wrap">
+      <div class="menu-wrap" id="menu-wrap" onClick="toggleClasses()">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
   </header>
+  <script>
+    function toggleClasses() {
+      const links = document.getElementById('header-links');
+      const body = document.getElementsByTagName('body');
+      const menu = document.getElementById('menu-wrap');
+      links.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+      menu.classList.toggle('cross');
+    }
+  </script>
   <div class="all"> 
