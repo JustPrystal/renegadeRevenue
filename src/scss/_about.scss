@@ -36,7 +36,7 @@
             .heading{
                 margin-bottom: 30px;
                 font-family: 'Neue-Black';
-                font-size: 50px;
+                font-size: 48px;
                 font-weight: 700;
                 transform: translateX(-10%);
                 color: var(--black);
@@ -48,18 +48,18 @@
                     transform: translateX(0);
                 }
                 @include responsive(lg){
-                    font-size: 45px;
+                    font-size: 44px;
                 }
                 @include responsive(md){
                     font-size: 40px;       
                 }
                 @include responsive(sm){
-                    font-size: 35px;       
+                    font-size: 36px;       
                     text-align: center;  
                     margin-bottom: 20px;     
                 }
                 @include responsive(xs){
-                    font-size: 30px;
+                    font-size: 32px;
                 }
             }
 
@@ -103,7 +103,7 @@
                     color: var(--black);
                     margin-bottom: 20px;
                     font-family: 'Mukta';
-                    font-size: 30px;
+                    font-size: 28px;
                     font-weight: 300;
                     line-height: 120%;
 
@@ -112,7 +112,7 @@
                     }
 
                     @include responsive(lg){
-                        font-size: 25px;
+                        font-size: 24px;
                     }
                     @include responsive(md){
                         font-size: 20px;   
