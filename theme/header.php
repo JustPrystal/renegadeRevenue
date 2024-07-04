@@ -74,12 +74,13 @@
         document.documentElement.style.setProperty('--black', '#000000');
       }
     })
-    function toggleClasses() {
+    $("body").click(function(){
+      $(this).toggleClass("no-scroll");
+    })
       const links = document.getElementById('header-links');
-      const body = document.getElementsByTagName('body');
       const menu = document.getElementById('menu-wrap');
+    function toggleClasses() {
       links.classList.toggle('active');
-      body.classList.toggle('no-scroll');
       menu.classList.toggle('cross');
     }
   </script>
