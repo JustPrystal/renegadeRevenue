@@ -13,8 +13,13 @@ $custom-breakpoints: (
 
 
 // Color Scheme::
-
+:root {
+    --green: #cfdd01;
+    --white: #ffffff;
+    --black: #000000;
+}
 $white: #fff;
 $green: #cfdd01;
 $black: #000;
 $lightBlack: #222;
+$red: #DA4363;

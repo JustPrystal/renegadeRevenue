@@ -39,7 +39,7 @@
   <?php 
     $header = get_field('header', 'option');
   ?>
-<div class="mode dark">
+<div class="mode">
     <div class="frame">
         <div class="icon"></div>
     </div>
@@ -64,6 +64,15 @@
   <script>
     $(".mode").click(function(){
       $(this).toggleClass("dark");
+      if($(this).hasClass("dark")){
+        document.documentElement.style.setProperty('--green', '#1596b3');
+        document.documentElement.style.setProperty('--white', '#333333');
+        document.documentElement.style.setProperty('--black', '#ffffff');
+      }else{
+        document.documentElement.style.setProperty('--green', '#cfdd01');
+        document.documentElement.style.setProperty('--white', '#ffffff');
+        document.documentElement.style.setProperty('--black', '#000000');
+      }
     })
     $("body").click(function(){
       $(this).toggleClass("no-scroll");
