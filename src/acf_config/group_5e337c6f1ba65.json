@@ -262,15 +262,15 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_66873af78b941": {
-                    "key": "layout_66873af78b941",
-                    "name": "animation",
-                    "label": "Animation",
+                "layout_668848a02a5b8": {
+                    "key": "layout_668848a02a5b8",
+                    "name": "contact",
+                    "label": "Contact",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_66873afd8b942",
-                            "label": "fields",
+                            "key": "field_668848ab2a5b9",
+                            "label": "Fields",
                             "name": "fields",
                             "type": "clone",
                             "instructions": "",
@@ -282,7 +282,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_66873ac409d1b"
+                                "group_66884805667a7"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -327,5 +327,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1720138514
+    "modified": 1720207570
 }
