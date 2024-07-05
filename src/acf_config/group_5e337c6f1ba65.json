@@ -261,6 +261,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_66873af78b941": {
+                    "key": "layout_66873af78b941",
+                    "name": "animation",
+                    "label": "Animation",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66873afd8b942",
+                            "label": "fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_66873ac409d1b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -296,5 +327,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1720119914
+    "modified": 1720138514
 }
