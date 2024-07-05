@@ -1,8 +1,18 @@
 .ways-to-work{
-    background: linear-gradient(180deg, var(--green) 35.1%, var(--white) 35.1%, var(--white) 100%);
+    background: linear-gradient(
+        180deg,
+        var(--green) 35.1%,
+        var(--white) 35.1%,
+        var(--white) 100%
+      );
     padding: 20px 40px 100px 40px;
     @include responsive(md){
-        background: linear-gradient(180deg, var(--green) 100%, var(--white) 100%, var(--white) 100%);
+        background: linear-gradient(
+            180deg,
+            var(--green) 100%,
+            var(--white) 100%,
+            var(--white) 100%
+          );
     }
     .container{
         max-width: 1440px;
@@ -11,17 +21,23 @@
         justify-content: center;
         .inner{
             .heading{
-                font-size: 36px;
+                font-size: 48px;
                 margin-bottom: 50px;
                 color: var(--black);
                 font-family: 'Neue-Black';
-                @include responsive(sm){
-                    font-size: 30px;
-                }
-                @include responsive(xs){
-                    font-size: 24px;
+                @include responsive(lg) {
+                    font-size: 44px;
+                  }
+                  @include responsive(md) {
+                    font-size: 40px;
+                  }
+                  @include responsive(sm) {
+                    font-size: 36px;
+                  }
+                  @include responsive(xs) {
+                    font-size: 32px;
                     margin-bottom: 40px;
-                }
+                  }
             }
             .ways{
                 margin-left: 20px;
@@ -60,7 +76,7 @@
                                 margin-bottom: 20px;
                             }
                             .content-heading{
-                                font-size: 30px;
+                                font-size: 36px;
                                 position: relative;
                                 color: var(--black);
                                 font-family: 'Neue-Black';
@@ -78,23 +94,27 @@
                                     top: 45%;
                                     left: -1px;
                                 }
-                                @include responsive(lg){
+                                @include responsive(lg) {
+                                    font-size: 32px;
+                                  }
+                                  @include responsive(md) {
                                     font-size: 28px;
-                                }
-                                @include responsive(sm){
-                                    font-size: 26px;
-                                }
-                                @include responsive(xs){
+                                  }
+                                  @include responsive(sm) {
+                                    font-size: 24px;
+                                  }
+                                  @include responsive(xs) {
                                     font-size: 20px;
-                                }
+                                  }
                             }
                         }
                         .content-wrap{
-                            font-size: 20px;
+                            font-size: 24px;
                             color: var(--black);
                             font-family: 'Mukta';
                             margin-bottom: 20px;
                             padding-bottom: 20px;
+                            line-height: 120%;
                             .read-more{
                                 display: none;
                                 position: absolute;
@@ -104,11 +124,12 @@
                                 z-index: 1;
                                 text-decoration: underline;
                             }
-                            @include responsive(lg){
-                                font-size: 18px;
-                            }
+                            @include responsive(lg) {
+                                font-size: 20px;
+                              }
                             @include responsive(md){
                                 font-weight: 500;
+                                font-size: 16px;
                                 margin-bottom: 0px;
                                 line-height: 120%;
                                 height: 80px;
@@ -156,10 +177,11 @@
                                 font-family: 'Mukta';
                                 font-weight: 600;
                                 @include responsive(lg){
-                                    font-size: 18px;
+                                    font-size: 20px;
                                 }
                                 @include responsive(md){
                                     margin-bottom: 20px;
+                                    font-size: 16px;
                                 }
                                 @include responsive(xs){
                                     font-size: 14px;
@@ -174,14 +196,17 @@
                 text-align: center;
                 p{
                     color: var(--black);
-                    font-size: 30px;
+                    font-size: 36px;
                     font-family: 'Neue-Black';
                     margin-bottom: 60px;
+                    @include responsive(lg){
+                        font-size: 32px;
+                      }
                     @include responsive(md){
                         font-size: 28px;
                     }
                     @include responsive(sm){
-                        font-size: 26px;
+                        font-size: 24px;
                         margin-bottom: 45px;
                     }
                     @include responsive(xs){
@@ -192,7 +217,7 @@
                 a{
                     display: inline-block;
                     font-family: 'Neue-Bold';
-                    font-size: 30px;
+                    font-size: 32px;
                     font-weight: 700;
                     text-transform: uppercase;
                     padding: 15px 30px;
@@ -215,7 +240,7 @@
                         font-size: 24px;
                     }
                     @include responsive(xs){
-                        font-size: 18px;
+                        font-size: 20px;
                     }
                 }
             }
