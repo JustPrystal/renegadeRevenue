@@ -41,6 +41,9 @@
             case 'problems_solved':
               include 'blocks/Problems_solved.php';
               break;  
+            case 'animation':
+              include 'blocks/animation.php';
+              break;  
           }
         }
       }

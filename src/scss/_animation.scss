@@ -1,0 +1,87 @@
+.animation{
+    .inner{
+        max-width: 1400px;
+        margin: 0 auto;
+        .heading{
+            font-family: 'Neue-Black';
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--black);
+
+            @include responsive(lg){
+                font-size: 44px;
+            }
+            @include responsive(md){
+                font-size: 40px;       
+            }
+            @include responsive(sm){
+                font-size: 36px;       
+            }
+            @include responsive(xs){
+                font-size: 32px;       
+            }
+        }
+        .description{
+            font-family: 'Mukta';
+            font-size: 28px;
+            line-height: 110%;
+            margin-bottom: 30px;
+            color: var(--black);
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            @include responsive(lg){
+                font-size: 24px;
+            }
+            @include responsive(md){
+                font-size: 20px;   
+            }
+            @include responsive(sm){
+                font-size: 18px;   
+            }
+            @include responsive(xs){
+                font-size: 16px;   
+            }
+        }
+        .animation-main{
+            height: 100vh;
+        }
+    }
+}
+.circles{
+    position: fixed;
+    pointer-events: none;
+    &.left-circle{
+        left: 0;
+        transform: translate(-50%, -50%);
+        top: 0;
+    }
+    &.right-circle{
+        transform: translate(50%, -50%);
+        right: 0;
+        top: 0;
+    }
+    &.bottom-circle{
+        left: 50%;
+        transform: translate(-50%, 50%);
+        bottom: 0;
+    }
+    // &.left-circle{
+    //     left: 0;
+    //     transform: translate(-50%, -50%);
+    //     top: 0;
+    // }
+    // &.right-circle{
+    //     transform: translate(50%, -50%);
+    //     right: 0;
+    //     top: 0;
+    // }
+    // &.bottom-circle{
+    //     left: 50%;
+    //     transform: translate(-50%, 50%);
+    //     bottom: 0;
+    // }
+}

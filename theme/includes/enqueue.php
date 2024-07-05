@@ -38,6 +38,20 @@
 				"loadInFooter" => false
 			],
 			[
+				"name" => 'gsap.js', 
+				"type" => 'js',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js',
+				"version" => '3.11.3',
+				"loadInFooter" => false
+			],
+			[
+				"name" => 'scrollTrigger.js', 
+				"type" => 'js',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js',
+				"version" => '3.11.3',
+				"loadInFooter" => false
+			],
+			[
 				"name" => 'custom.js', 
 				"type" => 'js',
 				"path" => $templatedir . '/includes/custom.js',
