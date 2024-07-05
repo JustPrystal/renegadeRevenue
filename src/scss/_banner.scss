@@ -16,12 +16,11 @@
         padding: 0 20px;           
     }
     @include responsive(sm){
-        background-image: linear-gradient(to top, var(--white) 10%, transparent);
+        background-image: linear-gradient(to top, var(--white) , transparent);
     }
     @include responsive(xs){
-        padding: 0 10px;
         height: 80vh;
-        background-image: linear-gradient(to top, rgba(255,255,255,0.8) 30%, transparent);
+        background-image: linear-gradient(to top, var(--white)  30%, transparent);
     }
 
 
@@ -41,9 +40,6 @@
         }
         @include responsive(sm){
             object-position: -250px center;   
-        }
-        @include responsive(xs){
-            object-position: -350px center;   
         }
     }
 
