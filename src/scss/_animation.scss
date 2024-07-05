@@ -1,7 +1,9 @@
 .animation{
+    background: var(--white);
     .inner{
         max-width: 1400px;
         margin: 0 auto;
+        padding: 0 20px;
         .heading{
             font-family: 'Neue-Black';
             font-size: 48px;
@@ -47,41 +49,64 @@
             }
         }
         .animation-main{
-            height: 100vh;
+            // height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                max-width: 800px;
+                width: 100%;
+                overflow: visible;
+            }
+            .circles{
+                position: absolute;
+                &.left-circle{
+                    left: 40.65%;
+                    transform: translate(-50%, -50%);
+                    top: 40%;
+                }
+                &.right-circle{
+                    transform: translate(50%, -50%);
+                    right: 40.65%;
+                    top: 40%;
+                }
+                &.bottom-circle{
+                    // display: none;
+                    left: 49.4%;
+                    transform: translate(-50%, 50%);
+                    bottom: 43.2%;
+                }
+                // &.left-circle{
+                //     left: 0;
+                //     transform: translate(-50%, -50%);
+                //     top: 0;
+                // }
+                // &.right-circle{
+                //     transform: translate(50%, -50%);
+                //     right: 0;
+                //     top: 0;
+                // }
+                // &.bottom-circle{
+                //     left: 50%;
+                //     transform: translate(-50%, 50%);
+                //     bottom: 0;
+                // }
+            }
         }
     }
 }
-.circles{
-    position: fixed;
-    pointer-events: none;
-    &.left-circle{
-        left: 0;
-        transform: translate(-50%, -50%);
-        top: 0;
+#mainsvg{
+    #Vector{
+        stroke: var(--black);
     }
-    &.right-circle{
-        transform: translate(50%, -50%);
-        right: 0;
-        top: 0;
+    #circle-heading{
+        fill: var(--black);
     }
-    &.bottom-circle{
-        left: 50%;
-        transform: translate(-50%, 50%);
-        bottom: 0;
+    #circle-text{
+        fill: var(--black);
     }
-    // &.left-circle{
-    //     left: 0;
-    //     transform: translate(-50%, -50%);
-    //     top: 0;
-    // }
-    // &.right-circle{
-    //     transform: translate(50%, -50%);
-    //     right: 0;
-    //     top: 0;
-    // }
-    // &.bottom-circle{
-    //     left: 50%;
-    //     transform: translate(-50%, 50%);
-    //     bottom: 0;
-    // }
+    #colored-shield{
+        fill: var(--green);
+    }
 }
