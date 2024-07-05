@@ -1,249 +1,255 @@
-.ways-to-work{
+.ways-to-work {
+  background: linear-gradient(
+    180deg,
+    var(--green) 35.1%,
+    var(--white) 35.1%,
+    var(--white) 100%
+  );
+  padding: 20px 40px 100px 40px;
+  @include responsive(md) {
     background: linear-gradient(
-        180deg,
-        var(--green) 35.1%,
-        var(--white) 35.1%,
-        var(--white) 100%
-      );
-    padding: 20px 40px 100px 40px;
-    @include responsive(md){
-        background: linear-gradient(
-            180deg,
-            var(--green) 100%,
-            var(--white) 100%,
-            var(--white) 100%
-          );
-    }
-    .container{
-        max-width: 1440px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        .inner{
-            .heading{
-                font-size: 48px;
-                margin-bottom: 50px;
-                color: var(--black);
-                font-family: 'Neue-Black';
-                @include responsive(lg) {
-                    font-size: 44px;
-                  }
-                  @include responsive(md) {
-                    font-size: 40px;
-                  }
-                  @include responsive(sm) {
-                    font-size: 36px;
-                  }
-                  @include responsive(xs) {
-                    font-size: 32px;
-                    margin-bottom: 40px;
-                  }
-            }
-            .ways{
-                margin-left: 20px;
-                margin-bottom: 60px;
-                @include responsive(md){
-                    margin-left: 0px;
-                }
-                @include responsive(xs){
-                    margin-bottom: 50px;
-                }
-                .boxes{ //accordian
-                    display: flex;
-                    justify-content: space-between;
-                    @include responsive(md){
-                        display: block;
-                        background: var(--green);
-                    }
-                    .content-box{
-                        width: calc(33.3% - 50px);
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        background: var(--white);
-                        border: 1px solid var(--black);
-                        padding: 15px;
-                        @include responsive(md){
-                            margin-bottom: 20px;
-                            display: block;
-                            width: unset;
-
-                        }
-                        .heading-wrap{
-                            @include responsive(md){   
-                                text-align: center;
-                                position: relative;
-                                margin-bottom: 20px;
-                            }
-                            .content-heading{
-                                font-size: 36px;
-                                position: relative;
-                                color: var(--black);
-                                font-family: 'Neue-Black';
-                                text-transform: uppercase;
-                                display: inline-block;
-                                z-index: 1;
-                                &::before{
-                                    content: "";
-                                    position: absolute;
-                                    display: block;
-                                    width: 95%;
-                                    height: 45%;
-                                    background: var(--green);
-                                    z-index: -1;
-                                    top: 45%;
-                                    left: -1px;
-                                }
-                                @include responsive(lg) {
-                                    font-size: 32px;
-                                  }
-                                  @include responsive(md) {
-                                    font-size: 28px;
-                                  }
-                                  @include responsive(sm) {
-                                    font-size: 24px;
-                                  }
-                                  @include responsive(xs) {
-                                    font-size: 20px;
-                                  }
-                            }
-                        }
-                        .content-wrap{
-                            font-size: 24px;
-                            color: var(--black);
-                            font-family: 'Mukta';
-                            margin-bottom: 20px;
-                            padding-bottom: 20px;
-                            line-height: 120%;
-                            .read-more{
-                                display: none;
-                                position: absolute;
-                                bottom: 0px;
-                                font-weight: 600;
-                                left: 0px;
-                                z-index: 1;
-                                text-decoration: underline;
-                            }
-                            @include responsive(lg) {
-                                font-size: 20px;
-                              }
-                            @include responsive(md){
-                                font-weight: 500;
-                                font-size: 16px;
-                                margin-bottom: 0px;
-                                line-height: 120%;
-                                height: 80px;
-                                overflow: hidden;
-                                position: relative;
-                                &::after{
-                                    position: absolute;
-                                    inset: 0;
-                                    content: "";
-                                    background: linear-gradient(to top, var(--white) 30%, transparent);
-                                }
-                                .read-more{
-                                    display: block;
-                                }
-                                &.open{
-                                    height: auto;
-                                    overflow: visible;
-                                    &::after{
-                                        display: none;
-                                    }
-                                }
-                            }
-                            @include responsive(xs){
-                                font-size: 14px;
-                            }
-                            p{
-                                margin-bottom: 20px;
-                            }
-                        }
-                        .price-wrap{
-                            margin-top: auto;
-                            @include responsive(md){
-                                height: 0;
-                                overflow: hidden;
-                                transition: ease 0.15s;
-                                overflow-y: auto;
-                                margin: 0px 20px;
-                            }
-                            @include responsive(xs){
-                                margin: 0px 15px;
-                            }
-                            .price{
-                                font-size: 20px;
-                                color: $black;
-                                font-family: 'Mukta';
-                                font-weight: 600;
-                                @include responsive(lg){
-                                    font-size: 20px;
-                                }
-                                @include responsive(md){
-                                    margin-bottom: 20px;
-                                    font-size: 16px;
-                                }
-                                @include responsive(xs){
-                                    font-size: 14px;
-                                    margin-bottom: 15px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .schedule{
-                text-align: center;
-                p{
-                    color: var(--black);
-                    font-size: 36px;
-                    font-family: 'Neue-Black';
-                    margin-bottom: 60px;
-                    @include responsive(lg){
-                        font-size: 32px;
-                      }
-                    @include responsive(md){
-                        font-size: 28px;
-                    }
-                    @include responsive(sm){
-                        font-size: 24px;
-                        margin-bottom: 45px;
-                    }
-                    @include responsive(xs){
-                        font-size: 20px;
-                        margin-bottom: 40px;
-                    }
-                }
-                a{
-                    display: inline-block;
-                    font-family: 'Neue-Bold';
-                    font-size: 32px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    padding: 15px 30px;
-                    color: var(--black);
-                    border: 1px solid var(--black);
-                    background: var(--green);
-                    // max-width: fit-content;
-                    transition: all 0.3s ease;
-                    // &:hover{
-                    //     background: darken($color: var(--green), $amount: 5);
-                    // }
-                    @include responsive(md){
-                        font-size: 26px;
-                        background: var(--white);
-                        // &:hover{
-                        //     background: darken($color: var(--white), $amount: 5);
-                        // }
-                    }
-                    @include responsive(sm){
-                        font-size: 24px;
-                    }
-                    @include responsive(xs){
-                        font-size: 20px;
-                    }
-                }
-            }
+      180deg,
+      var(--green) 100%,
+      var(--white) 100%,
+      var(--white) 100%
+    );
+  }
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    .inner {
+      .heading {
+        font-size: 48px;
+        margin-bottom: 50px;
+        color: var(--black);
+        font-family: "Neue-Black";
+        @include responsive(lg) {
+          font-size: 44px;
         }
+        @include responsive(md) {
+          font-size: 40px;
+        }
+        @include responsive(sm) {
+          font-size: 36px;
+        }
+        @include responsive(xs) {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+      }
+      .ways {
+        margin-left: 20px;
+        margin-bottom: 60px;
+        @include responsive(md) {
+          margin-left: 0px;
+        }
+        @include responsive(xs) {
+          margin-bottom: 50px;
+        }
+        .boxes {
+          //accordian
+          display: flex;
+          justify-content: space-between;
+          @include responsive(md) {
+            display: block;
+            background: var(--green);
+          }
+          .content-box {
+            width: calc(33.3% - 50px);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: var(--white);
+            border: 2px solid var(--black);
+            padding: 15px;
+            @include responsive(md) {
+              margin-bottom: 20px;
+              display: block;
+              width: unset;
+            }
+            .heading-wrap {
+              @include responsive(md) {
+                text-align: center;
+                position: relative;
+                margin-bottom: 20px;
+              }
+              .content-heading {
+                font-size: 36px;
+                position: relative;
+                color: var(--black);
+                font-family: "Neue-Black";
+                text-transform: uppercase;
+                display: inline-block;
+                z-index: 1;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  width: 95%;
+                  height: 45%;
+                  background: var(--green);
+                  z-index: -1;
+                  top: 45%;
+                  left: -1px;
+                }
+                @include responsive(lg) {
+                  font-size: 32px;
+                }
+                @include responsive(md) {
+                  font-size: 28px;
+                }
+                @include responsive(sm) {
+                  font-size: 24px;
+                }
+                @include responsive(xs) {
+                  font-size: 20px;
+                }
+              }
+            }
+            .content-wrap {
+              font-size: 24px;
+              color: var(--black);
+              font-family: "Mukta";
+              margin-bottom: 20px;
+              padding-bottom: 20px;
+              line-height: 120%;
+              .read-more {
+                display: none;
+                position: absolute;
+                bottom: 0px;
+                font-weight: 600;
+                left: 0px;
+                z-index: 1;
+                text-decoration: underline;
+              }
+              @include responsive(lg) {
+                font-size: 20px;
+              }
+              @include responsive(md) {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 0px;
+                line-height: 120%;
+                height: 80px;
+                overflow: hidden;
+                position: relative;
+                &::after {
+                  position: absolute;
+                  inset: 0;
+                  content: "";
+                  background: linear-gradient(
+                    to top,
+                    var(--white) 30%,
+                    transparent
+                  );
+                }
+                .read-more {
+                  display: block;
+                }
+                &.open {
+                  height: auto;
+                  overflow: visible;
+                  &::after {
+                    display: none;
+                  }
+                }
+              }
+              @include responsive(xs) {
+                font-size: 14px;
+              }
+              p {
+                margin-bottom: 20px;
+              }
+            }
+            .price-wrap {
+              margin-top: auto;
+              @include responsive(md) {
+                height: 0;
+                overflow: hidden;
+                transition: ease 0.15s;
+                overflow-y: auto;
+                margin: 0px 20px;
+              }
+              @include responsive(xs) {
+                margin: 0px 15px;
+              }
+              .price {
+                font-size: 20px;
+                color: $black;
+                font-family: "Mukta";
+                font-weight: 600;
+                color: var(--black);
+
+                @include responsive(lg) {
+                  font-size: 20px;
+                }
+                @include responsive(md) {
+                  margin-bottom: 20px;
+                  font-size: 16px;
+                }
+                @include responsive(xs) {
+                  font-size: 14px;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .schedule {
+        text-align: center;
+        p {
+          color: var(--black);
+          font-size: 36px;
+          font-family: "Neue-Black";
+          margin-bottom: 60px;
+          @include responsive(lg) {
+            font-size: 32px;
+          }
+          @include responsive(md) {
+            font-size: 28px;
+          }
+          @include responsive(sm) {
+            font-size: 24px;
+            margin-bottom: 45px;
+          }
+          @include responsive(xs) {
+            font-size: 20px;
+            margin-bottom: 40px;
+          }
+        }
+        a {
+          display: inline-block;
+          font-family: "Neue-Bold";
+          font-size: 32px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 15px 30px;
+          color: var(--black);
+          border: 2px solid var(--black);
+          background: var(--green);
+          // max-width: fit-content;
+          transition: all 0.3s ease;
+          &:hover{
+              background: var(--white);
+          }
+          @include responsive(md) {
+            font-size: 26px;
+            background: var(--white);
+            &:hover{
+                background: var(--green);
+            }
+          }
+          @include responsive(sm) {
+            font-size: 24px;
+          }
+          @include responsive(xs) {
+            font-size: 20px;
+          }
+        }
+      }
     }
+  }
 }
