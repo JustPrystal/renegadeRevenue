@@ -48,5 +48,13 @@
             $(this).text("Show More");
         }
     })
+    gsap.registerPlugin(ScrollTrigger);
 
+    let tl4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".ways-to-work",
+            start: "top center",
+        }
+    });
+    tl4.to(".ways .heading-wrap .content-heading", { className: "content-heading in-view", duration: 1});
 </script>

@@ -27,3 +27,23 @@
         </div>
     </div>
 </section>
+<script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tenants = document.querySelectorAll('.tenant');
+
+        // Loop through each .tenant element
+        tenants.forEach((tenant) => {
+            let heading = tenant.querySelector('.heading');
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: tenant,
+                    start: "top 70%",
+                }
+            });
+
+            // Add animation to the timeline
+            tl.from(tenant, {y: 50, opacity: 0, duration: 1 }, 0);
+            tl.to(heading, { className: "heading in-view", duration: 1 }, 0);
+        });
+</script>

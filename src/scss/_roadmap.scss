@@ -147,12 +147,16 @@
                     align-self: flex-end;
                     position: relative;
                     z-index: 1;
-
+                    &.in-view{
+                        &::before{
+                            animation: in-view-animation 0.7s ease-in-out forwards;
+                        }
+                    }
                     &::before{
                         content: "";
                         position: absolute;
                         display: block;
-                        width: 99%;
+                        width: 0%;
                         height: 40%;
                         background: var(--green);
                         z-index: -1;

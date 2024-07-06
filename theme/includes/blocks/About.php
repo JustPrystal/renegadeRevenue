@@ -18,3 +18,14 @@
         </div>
     </div>
 </section>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    let tl6 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".about",
+            start: "top 30%",
+        }
+    });
+    tl6.from(".about .image-wrap img", { opacity: 0, scale: 0.95, duration: 0.5});
+</script>

@@ -116,13 +116,18 @@
                                     text-transform: uppercase;
                                     position: relative;
                                     z-index: 1;
+                                    &.in-view{
+                                        &::before{
+                                            animation: in-view-animation 0.7s ease-in-out forwards;
+                                        }
+                                    }
                                     &::before{
                                         content: "";
                                         position: absolute;
                                         display: block;
-                                        width: 102%;
+                                        width: 0%;
                                         height: 40%;
-                                        background-color: $red;
+                                        background-color: #ff708f;
                                         z-index: -1;
                                         top: 55%;
                                         left: -1px;
