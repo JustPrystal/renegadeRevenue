@@ -111,7 +111,7 @@
                                     font-size: 28px;
                                     user-select: none;
                                     color: var(--black);
-                                    font-family: 'Neue-Med';
+                                    font-family: 'Neue-Bold';
                                     font-weight: 600;
                                     text-transform: uppercase;
                                     position: relative;
@@ -124,7 +124,7 @@
                                         height: 40%;
                                         background-color: $red;
                                         z-index: -1;
-                                        top: 45%;
+                                        top: 55%;
                                         left: -1px;
                                     }
                                     @include responsive(lg){
