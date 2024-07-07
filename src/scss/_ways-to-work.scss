@@ -6,6 +6,9 @@
     var(--white) 100%
   );
   padding: 20px 40px 100px 40px;
+  @include responsive(sm){
+    padding: 40px 20px;
+}
   @include responsive(md) {
     background: linear-gradient(
       180deg,

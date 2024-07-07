@@ -21,7 +21,9 @@
         position: relative;
         color: var(--black);
         overflow: hidden;
-
+        @include responsive(sm){
+            padding: 0 20px;
+        }
         &::before{
             content: "";
             position: absolute;
@@ -60,9 +62,6 @@
             }
             @include responsive(sm){
                 object-position: -250px center;   
-            }
-            @include responsive(xs){
-                object-position: -350px center;   
             }
         }
     

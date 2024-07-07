@@ -1,6 +1,9 @@
 .problems{
     background-color: var(--white);
     padding: 80px 40px 40px 40px;
+    @include responsive(sm){
+        padding: 80px 20px 40px 20px;
+    }
     .container{
         max-width: 1400px;
         margin: 0 auto;
@@ -39,6 +42,9 @@
                     margin: 0 auto;
                     @media (max-width: 1500px){
                         max-width: calc(100vw - 80px);
+                    }
+                    @include responsive(sm){
+                        max-width: 100vw ;
                     }
                 }
                 @include responsive(md){
