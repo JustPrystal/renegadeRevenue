@@ -40,7 +40,7 @@
             @include responsive(xs){
                 padding: 0 10px;
                 height: 80vh;
-                background-image: linear-gradient(to top, rgba(255,255,255,0.8) 30%, transparent);
+                background-image: linear-gradient(to top, var(--white) 30%, transparent);
             }
         }
         
