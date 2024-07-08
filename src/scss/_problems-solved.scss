@@ -1,7 +1,7 @@
 .problems{
     background-color: var(--white);
     padding: 80px 40px 40px 40px;
-    @include responsive(sm){
+    @include responsive(md) {
         padding: 80px 20px 40px 20px;
     }
     .container{
@@ -43,8 +43,8 @@
                     @media (max-width: 1500px){
                         max-width: calc(100vw - 80px);
                     }
-                    @include responsive(sm){
-                        max-width: 100vw ;
+                    @include responsive(md){
+                        max-width: calc(100vw - 40px);
                     }
                 }
                 @include responsive(md){
@@ -101,7 +101,7 @@
                                     content: "";
                                     position: absolute;
                                     color: var(--black);
-                                    transition: 300ms ease-in-out;
+                                    transition: transform 300ms ease-in-out;
                                     top: 50%;
                                     right: 23px;
                                     transform: translateY(-50%);
@@ -186,10 +186,12 @@
                             color: var(--black);
                             font-weight: 600;
                             @include responsive(lg){
-                                font-size: 20px;
+                                font-size: 18px;
                             }
                             @include responsive(md){
+                                font-weight: 500;
                                 display: none;
+                                padding-top: 20px;
                             }
                         }
                     }
@@ -202,6 +204,10 @@
                 transform: translateY(calc(-50% + 45px));
                 z-index: 1;
                 cursor: pointer;
+                path{
+                    fill: var(--black);
+                }
+                fill: var(--black);
                 @include responsive(md){
                     display: none;
                 }

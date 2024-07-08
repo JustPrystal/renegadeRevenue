@@ -12,6 +12,12 @@
             z-index: 1;
             
         }
+        @include responsive(lg){
+            object-position: -200px center;            
+        }
+        @include responsive(sm){
+            object-position: -250px center;   
+        }
     }
 
     .inner{

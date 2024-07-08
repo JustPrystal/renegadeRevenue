@@ -10,6 +10,7 @@
     padding: 40px 20px;
 }
   @include responsive(md) {
+    padding: 20px 20px 100px 20px;
     background: linear-gradient(
       180deg,
       var(--green) 100%,
