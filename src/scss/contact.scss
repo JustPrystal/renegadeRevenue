@@ -1,0 +1,240 @@
+.contact{
+    padding: 40px;
+    background: var(--white);
+    border-top: 2px solid var(--black);
+
+    @include responsive(sm){
+        padding: 40px 20px;
+    }
+
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .top-wrap{
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .heading{
+                margin-bottom: 15px;
+                font-family: 'Neue-Black';
+                font-size: 52px;
+                font-weight: 700;
+                color: var(--black);
+
+                @include responsive(lg){
+                    font-size: 48px;
+                }
+                @include responsive(md){
+                    font-size: 44px;       
+                }
+                @include responsive(sm){
+                    font-size: 40px;  
+                }
+                @include responsive(xs){
+                    font-size: 36px;
+                }
+            }
+            .description{
+                color: var(--black);
+                font-family: 'Neue-Thin';
+                font-size: 32px;
+                font-weight: 300;
+                line-height: 120%;
+            
+                @include responsive(md){
+                    font-size: 28px;
+                }
+                // @include responsive(md){
+                //     font-size: 24px;   
+                // }
+                @include responsive(sm){
+                    font-size: 24px;   
+                }
+                @include responsive(xs){
+                    font-size: 20px;   
+                }
+            }
+        }
+        .bio-form-wrap{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+
+            @include responsive(md){
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .bio-wrap{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                @include responsive(md){
+                    width: 100%;
+                }
+
+                .text{
+                    color: var(--black);
+                    font-family: 'Neue-Black';
+                    font-size: 36px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+
+                    @include responsive(lg){
+                        font-size: 32px;
+                    }
+                    @include responsive(md){
+                        font-size: 28px;       
+                    }
+                    @include responsive(sm){
+                        font-size: 24px;     
+                    }
+                    @include responsive(xs){
+                        font-size: 22px; 
+                        margin-bottom: 10px;      
+                    }
+
+                    .shade{
+                        font-family: 'Mukta';
+                        display: inline-block;
+                        font-size: 28px;
+                        line-height: 110%;
+                        color: var(--black);
+                        position: relative;
+                        z-index: 1;
+                        border-bottom: 2px solid var(--black);
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 99%;
+                            height: 45%;
+                            background: var(--green);
+                            z-index: -1;
+                            top: 45%;
+                            left: 0;
+                        }
+
+                        @include responsive(lg){
+                            font-size: 24px;
+                        }
+                        @include responsive(md){
+                            font-size: 20px;   
+                        }
+                        @include responsive(sm){
+                            font-size: 18px;   
+                        }
+                        @include responsive(xs){
+                            font-size: 16px;   
+                        }
+                    }
+                }
+            }
+            .form-wrap{
+                width: 50%;
+
+                @include responsive(md){
+                    width: 100%;
+                }
+
+                .gform_wrapper{
+
+                    .gform_heading{
+                        
+                        .gform_title{
+                            display: none;
+                        }
+                    }
+                    #gform_1{
+                        padding: 50px 40px;
+                        background: var(--green);
+
+                        @include responsive(sm){
+                            padding: 30px 20px;
+                        }
+                        @include responsive(xs){
+                            padding: 30px 10px;
+                        }
+
+                        .gform-body{
+        
+                            .gform_fields{
+                                row-gap: 30px;
+                                
+                                .gfield{
+        
+                                    .gform-field-label{
+                                        font-family: 'Mukta';
+                                        font-size: 24px;
+                                        line-height: 110%;
+                                        color: var(--black);
+
+                                        @include responsive(md){
+                                            font-size: 20px;   
+                                        }
+                                        @include responsive(xs){
+                                            font-size: 16px;   
+                                        }
+                                    }
+                                    .ginput_container{
+                                        
+                                        .large{
+                                            font-family: 'Mukta';
+                                            font-size: 18px;
+                                            background: var(--white);
+                                            border: 2px solid var(--black);
+                                            color: var(--black);
+                                            border-radius: 0;
+                                            
+                                        }
+                                        .textarea{
+                                            min-block-size: unset;
+                                            resize: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .gform_footer{
+
+                            .button{
+                                border-radius: 0px;
+                                color: var(--black);
+                                font-family: 'Neue-Bold';
+                                font-size: 24px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                padding: 15px 30px;
+                                color: var(--black);
+                                border: 2px solid var(--black);
+                                background-color: var(--white);
+                                transition: all 0.4s ease;
+
+                                &:hover{
+                                    background: var(--green);
+                                }
+
+                                @include responsive(md){
+                                    font-size: 20px;
+                                }
+                                @include responsive(sm){
+                                    font-size: 16px;
+                                    padding: 10px 20px;
+                                }
+                                @include responsive(xs){
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

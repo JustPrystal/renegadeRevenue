@@ -6,6 +6,9 @@
     var(--white) 100%
   );
   padding: 20px 40px 100px 40px;
+  @include responsive(sm){
+    padding: 40px 20px;
+}
   @include responsive(md) {
     padding: 20px 20px 100px 20px;
     background: linear-gradient(
@@ -84,11 +87,16 @@
                 text-transform: uppercase;
                 display: inline-block;
                 z-index: 1;
+                &.in-view{
+                  &::before{
+                      animation: in-view-animation 1s ease-in-out forwards;
+                  }
+              }
                 &::before {
                   content: "";
                   position: absolute;
                   display: block;
-                  width: 95%;
+                  width: 0%;
                   height: 45%;
                   background: var(--green);
                   z-index: -1;

@@ -53,4 +53,15 @@
             answer.stop().slideToggle();
         }
     })
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".problems",
+            start: "top 30%",
+        }
+    });
+    tl2.to(".problem-span", { className: "problem-span in-view", duration: 1});
+
 </script>

@@ -23,3 +23,12 @@ $green: #cfdd01;
 $black: #000;
 $lightBlack: #222;
 $red: #DA4363;
+
+@keyframes in-view-animation {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

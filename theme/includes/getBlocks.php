@@ -44,6 +44,9 @@
             case 'animation':
               include 'blocks/animation.php';
               break;  
+            case 'contact':
+              include 'blocks/contact.php';
+              break;  
           }
         }
       }

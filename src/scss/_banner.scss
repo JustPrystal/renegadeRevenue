@@ -1,16 +1,15 @@
 .banner{
-    height: 70vh;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 40px;
     position: relative;
-    background-image: linear-gradient(to left, var(--white) 40%, transparent);
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
-    color: var(--black);
-    overflow: hidden;
-    
 
+    @media (min-width:2560px){
+        &::before{
+            content: "";
+            background: linear-gradient(90deg, var(--white) 0%, var(--white) 20%, transparent 25%, transparent 75%, var(--white) 80%, var(--white) 100%);
+            inset: 0;
+            position: absolute;
+            z-index: 1;
     @include responsive(md){
         background-image: linear-gradient(to left, var(--white) 20%, transparent);
         padding: 0 20px;           
@@ -43,151 +42,186 @@
         }
     }
 
-    .container{
-        max-width: 1400px;
+    .inner{
+        height: 70vh;
+        max-width: 2560px;
         margin: 0 auto;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        padding: 80px 0;
-        height: 100%;
-
-        @include responsive(md){
-            padding: 50px 0;     
-            align-items: center;
-            justify-content: flex-start;  
-        }
+        padding: 0 40px;
+        position: relative;
+        color: var(--black);
+        overflow: hidden;
         @include responsive(sm){
-            align-items: flex-end;
-            justify-content: flex-start;    
-            padding: 30px 0;
+            padding: 0 20px;
         }
-
-        .content-wrap{
-            width: 60%;
-
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background-image: linear-gradient(to left, var(--white) 40%, transparent);
+            @include responsive(md){
+                background-image: linear-gradient(to left, var(--white) 20%, transparent);
+                padding: 0 20px;           
+            }
             @include responsive(sm){
-                width: 80%;
-                padding-top: 200px;
+                background-image: linear-gradient(to top, var(--white) 10%, transparent);
             }
             @include responsive(xs){
-                width: 100%;
+                padding: 0 10px;
+                height: 80vh;
+                background-image: linear-gradient(to top, var(--white) 30%, transparent);
             }
-
-            .heading{
-                font-family: 'Neue-Black';
-                font-size: 68px;
-                font-weight: 700;
-                line-height: 110%;
-                margin-bottom: 20px;
-
-                @include responsive(xl){
-                    font-size: 64px;
-                }
-                @include responsive(lg){
-                    font-size: 60px;
-                }
-                @include responsive(md){
-                    font-size: 56px;   
-                }
+        }
+        
+    
+    
+    
+        .background{
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            object-position: center center;
+            object-fit: fill;
+    
+            @include responsive(xl){
+                object-position: -150px center; 
+            }
+            @include responsive(lg){
+                object-position: -200px center;            
+            }
+            @include responsive(sm){
+                object-position: -250px center;   
+            }
+        }
+    
+        .container{
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 80px 0;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+    
+            @include responsive(md){
+                padding: 50px 0;     
+                align-items: center;
+                justify-content: flex-start;  
+            }
+            @include responsive(sm){
+                align-items: flex-end;
+                justify-content: flex-start;    
+                padding: 30px 0;
+            }
+    
+            .content-wrap{
+                width: 60%;
+    
                 @include responsive(sm){
-                    font-size: 52px;
+                    width: 80%;
+                    padding-top: 200px;
                 }
                 @include responsive(xs){
-                    font-size: 48px;
+                    width: 100%;
                 }
-
-                .shade{
-                    position: relative;
-                    z-index: 1;
-
-                    &::before{
-                        content: "";
-                        position: absolute;
-                        display: block;
-                        width: 245px;
-                        height: 30%;
-                        background: var(--green);
-                        z-index: -1;
-                        top: 60%;
-                        left: -10px;
-
-                        @include responsive(xl){
-                            width: 210px;
-                            left: -10px;
-                        }
-                        @include responsive(lg){
-                            width: 175px;
-                            left: -5px;
-                        }
-                        @include responsive(md){
-                            width: 140px;
-                            left: -5px;
-                        }
-                        @include responsive(sm){
-                            width: 105px;
-                            left: -5px;
-                        }
-                        @include responsive(xs){
-                            width: 120px;
-                            left: -3px;
-                        }
-                    }
-                }
-            }
-            .description{
-                font-family: 'Neue-Thin';
-                font-size: 40px;
-                line-height: 110%;
-                margin-bottom: 30px;
-
-                @include responsive(xl){
-                    font-size: 36px;
-                }
-                @include responsive(lg){
-                    font-size: 32px;
-                }
-                @include responsive(md){
-                    font-size: 28px;   
-                }
-                @include responsive(sm){
-                    font-size: 24px;
-                }
-                @include responsive(xs){
-                    font-size: 20px;
-                }
-
-                span{
+    
+                .heading{
                     font-family: 'Neue-Black';
+                    font-size: 68px;
                     font-weight: 700;
-                }
-            }
-            .button-wrap{
-
-                .button{
-                    font-family: 'Neue-Bold';
-                    font-size: 24px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    padding: 15px 30px;
-                    color: var(--black);
-                    border: 2px solid var(--black);
-                    background: var(--green);
-                    max-width: fit-content;
-                    transition: all 0.4s ease;
-
-                    &:hover{
-                        background: var(--white);
+                    line-height: 110%;
+                    margin-bottom: 20px;
+    
+                    @include responsive(xl){
+                        font-size: 64px;
+                    }
+                    @include responsive(lg){
+                        font-size: 60px;
                     }
                     @include responsive(md){
-                        font-size: 20px;
+                        font-size: 56px;   
                     }
                     @include responsive(sm){
-                        font-size: 18px;
-                        padding: 10px 20px;
+                        font-size: 52px;
                     }
                     @include responsive(xs){
-                        font-size: 16px;
+                        font-size: 48px;
+                    }
+    
+                    .shade{
+                        position: relative;
+                        z-index: 1;
+    
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 90%;
+                            height: 30%;
+                            background: var(--green);
+                            z-index: -1;
+                            top: 60%;
+                            left: -2%;
+                            
+                        }
+                    }
+                }
+                .description{
+                    font-family: 'Neue-Thin';
+                    font-size: 40px;
+                    line-height: 110%;
+                    margin-bottom: 30px;
+    
+                    @include responsive(xl){
+                        font-size: 36px;
+                    }
+                    @include responsive(lg){
+                        font-size: 32px;
+                    }
+                    @include responsive(md){
+                        font-size: 28px;   
+                    }
+                    @include responsive(sm){
+                        font-size: 24px;
+                    }
+                    @include responsive(xs){
+                        font-size: 20px;
+                    }
+    
+                    span{
+                        font-family: 'Neue-Black';
+                        font-weight: 700;
+                    }
+                }
+                .button-wrap{
+    
+                    .button{
+                        font-family: 'Neue-Bold';
+                        font-size: 24px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        padding: 15px 30px;
+                        color: var(--black);
+                        border: 2px solid var(--black);
+                        background: var(--green);
+                        max-width: fit-content;
+                        transition: all 0.4s ease;
+    
+                        &:hover{
+                            background: var(--white);
+                        }
+                        @include responsive(md){
+                            font-size: 20px;
+                        }
+                        @include responsive(sm){
+                            font-size: 18px;
+                            padding: 10px 20px;
+                        }
+                        @include responsive(xs){
+                            font-size: 16px;
+                        }
                     }
                 }
             }

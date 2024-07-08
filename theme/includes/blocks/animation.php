@@ -81,26 +81,20 @@
 <script>
     gsap.registerPlugin(ScrollTrigger);
 
-    let tl = gsap.timeline({
+    let tl5 = gsap.timeline({
         scrollTrigger: {
             trigger: ".animation-main",
-            start: "-50% 50%",
-            end: '100% 50%',
+            start: "-30% 50%",
+            end: '70% 100%',
             scrub: 1,
         }
     });
 
-    tl.from("#left-circle", { x:"-100%", y: "-100%", opacity: 0, duration: 2, ease: "power1.inOut"  }, 0);
-    tl.from("#right-circle", { x:"100%", y: "-100%", opacity: 0, duration: 2, ease: "power1.inOut"  }, 0);
-    tl.from("#bottom-circle", { y: "100%", opacity: 0, duration: 2, ease: "power1.inOut"  }, 0);
-    tl.from("#circle-heading", { opacity: 0, duration: 1, ease: "power1.inOut"  }, 1);
-    tl.from("#circle-text", { opacity: 0, duration: 1, ease: "power1.inOut"  }, 2);
-    tl.from("#center-shield", {  opacity: 0, duration: 1, ease: "power1.inOut"  }, 3);
-    tl.to("#center-shield", {  opacity: 0, duration: 3, ease: "power1.inOut"  }, 4);
-    tl.to("#circle-text", { opacity: 0, duration: 1, ease: "power1.inOut"  }, 5);
-    tl.to("#circle-heading", { opacity: 0, duration: 1, ease: "power1.inOut"  }, 6);
-    tl.to("#left-circle", { x:"-100%", y: "-100%", opacity: 0, duration: 2, ease: "power1.inOut"  }, 7);
-    tl.to("#right-circle", { x:"100%", y: "-100%", opacity: 0, duration: 2, ease: "power1.inOut"  }, 7);
-    tl.to("#bottom-circle", { y: "100%", opacity: 0, duration: 2, ease: "power1.inOut"  }, 7);
+    tl5.from("#left-circle", { x:"-100", y: "-100", opacity: 0, duration: 2, ease: "power1.inOut"  }, 0);
+    tl5.from("#right-circle", { x:"100", y: "-100", opacity: 0, duration: 2, ease: "power1.inOut"  }, 0);
+    tl5.from("#bottom-circle", { y: "100", opacity: 0, duration: 2, ease: "power1.inOut"  }, 0);
+    tl5.from("#circle-heading", { opacity: 0, duration: 1, ease: "power1.inOut"  }, 1);
+    tl5.from("#circle-text", { opacity: 0, duration: 1, ease: "power1.inOut"  }, 2);
+    tl5.from("#center-shield", {  opacity: 0, duration: 1, ease: "power1.inOut"  }, 3);
 
 </script>
