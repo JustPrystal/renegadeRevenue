@@ -78,6 +78,11 @@
         </div>
     </div>
 </section>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/teamlove/revenue-roadmap-intro?primary_color=cfde00', text: 'Schedule time with us', color: '#cfde00', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
 <script>
     gsap.registerPlugin(ScrollTrigger);
 

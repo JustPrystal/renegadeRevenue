@@ -292,37 +292,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                "layout_66888978eb162": {
-                    "key": "layout_66888978eb162",
-                    "name": "contact",
-                    "label": "Contact",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6688897feb163",
-                            "label": "Fields",
-                            "name": "fields",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_66884805667a7"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -356,7 +325,7 @@
         "discussion",
         "comments"
     ],
-    "active": true,
+    "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1720305667
+    "modified": 1720138514
 }
