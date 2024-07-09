@@ -207,9 +207,9 @@
           }
         }
       }
-      .schedule {
+      .schedule-wrap {
         text-align: center;
-        p {
+        .schedule {
           color: var(--black);
           font-size: 36px;
           font-family: "Neue-Black";
@@ -229,7 +229,7 @@
             margin-bottom: 40px;
           }
         }
-        a {
+        .button {
           display: inline-block;
           font-family: "Neue-Bold";
           font-size: 32px;

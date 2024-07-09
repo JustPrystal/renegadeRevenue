@@ -13,7 +13,7 @@
                 <?php echo $block['description'] ?>
             </div>
             <div class="button-wrap">
-                <a href=<?php echo $block['button']['url'] ?> class="button"><?php echo $block['button']['title'] ?></a>
+                <p class="button"><?php echo $block['button'] ?></p>
             </div>
         </div>
     </div>

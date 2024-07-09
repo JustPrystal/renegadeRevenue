@@ -25,15 +25,15 @@
                                 <div class="read-more">Show More</div> 
                             </div>
                             <div class="price-wrap">
-                                <p class="price"><?php echo($box["price"]) ?></p>
+                                <p class="price"> <?php echo($box["price"]) ?> </p>
                             </div>
                         </div>
                     <?php } ?>
                 </div>  
             </div>
-            <div class="schedule">
-                <p> <?php echo($ScheduleText) ?> </p>
-                <a href="<?php echo($Button["url"]) ?>"> <?php echo($Button["title"]) ?> </a>
+            <div class="schedule-wrap">
+                <p class="schedule"> <?php echo($ScheduleText) ?> </p>
+                <p class="button"> <?php echo($Button) ?> </p>
             </div>
         </div>
     </div>

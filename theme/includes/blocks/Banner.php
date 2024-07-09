@@ -2,7 +2,8 @@
     $backgroundImage = $block['background-image'];
     $heading = $block['heading'];
     $description = $block['description'];
-    $link = $block['button'];
+    $button = $block['button'];
+    $brands = $block['brands'];
 ?>
 
 <div class="banner">
@@ -17,7 +18,19 @@
                     <?php echo $description; ?>
                 </p>
                 <div class="button-wrap">
-                    <a href=<?php echo $link['url'] ?> class="button"><?php echo $link['title'] ?></a>
+                    <p class="button"> <?php echo $button; ?> </p>
+                </div>
+            </div>
+            <div class="brands-wrap">
+                <div class="text-wrap">
+                    <p class="text">Brands I've Worked With:</p>
+                </div>
+                <div class="images-wrap">
+                    <?php foreach($brands as $brand){?>
+                        <div class="image-wrap">
+                            <img src="<?php echo $brand['brand_logo']['url'] ?>" alt="">
+                        </div>
+                        <?php } ?>
                 </div>
             </div>
         </div>

@@ -71,7 +71,10 @@
             "key": "field_6684425da0c09",
             "label": "Button",
             "name": "button",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -91,7 +94,10 @@
             "key": "field_668c8b27154cf",
             "label": "Brands",
             "name": "brands",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -105,14 +111,21 @@
             "min": 0,
             "max": 0,
             "layout": "table",
+<<<<<<< HEAD
             "button_label": "Add Row",
             "rows_per_page": 20,
+=======
+            "button_label": "",
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
             "sub_fields": [
                 {
                     "key": "field_668c8b3b154d0",
                     "label": "Brand Logo",
                     "name": "brand_logo",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -131,8 +144,12 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
+<<<<<<< HEAD
                     "mime_types": "",
                     "parent_repeater": "field_668c8b27154cf"
+=======
+                    "mime_types": ""
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
                 }
             ]
         }
@@ -154,6 +171,11 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
+<<<<<<< HEAD
     "show_in_rest": false,
     "modified": 1720490213
 }
+=======
+    "modified": 1720487363
+}
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc

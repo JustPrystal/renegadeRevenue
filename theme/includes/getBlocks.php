@@ -47,6 +47,9 @@
             case 'contact':
               include 'blocks/contact.php';
               break;  
+            case 'calendly':
+              include 'blocks/Calendly.php';
+              break; 
           }
         }
       }

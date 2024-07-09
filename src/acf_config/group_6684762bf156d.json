@@ -132,7 +132,10 @@
             "key": "field_668485efd49db",
             "label": "Button",
             "name": "button",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -164,8 +167,13 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
+<<<<<<< HEAD
     "show_in_rest": false,
     "modified": 1720490214
 }
+=======
+    "modified": 1720483276
+}
+>>>>>>> 51ca34546f49460aa25149db7915cce698308fdc

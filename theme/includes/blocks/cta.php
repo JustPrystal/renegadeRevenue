@@ -8,7 +8,7 @@
                 <?php echo $block['description'] ?>
             </div>
             <div class="button-image-wrap">
-                <a href="<?php $block['button']['url'] ?>" class="button"><?php echo $block['button']['title'] ?></a>
+                <p class="button"><?php echo $block['button'] ?></p>
                 <div class="image-wrap">
                     <img src="<?php echo $block['image'] ?>" alt="image" class="image">
                 </div>
