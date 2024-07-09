@@ -22,15 +22,17 @@
                 </div>
             </div>
             <div class="brands-wrap">
-                <div class="text-wrap">
-                    <p class="text">Brands I've Worked With:</p>
-                </div>
-                <div class="images-wrap">
-                    <?php foreach($brands as $brand){?>
-                        <div class="image-wrap">
-                            <img src="<?php echo $brand['brand_logo']['url'] ?>" alt="">
-                        </div>
-                        <?php } ?>
+                <div class="brands-content">
+                    <div class="text-wrap">
+                        <p class="text">Brands I've Worked With:</p>
+                    </div>
+                    <div class="images-wrap">
+                        <?php foreach($brands as $brand){?>
+                            <div class="image-wrap">
+                                <img src="<?php echo $brand['brand_logo']['url'] ?>" alt="">
+                            </div>
+                            <?php } ?>
+                    </div>
                 </div>
             </div>
         </div>
