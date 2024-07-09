@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html id="no" <?php language_attributes(); ?>>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0" />
 
-    <?php include_once INCLUDES_DIR . 'google-tag-manager.php'; ?>
-    <?php include_once INCLUDES_DIR . 'google-analytics.php'; ?>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0" />
 
-  	<!--FAVICON-->
-    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/social/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/social/site.webmanifest">
-    <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <?php wp_head();?>    
-    <meta name="author" content="<?php bloginfo('name'); ?>" />
-    
-  </head>
-  <body class="<?php 
-  
-  $fadeMenu = get_field("menu_fade", $post->ID);
-  if ($fadeMenu) {
-    echo ' fadeMenu';
-  }
+  <?php include_once INCLUDES_DIR . 'google-tag-manager.php'; ?>
+  <?php include_once INCLUDES_DIR . 'google-analytics.php'; ?>
 
-  $current_user = wp_get_current_user();
-    if (user_can( $current_user, 'administrator' )) {
-        echo ' adminbar';
-    }
-  ?>">
+  <!--FAVICON-->
+  <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon.png"
+    type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="<?php echo get_stylesheet_directory_uri(); ?>/social/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/social/site.webmanifest">
+  <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/safari-pinned-tab.svg"
+    color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <?php wp_head(); ?>
+  <meta name="author" content="<?php bloginfo('name'); ?>" />
+
+</head>
+
+<body class="<?php
+
+$current_user = wp_get_current_user();
+if (user_can($current_user, 'administrator')) {
+  echo ' adminbar';
+}
+?>">
 
 
-  <?php 
-    $header = get_field('header', 'option');
+  <?php
+  $header = get_field('header', 'option');
   ?>
-<div class="mode">
+  <div class="mode">
     <div class="frame">
-        <div class="icon"></div>
+      <div class="icon"></div>
     </div>
-</div>
+  </div>
   <header class="desktop-header">
     <div class="container">
       <a href="/home" class="logo-wrap">
@@ -50,7 +52,7 @@
         <img src="<?php echo $header['dark_mode_logo']['url'] ?>" alt="logo" class="dark-mode-logo">
       </a>
       <div class="header-links" id="header-links">
-        <?php foreach($header['header-links'] as $link){ ?>
+        <?php foreach ($header['header-links'] as $link) { ?>
           <a href=<?php echo $link['link']['url']; ?> class="link"><?php echo $link['link']['title']; ?></a>
         <?php } ?>
       </div>
@@ -62,21 +64,21 @@
     </div>
   </header>
   <script>
-    $(".mode").click(function(){
+    $(".mode").click(function () {
       $(this).toggleClass("dark");
       $(".dark-mode-logo").stop().fadeToggle()
       $(".logo").stop().fadeToggle()
-      if($(this).hasClass("dark")){
+      if ($(this).hasClass("dark")) {
         document.documentElement.style.setProperty('--green', '#1596b3');
         document.documentElement.style.setProperty('--white', '#333333');
         document.documentElement.style.setProperty('--black', '#ffffff');
-      }else{
+      } else {
         document.documentElement.style.setProperty('--green', '#cfdd01');
         document.documentElement.style.setProperty('--white', '#ffffff');
         document.documentElement.style.setProperty('--black', '#000000');
       }
     })
-    $(".menu-wrap").click(function(){
+    $(".menu-wrap").click(function () {
       $("body").toggleClass("no-scroll");
     })
     function toggleClasses() {
@@ -86,4 +88,4 @@
       menu.classList.toggle('cross');
     }
   </script>
-  <div class="all"> 
+  <div class="all">
