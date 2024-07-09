@@ -6,6 +6,7 @@
             "key": "field_668c7f8073498",
             "label": "calendly",
             "name": "calendly",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -37,7 +38,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1720483744
+    "show_in_rest": false,
+    "modified": 1720490214
 }
