@@ -71,7 +71,7 @@
             display: none;
           }
         }
-        #gform_1 {
+        form[method="post"] {
           padding: 50px 40px;
           background: var(--white);
           color: var(--black);
@@ -126,6 +126,7 @@
                     margin-left: 5px;
                     position: relative;
                     z-index: 1;
+                    transition: 0s;
 
                     @include responsive(md) {
                       font-size: 20px;
@@ -150,7 +151,7 @@
             justify-content: flex-end;
             margin-top: 30px;
 
-            .button {
+            input[type="submit"] {
               border-radius: 0px;
               color: var(--black);
               font-family: "Neue-Bold";
