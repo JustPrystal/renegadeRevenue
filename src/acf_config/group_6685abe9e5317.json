@@ -44,7 +44,7 @@
             "key": "field_6685ac0208025",
             "label": "Button",
             "name": "button",
-            "type": "link",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -53,7 +53,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_6685ac1508026",
@@ -97,5 +101,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1720036389
+    "modified": 1720483231
 }

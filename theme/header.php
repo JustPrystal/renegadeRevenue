@@ -54,7 +54,8 @@ if (user_can($current_user, 'administrator')) {
       <div class="header-links" id="header-links">
         <?php foreach ($header['header-links'] as $link) { ?>
           <a href=<?php echo $link['link']['url']; ?> class="link"><?php echo $link['link']['title']; ?></a>
-        <?php } ?>
+          <?php } ?>
+          <p class="header-button"> <?php echo $header['book_a_call_button'] ?> </p>
       </div>
       <div class="menu-wrap" id="menu-wrap" onClick="toggleClasses()">
         <span></span>
