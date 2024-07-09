@@ -33,7 +33,7 @@
             height: 80vh;
         }
         @include responsive(xs){
-            height: 100vh;
+            height: calc(100vh - 100px);
         }
         &::before{
             content: "";
@@ -78,8 +78,8 @@
                 height: 72vh;  
             }
             @include responsive(xs){
-                object-position: -365px center;   
-                height: 90vh;         
+                object-position: -280px center;   
+                height: 80vh;         
             }
         }
     
