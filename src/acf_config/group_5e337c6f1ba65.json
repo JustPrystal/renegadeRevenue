@@ -314,8 +314,6 @@
                             },
                             "clone": [
                                 "group_66873ac409d1b"
-<<<<<<< Updated upstream
-=======
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -347,7 +345,6 @@
                             },
                             "clone": [
                                 "group_668c7f64584b2"
->>>>>>> Stashed changes
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -392,9 +389,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-<<<<<<< Updated upstream
-    "modified": 1720475221
-=======
     "modified": 1720483813
->>>>>>> Stashed changes
 }
