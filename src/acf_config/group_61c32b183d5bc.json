@@ -112,10 +112,7 @@
                     "key": "field_668c729247f1a",
                     "label": "Book a call button",
                     "name": "book_a_call_button",
-<<<<<<< HEAD
                     "aria-label": "",
-=======
->>>>>>> 51ca34546f49460aa25149db7915cce698308fdc
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -151,11 +148,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-<<<<<<< HEAD
     "show_in_rest": false,
     "modified": 1720490214
 }
-=======
-    "modified": 1720480423
-}
->>>>>>> 51ca34546f49460aa25149db7915cce698308fdc

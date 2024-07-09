@@ -323,37 +323,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                "layout_668c7faf99941": {
-                    "key": "layout_668c7faf99941",
-                    "name": "calendly",
-                    "label": "Calendly",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_668c7fbb99942",
-                            "label": "Fields",
-                            "name": "fields",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_668c7f64584b2"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -389,5 +358,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1720483813
+    "modified": 1720475221
 }
