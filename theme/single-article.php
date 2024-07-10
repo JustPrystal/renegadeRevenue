@@ -19,10 +19,10 @@
             </div>
             <div class="text-wrap">
                 <div class="author-name">
-                    Written by: <?php echo get_author_name($post->post_author) ?>
+                    <span class="bold">Written by:</span> <?php echo get_author_name($post->post_author) ?>
                 </div>
                 <div class="creation-date">
-                    Created: <?php echo $post->post_date?> 
+                    <span class="bold">Created:</span> <?php echo $post->post_date?> 
                 </div>
             </div>
 

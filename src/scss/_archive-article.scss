@@ -3,6 +3,10 @@
     background-color: var(--white);
     border-top: 2px solid var(--black);
 
+    @include responsive(sm){
+        padding: 50px 20px;
+    }
+
     .inner{
         max-width: 1400px;
         margin: 0 auto;
@@ -45,6 +49,13 @@
                         font-family: 'Mukta';
                         margin-bottom: 10px;
                         color: var(--black);
+
+                        @include responsive(md){
+                            font-size: 22px;
+                        }
+                        @include responsive(sm){
+                            font-size: 20px;
+                        }
                     }
                 }
             }
