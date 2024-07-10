@@ -90,7 +90,7 @@
                                     'field'    => 'slug',
                                     'terms'    => $term->slug,
                                 )
-                                );
+                            );
                         }
                         
                         $articles = new WP_Query($args);
