@@ -33,7 +33,7 @@
             </div>
             <div class="schedule-wrap">
                 <p class="schedule"> <?php echo($ScheduleText) ?> </p>
-                <p class="button"> <?php echo($Button) ?> </p>
+                <div class="button"> <?php echo($Button) ?> </div>
             </div>
         </div>
     </div>

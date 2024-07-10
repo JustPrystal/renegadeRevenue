@@ -104,20 +104,23 @@
         }
       }
       .header-button {
-        font-family: "Neue-Bold";
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--black);
-        transition: all 0.4s ease;
-        text-transform: uppercase;
-        padding: 15px 30px;
-        border: 2px solid var(--green);
-
-        &:hover {
-          background-color: var(--green);
-        }
-        @include responsive(md) {
-          font-size: 20px;
+        display: flex;
+        a{
+          font-family: "Neue-Bold";
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--black);
+          transition: all 0.4s ease;
+          text-transform: uppercase;
+          padding: 15px 30px;
+          border: 2px solid var(--green);
+  
+          &:hover {
+            background-color: var(--green);
+          }
+          @include responsive(md) {
+            font-size: 20px;
+          }
         }
       }
     }

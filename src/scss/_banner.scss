@@ -175,8 +175,8 @@
                     }
                 }
                 .button-wrap{
-    
-                    .button{
+                    display: flex;
+                    a{
                         font-family: 'Neue-Bold';
                         font-size: 24px;
                         font-weight: 700;
