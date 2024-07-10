@@ -48,7 +48,23 @@
                 </div>
             </div>
         </div>
-
+        <div class="recommended">
+            <div class="recommended-heading">
+                Recommended Reading:
+            </div>
+            <?php
+                $category = get_the_category()[0]->slug;
+                var_dump($category);
+                $recommended_args = array(
+                    'category_name' => $category, 
+                    'posts_per_page' => 2, 
+                    // 'post__not_in' => array( $post->ID ) // Exclude current post
+                );
+                $recommended_query = new WP_Query($recommended_args);
+                var_dump($recommended_query);
+            ?>
+            <div class="recommended-articles"></div>
+        </div>
     </div>
 </section>
 

@@ -1,23 +1,23 @@
-.articles-archive{
+.articles-archive {
     padding: 50px 40px;
     background-color: var(--white);
     border-top: 2px solid var(--black);
 
-    @include responsive(sm){
+    @include responsive(sm) {
         padding: 50px 20px;
     }
 
-    .inner{
+    .inner {
         max-width: 1400px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         color: var(--black);
 
-        .heading-wrap{
+        .heading-wrap {
             margin-bottom: 20px;
 
-            .heading{
+            .heading {
                 font-family: "Neue-Black";
                 font-size: 68px;
                 font-weight: 700;
@@ -27,47 +27,54 @@
                 @include responsive(xl) {
                     font-size: 60px;
                 }
+
                 @include responsive(lg) {
                     font-size: 56px;
                 }
+
                 @include responsive(md) {
                     font-size: 52px;
                 }
+
                 @include responsive(xs) {
                     font-size: 48px;
                 }
             }
         }
-        .main-wrapper{
+
+        .main-wrapper {
             display: flex;
 
-            .sidebar{
+            .sidebar {
                 min-width: 300px;
-                .categories{
-                    .category{
+
+                .categories {
+                    .category {
                         font-size: 24px;
                         font-family: 'Mukta';
                         margin-bottom: 10px;
                         color: var(--black);
 
-                        @include responsive(md){
+                        @include responsive(md) {
                             font-size: 22px;
                         }
-                        @include responsive(sm){
+
+                        @include responsive(sm) {
                             font-size: 20px;
                         }
                     }
                 }
             }
-            .main{
+
+            .main {
                 width: 100%;
 
-                .featured{
+                .featured {
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 40px;
 
-                    .featured-heading{
+                    .featured-heading {
                         position: relative;
                         z-index: 1;
                         color: var(--black);
@@ -76,21 +83,24 @@
                         font-weight: 700;
                         margin-bottom: 20px;
 
-                        @include responsive(lg){
+                        @include responsive(lg) {
                             font-size: 32px;
                         }
-                        @include responsive(md){
-                            font-size: 28px;       
-                        }
-                        @include responsive(sm){
-                            font-size: 24px;  
-                            align-self: center;     
-                        }
-                        @include responsive(xs){
-                            font-size: 20px;       
+
+                        @include responsive(md) {
+                            font-size: 28px;
                         }
 
-                        &::before{
+                        @include responsive(sm) {
+                            font-size: 24px;
+                            align-self: center;
+                        }
+
+                        @include responsive(xs) {
+                            font-size: 20px;
+                        }
+
+                        &::before {
                             content: "";
                             position: absolute;
                             display: block;
@@ -98,33 +108,35 @@
                             height: 30%;
                             background: var(--green);
                             z-index: -1;
-                            top: 60%; 
+                            top: 60%;
                         }
                     }
-                    .featured-articles{
+
+                    .featured-articles {
                         display: flex;
                         flex-wrap: wrap;
 
-                        .featured-articles-article{
+                        .featured-articles-article {
                             display: flex;
                             flex-direction: column;
                             width: 100%;
                             margin-bottom: 40px;
 
-                            &:last-child{
+                            &:last-child {
                                 margin-bottom: 0;
                             }
-                            
-                            .image-wrap{
+
+                            .image-wrap {
                                 width: 100%;
                                 margin-bottom: 20px;
 
-                                img{
+                                img {
                                     width: 100%;
                                     height: auto;
                                 }
-                            }   
-                            .title{
+                            }
+
+                            .title {
                                 font-family: "Neue-Black";
                                 font-size: 68px;
                                 font-weight: 700;
@@ -134,37 +146,45 @@
                                 @include responsive(xl) {
                                     font-size: 60px;
                                 }
+
                                 @include responsive(lg) {
                                     font-size: 56px;
                                 }
+
                                 @include responsive(md) {
                                     font-size: 52px;
                                 }
+
                                 @include responsive(xs) {
                                     font-size: 48px;
                                 }
                             }
-                            .short-description{
+
+                            .short-description {
                                 margin-bottom: 20px;
                                 font-family: 'Mukta';
                                 font-size: 28px;
                                 font-weight: 300;
                                 line-height: 120%;
 
-                                @include responsive(lg){
+                                @include responsive(lg) {
                                     font-size: 24px;
                                 }
-                                @include responsive(md){
-                                    font-size: 20px;   
+
+                                @include responsive(md) {
+                                    font-size: 20px;
                                 }
-                                @include responsive(sm){
-                                    font-size: 18px;   
+
+                                @include responsive(sm) {
+                                    font-size: 18px;
                                 }
-                                @include responsive(xs){
-                                    font-size: 16px;   
+
+                                @include responsive(xs) {
+                                    font-size: 16px;
                                 }
                             }
-                            .read-more{
+
+                            .read-more {
                                 font-family: 'Neue-Bold';
                                 font-size: 24px;
                                 font-weight: 700;
@@ -175,29 +195,33 @@
                                 background: var(--green);
                                 max-width: fit-content;
                                 transition: all 0.4s ease;
-            
-                                &:hover{
+
+                                &:hover {
                                     background: var(--white);
                                 }
-                                @include responsive(md){
+
+                                @include responsive(md) {
                                     font-size: 20px;
                                 }
-                                @include responsive(sm){
+
+                                @include responsive(sm) {
                                     font-size: 18px;
                                     padding: 10px 20px;
                                 }
-                                @include responsive(xs){
+
+                                @include responsive(xs) {
                                     font-size: 16px;
                                 }
                             }
                         }
                     }
                 }
-                .all-articles-wrap{
+
+                .all-articles-wrap {
                     display: flex;
                     flex-direction: column;
 
-                    .all-heading{
+                    .all-heading {
                         position: relative;
                         z-index: 1;
                         color: var(--black);
@@ -206,7 +230,7 @@
                         font-weight: 700;
                         margin-bottom: 20px;
 
-                        &::before{
+                        &::before {
                             content: "";
                             position: absolute;
                             display: block;
@@ -215,49 +239,56 @@
                             background: var(--green);
                             z-index: -1;
                             top: 60%;
-                            
+
                         }
 
-                        @include responsive(lg){
+                        @include responsive(lg) {
                             font-size: 32px;
                         }
-                        @include responsive(md){
-                            font-size: 28px;       
+
+                        @include responsive(md) {
+                            font-size: 28px;
                         }
-                        @include responsive(sm){
-                            font-size: 24px;  
-                            align-self: center;     
+
+                        @include responsive(sm) {
+                            font-size: 24px;
+                            align-self: center;
                         }
-                        @include responsive(xs){
-                            font-size: 20px;       
-                        } 
+
+                        @include responsive(xs) {
+                            font-size: 20px;
+                        }
                     }
-                    .all-articles{
+
+                    .all-articles {
                         display: flex;
                         gap: 45px;
                         flex-wrap: wrap;
                         margin-bottom: 45px;
-                        .all-articles-article{
+
+                        .all-articles-article {
                             width: calc(33.3% - 30px);
 
-                            .image-wrap{
+                            .image-wrap {
                                 width: 100%;
                                 margin-bottom: 10px;
 
-                                img{
+                                img {
                                     width: 100%;
                                     aspect-ratio: 1.4;
                                     object-fit: cover;
                                     height: auto;
                                 }
                             }
-                            .categories-assigned{
+
+                            .categories-assigned {
                                 display: flex;
                                 gap: 10px;
                                 margin-bottom: 5px;
 
-                                .category-tag{
+                                .category-tag {
                                     color: var(--black);
+                                    border: 1px solid var(--black);
                                     font-family: 'Mukta';
                                     font-size: 12px;
                                     line-height: 120%;
@@ -265,38 +296,44 @@
                                     background-color: var(--green);
                                 }
                             }
-                            .title{
+
+                            .title {
                                 color: var(--black);
                                 font-family: 'Neue-Black';
                                 font-size: 28px;
                                 font-weight: 700;
                                 margin-bottom: 8px;
                             }
-                            .short-description{
+
+                            .short-description {
                                 font-family: 'Mukta';
                                 font-size: 22px;
                                 font-weight: 300;
                                 line-height: 120%;
                                 color: var(--black);
 
-                                @include responsive(md){
-                                    font-size: 20px;   
+                                @include responsive(md) {
+                                    font-size: 20px;
                                 }
-                                @include responsive(sm){
-                                    font-size: 18px;   
+
+                                @include responsive(sm) {
+                                    font-size: 18px;
                                 }
-                                @include responsive(xs){
-                                    font-size: 16px;   
+
+                                @include responsive(xs) {
+                                    font-size: 16px;
                                 }
                             }
-                        }   
+                        }
                     }
                 }
-                .button-wrap{
+
+                .button-wrap {
                     display: flex;
                     margin-top: 50px;
                     justify-content: center;
-                    #loadMoreReviews{
+
+                    #loadMoreReviews {
                         text-align: center;
                         background-color: var(--green);
                         width: max-content;
@@ -307,13 +344,40 @@
                         font-family: 'Neue-Bold';
                         text-transform: uppercase;
                         font-size: 24px;
-                        // &[disabled]{
-                        //     opacity: 0.5;
-                        //     cursor: not-allowed;
-                        // }
+
+                        &.disabled {
+                            display: none;
+                        }
+
+                        &.loading {
+                            position: relative;
+                            color: var(--green);
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                width: 40px;
+                                height: 40px;
+                                border: 3px solid var(--black);
+                                border-bottom-color: transparent;
+                                border-radius: 50%;
+                                display: inline-block;
+                                left: calc(50% - 20px);
+                                top: calc(50% - 20px);
+                                box-sizing: border-box;
+                                animation: rotation 1s linear infinite;
+                            }
+                        }
                     }
                 }
             }
         }
+    }
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

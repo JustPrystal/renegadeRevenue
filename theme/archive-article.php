@@ -125,9 +125,13 @@
 <script>
     jQuery(document).ready(function(){
         jQuery(document.body).on('click', '#loadMoreReviews', function(){
+
+            console.log("clicked")
+
             var that = jQuery(this);
             var max = that.data('max');
-            var pageCount = that.data('page');
+            var pageCount = parseInt(that.attr('data-page'));
+            console.log("pageCount", pageCount)
             var postCountPerPage = that.data('perpage');
             that.addClass('loading').prop("disabled", true);;
             jQuery.ajax({
@@ -146,8 +150,9 @@
                         pageCount = pageCount + 1;
                         that.removeClass('loading').prop("disabled", false);
                         that.attr('data-page', pageCount);
+                        console.log(pageCount , max)
                         if(pageCount == max){
-                            that.prop("disabled", true);
+                            that.addClass("disabled");
                         }
                     }
                     else{
