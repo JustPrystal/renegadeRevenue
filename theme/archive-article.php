@@ -65,7 +65,7 @@
                         
                         $articles = new WP_Query($args);
                         if (count($articles->posts) > 0) {?>
-                            <div class="all">
+                            <div class="all-articles-wrap">
                                 <div class="all-heading">All Articles</div>
                                 <div class="all-articles">
                                     <?php foreach($articles->posts as $article){ ?>
@@ -82,7 +82,7 @@
                                                     <?php } ?>
                                                 </div>
                                             <?php } ?>
-                                            <div class="title" style="background-color: pink;">
+                                            <div class="title">
                                                 <?php echo $article->post_title?>
                                             </div>
                                             <div class="short-description">

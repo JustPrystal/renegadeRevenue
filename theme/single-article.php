@@ -11,14 +11,14 @@
         <div class="image"><?php the_post_thumbnail(); ?></div>
         <div class="author-info">
             <div class="author-image">
-                
+                <?php echo get_avatar($post->post_author) ?>
             </div>
             <div class="text-wrap">
                 <div class="author-name">
-                    <?php echo $post->post_author ?>
+                    Written by: <?php echo get_author_name($post->post_author) ?>
                 </div>
                 <div class="creation-date">
-                    <?php echo $post->post_date?> 
+                    Created: <?php echo $post->post_date?> 
                 </div>
             </div>
 
