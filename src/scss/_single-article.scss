@@ -7,7 +7,7 @@
   }
 
   .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -34,10 +34,17 @@
       }
     }
     .image {
+<<<<<<< HEAD
       width: 100%;
 
       img{
         width: 100%;
+=======
+      margin-bottom: 50px;
+      img{
+        width: 100%;
+        height: auto;
+>>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
       }
     }
     .author-info {
@@ -98,6 +105,7 @@
     .description {
       margin-bottom: 30px;
       font-size: 24px;
+      padding-left: 100px;
       color: var(--black);
       font-family: "Mukta";
       line-height: 120%;
@@ -222,10 +230,10 @@
       }
     }
     .article-cta-wrap{
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
       background-color: var(--white);
-      border: 1px solid var(--black);
+      border: 1px solid grey;
       .article-cta{
         padding: 20px;
         display: flex;
@@ -242,7 +250,7 @@
           }
           .image{
             width: 100%;
-            img{
+            svg{
               width: 100%;
             }
           }
@@ -257,13 +265,16 @@
               font-family: 'Neue-Black';
               font-weight: 700;
               color: var(--black);
-              font-size: 36px;
+              font-size: 54px;
               margin-bottom: 15px;
+              @include responsive(lg){
+                font-size: 52px;
+              }
               @include responsive(md){
-                font-size: 32px;
+                font-size: 40px;
               }
               @include responsive(xs){
-                font-size: 28px;
+                font-size: 32px;
               }
               span{
                 position: relative;
@@ -282,15 +293,18 @@
               }
             }
             .article-description{
-              font-size: 20px;
+              font-size: 28px;
               color: var(--black);
               font-family: "Mukta";
               margin-bottom: 20px;
               @include responsive(md){
-                font-size: 18px;
+                font-size: 20px;
+              }
+              @include responsive(sm){
+                font-size: 22px;
               }
               @include responsive(xs){
-                font-size: 16px;
+                font-size: 18px;
               }
             }
             .article-button-wrap{
@@ -304,7 +318,7 @@
                 display: inline-block;
                 font-size: 24px;
                 font-weight: 700;
-                color: var(--black) !important;
+                color: var(--black);
                 transition: all 0.4s ease;
                 text-transform: uppercase;
                 padding: 15px 30px;
@@ -322,5 +336,19 @@
         }
       }
     }
+  }
+}
+#article-svg{
+  #article-Vector{
+      stroke: var(--black);
+  }
+  #article-circle-heading{
+      fill: var(--black);
+  }
+  #article-circle-text{
+      fill: var(--black);
+  }
+  #article-colored-shield{
+      fill: var(--green);
   }
 }

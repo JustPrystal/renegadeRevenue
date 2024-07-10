@@ -11,7 +11,7 @@
                 <div class="sidebar">
                      
                     <div class="categories">
-                        <?php 
+                    <?php 
                             $cat_args = array(
                                 'taxonomy' => 'category',
                                 'orderby' => 'name',
@@ -21,6 +21,9 @@
                 
                             $cats = get_categories($cat_args); 
                             foreach ($cats as $cat){ ?>
+                                <?php if ($cat->slug == "uncategorized"){
+                                    continue; 
+                                }  else ?>
                                 <a href="<?php echo get_term_link($cat)?>" class="category"><?php echo $cat->name; ?></a>
                             <?php }
                         ?>

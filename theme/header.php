@@ -47,7 +47,7 @@ if (user_can($current_user, 'administrator')) {
   </div>
   <header class="desktop-header">
     <div class="container">
-      <a href="/home" class="logo-wrap">
+      <a href="/" class="logo-wrap">
         <img src="<?php echo $header['logo']['url'] ?>" alt="logo" class="logo">
         <img src="<?php echo $header['dark_mode_logo']['url'] ?>" alt="logo" class="dark-mode-logo">
       </a>
