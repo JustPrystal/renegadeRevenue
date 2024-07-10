@@ -8,8 +8,21 @@
             </div>    
             <div class="main-wrapper">
                 <div class="sidebar">
-                    <!-- search -->
-                    <!-- categories -->
+                     
+                    <div class="categories">
+                        <?php 
+                            $cat_args = array(
+                                'taxonomy' => 'category',
+                                'orderby' => 'name',
+                                'order'   => 'ASC'
+                            );
+                
+                            $cats = get_categories($cat_args); 
+                            foreach ($cats as $cat){ ?>
+                                <a class="category"><?php echo $cat->name; ?></a>
+                            <?php }
+                        ?>
+                    </div>
                      
                 </div>
                 <div class="main">
@@ -65,7 +78,7 @@
                         
                         $articles = new WP_Query($args);
                         if (count($articles->posts) > 0) {?>
-                            <div class="all">
+                            <div class="all-articles-wrap">
                                 <div class="all-heading">All Articles</div>
                                 <div class="all-articles">
                                     <?php foreach($articles->posts as $article){ ?>
