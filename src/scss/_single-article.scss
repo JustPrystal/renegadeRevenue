@@ -1,0 +1,45 @@
+.single-article {
+  padding: 50px 40px;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+      font-family: "Neue-Black";
+      font-size: 68px;
+      font-weight: 700;
+      line-height: 110%;
+      margin-bottom: 20px;
+
+      @include responsive(xl) {
+        font-size: 60px;
+      }
+      @include responsive(lg) {
+        font-size: 56px;
+      }
+      @include responsive(md) {
+        font-size: 52px;
+      }
+      @include responsive(xs) {
+        font-size: 48px;
+      }
+    }
+    .image {
+    }
+    .author-info {
+      .author-image {
+      }
+      .text-wrap {
+        .author-name {
+        }
+        .creation-date {
+        }
+      }
+    }
+    .description {
+    }
+  }
+}
