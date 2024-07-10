@@ -230,32 +230,35 @@
           }
         }
         .button {
-          display: inline-block;
-          font-family: "Neue-Bold";
-          font-size: 32px;
-          font-weight: 700;
-          text-transform: uppercase;
-          padding: 15px 30px;
-          color: var(--black);
-          border: 2px solid var(--black);
-          background: var(--green);
-          // max-width: fit-content;
-          transition: all 0.3s ease;
-          &:hover{
-              background: var(--white);
-          }
-          @include responsive(md) {
-            font-size: 26px;
-            background: var(--white);
+          display: flex;
+          justify-content: center;
+          a{
+            font-family: "Neue-Bold";
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            color: var(--black);
+            border: 2px solid var(--black);
+            background: var(--green);
+            // max-width: fit-content;
+            transition: all 0.3s ease;
             &:hover{
-                background: var(--green);
+                background: var(--white);
             }
-          }
-          @include responsive(sm) {
-            font-size: 24px;
-          }
-          @include responsive(xs) {
-            font-size: 20px;
+            @include responsive(md) {
+              font-size: 26px;
+              background: var(--white);
+              &:hover{
+                  background: var(--green);
+              }
+            }
+            @include responsive(sm) {
+              font-size: 24px;
+            }
+            @include responsive(xs) {
+              font-size: 20px;
+            }
           }
         }
       }
