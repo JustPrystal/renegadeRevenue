@@ -288,12 +288,21 @@
 
                                 .category-tag {
                                     color: var(--black);
-                                    border: 1px solid var(--black);
                                     font-family: 'Mukta';
-                                    font-size: 12px;
-                                    line-height: 120%;
-                                    padding: 5px;
-                                    background-color: var(--green);
+                                    font-size: 16px;
+                                    position: relative;
+                                    line-height: 100%;
+                                    font-weight: 600;
+                                    z-index: 1;
+                                    &::before{
+                                        position: absolute;
+                                        z-index: -1;
+                                        content: "";
+                                        width: 100%;
+                                        bottom: 0;
+                                        height: 50%;
+                                        background-color: var(--green);
+                                    }
                                 }
                             }
 
