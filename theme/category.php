@@ -1,6 +1,7 @@
 <?php
     get_header();
-?>
+    $term = get_queried_object();
+?>  
     <div class="articles-archive">
         <div class="inner">
             <div class="heading-wrap">
@@ -36,6 +37,7 @@
                                     'key' => 'is_featured',
                                     'value' => '1',
                                     'compare' => '='
+
                                 ]
                             ]
                         ];
@@ -77,6 +79,16 @@
                                 ],
                             'posts_per_page' => 6,
                         ];
+
+                        if($term->slug !== 'uncategorized'){
+                            $args['tax_query'] = array(
+                                array(
+                                    'taxonomy' => $term->taxonomy,
+                                    'field'    => 'slug',
+                                    'terms'    => $term->slug,
+                                )
+                                );
+                        }
                         
                         $articles = new WP_Query($args);
                         if (count($articles->posts) > 0) {?>
@@ -97,7 +109,7 @@
                                                     <?php } ?>
                                                 </div>
                                             <?php } ?>
-                                            <div class="title">
+                                            <div class="title" style="color:red">
                                                 <?php echo $article->post_title?>
                                             </div>
                                             <div class="short-description">

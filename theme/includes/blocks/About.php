@@ -13,7 +13,7 @@
                 <?php echo $block['description'] ?>
             </div>
             <div class="button-wrap">
-                <p class="button"><?php echo $block['button'] ?></p>
+                <?php echo $block['button'] ?>
             </div>
         </div>
     </div>

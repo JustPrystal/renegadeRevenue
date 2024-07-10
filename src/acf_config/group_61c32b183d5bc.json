@@ -6,7 +6,6 @@
             "key": "field_66844573fbb6f",
             "label": "Header",
             "name": "header",
-            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -16,13 +15,13 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_66844584fbb70",
                     "label": "Logo",
                     "name": "logo",
-                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -32,6 +31,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -47,7 +47,6 @@
                     "key": "field_66870cd754471",
                     "label": "Dark Mode Logo",
                     "name": "dark_mode_logo",
-                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -57,6 +56,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -72,7 +72,6 @@
                     "key": "field_66844596fbb71",
                     "label": "Header-Links",
                     "name": "header-links",
-                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -82,18 +81,18 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "collapsed": "",
                     "min": 0,
                     "max": 0,
                     "layout": "table",
-                    "button_label": "Add Row",
+                    "button_label": "",
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_668445acfbb72",
                             "label": "Link",
                             "name": "link",
-                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -103,8 +102,8 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "parent_repeater": "field_66844596fbb71"
+                            "aria-label": "",
+                            "return_format": "array"
                         }
                     ]
                 },
@@ -112,8 +111,7 @@
                     "key": "field_668c729247f1a",
                     "label": "Book a call button",
                     "name": "book_a_call_button",
-                    "aria-label": "",
-                    "type": "text",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -123,10 +121,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 }
             ]
         }
@@ -146,8 +144,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
-    "show_in_rest": false,
-    "modified": 1720490214
+    "modified": 1720576427
 }

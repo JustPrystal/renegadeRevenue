@@ -18,7 +18,7 @@
                     <?php echo $description; ?>
                 </p>
                 <div class="button-wrap">
-                    <p class="button"> <?php echo $button; ?> </p>
+                    <?php echo $button; ?>
                 </div>
             </div>
             <div class="brands-wrap">
