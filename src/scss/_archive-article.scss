@@ -234,11 +234,11 @@
                     }
                     .all-articles{
                         display: flex;
-                        gap: 20px;
+                        gap: 45px;
                         flex-wrap: wrap;
-                        
+                        margin-bottom: 45px;
                         .all-articles-article{
-                            width: calc(33.3% - 15px);
+                            width: calc(33.3% - 30px);
 
                             .image-wrap{
                                 width: 100%;
@@ -246,13 +246,15 @@
 
                                 img{
                                     width: 100%;
+                                    aspect-ratio: 1.4;
+                                    object-fit: cover;
                                     height: auto;
                                 }
                             }
                             .categories-assigned{
                                 display: flex;
                                 gap: 10px;
-                                margin-bottom: 15px;
+                                margin-bottom: 5px;
 
                                 .category-tag{
                                     color: var(--black);
@@ -268,10 +270,9 @@
                                 font-family: 'Neue-Black';
                                 font-size: 28px;
                                 font-weight: 700;
-                                margin-bottom: 20px;
+                                margin-bottom: 8px;
                             }
                             .short-description{
-                                margin-bottom: 20px;
                                 font-family: 'Mukta';
                                 font-size: 22px;
                                 font-weight: 300;
@@ -299,6 +300,7 @@
                         text-align: center;
                         background-color: var(--green);
                         width: max-content;
+                        cursor: pointer;
                         padding: 15px 30px;
                         border: 2px solid var(--black);
                         color: var(--black);
