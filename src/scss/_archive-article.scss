@@ -38,13 +38,14 @@
             display: flex;
 
             .sidebar{
-                min-width: 400px;
-
-                @include responsive(lg){
-                    min-width: 350px;
-                }
-                @include responsive(md){
-                    min-width: 300px;
+                min-width: 300px;
+                .categories{
+                    .category{
+                        font-size: 24px;
+                        font-family: 'Mukta';
+                        margin-bottom: 10px;
+                        color: var(--black);
+                    }
                 }
             }
             .main{
@@ -277,6 +278,26 @@
                                 }
                             }
                         }   
+                    }
+                }
+                .button-wrap{
+                    display: flex;
+                    margin-top: 50px;
+                    justify-content: center;
+                    #loadMoreReviews{
+                        text-align: center;
+                        background-color: var(--green);
+                        width: max-content;
+                        padding: 15px 30px;
+                        border: 2px solid var(--black);
+                        color: var(--black);
+                        font-family: 'Neue-Bold';
+                        text-transform: uppercase;
+                        font-size: 24px;
+                        // &[disabled]{
+                        //     opacity: 0.5;
+                        //     cursor: not-allowed;
+                        // }
                     }
                 }
             }

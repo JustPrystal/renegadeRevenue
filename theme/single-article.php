@@ -27,7 +27,7 @@
             </div>
 
         </div>
-        <div class="decription">
+        <div class="description">
             <?php echo $post->post_content?>
         </div>
         <div class="article-cta-wrap">
