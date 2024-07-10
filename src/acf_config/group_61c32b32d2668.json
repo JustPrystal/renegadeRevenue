@@ -73,6 +73,11 @@
                     ]
                 }
             ]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
         },
         {
             "key": "field_668dd00f03c39",
@@ -91,6 +96,7 @@
             "endpoint": 0
         },
         {
+<<<<<<< HEAD
             "key": "field_668dd02f730e8",
             "label": "Article CTA Image",
             "name": "article_cta_image",
@@ -115,6 +121,8 @@
             "mime_types": ""
         },
         {
+=======
+>>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "key": "field_668dd1a10c159",
             "label": "Article CTA Heading",
             "name": "article_cta_heading",
@@ -170,6 +178,10 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+<<<<<<< HEAD
+=======
+>>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
+>>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
         }
     ],
     "location": [
@@ -187,7 +199,17 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
+<<<<<<< HEAD
     "active": true,
     "description": "",
     "modified": 1720580008
+=======
+    "active": 1,
+    "description": "",
+<<<<<<< HEAD
+    "modified": 1719950335
+=======
+    "modified": 1720643050
+>>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
+>>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
 }
