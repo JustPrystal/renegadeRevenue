@@ -73,7 +73,8 @@
                                     'value' => '0',
                                     'compare' => '='
                                 ]
-                            ]
+                                ],
+                            'posts_per_page' => 6,
                         ];
                         
                         $articles = new WP_Query($args);
@@ -95,7 +96,7 @@
                                                     <?php } ?>
                                                 </div>
                                             <?php } ?>
-                                            <div class="title" style="background-color: pink;">
+                                            <div class="title">
                                                 <?php echo $article->post_title?>
                                             </div>
                                             <div class="short-description">
@@ -105,11 +106,60 @@
                                     <?php } ?>
                                 </div>
                             </div>
+                            <?php if($articles->have_posts() && $articles->max_num_pages > 1){
+                                ?>
+                                <div class="button-wrap">
+                                    <a id="loadMoreReviews" data-max="<?php echo $articles->max_num_pages; ?>" data-page="1" data-perpage="<?php echo 6; ?>">Load More</a>
+                                </div>
+                                <?php
+                            }?>
                     <?php } ?>
                 </div>
             </div>
         </div>
     </div>
+<script>
+    jQuery(document).ready(function(){
+        jQuery(document.body).on('click', '#loadMoreReviews', function(){
+            var that = jQuery(this);
+            var max = that.data('max');
+            var pageCount = that.data('page');
+            var postCountPerPage = that.data('perpage');
+            that.addClass('loading').prop("disabled", true);;
+            jQuery.ajax({
+                url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
+                type:"POST",
+                data:{
+                    action: "load_more_reviews",
+                    maxpages : max,
+                    pagecount : pageCount,
+                    postperpage : postCountPerPage,
+                },
+                success: function(response){
+                   
+                    if(response.data.type == 'success'){
+                        jQuery('.all-articles').append(response.data.posts);
+                        pageCount = pageCount + 1;
+                        that.removeClass('loading').prop("disabled", false);
+                        that.attr('data-page', pageCount);
+                        if(pageCount == max){
+                            that.prop("disabled", true);
+                        }
+                    }
+                    else{
+                        that.removeClass('loading').prop("disabled", false);;
+                        alert(response.data.message);
+                    }
+                   
+                },  
+                error: function(response){
+                    console.log(response);
+                    that.removeClass('loading').attr('disabled', 'false');
+                }
+            })
+        })
+    });
+</script>
 <?php
     get_footer();
 ?>
