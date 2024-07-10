@@ -1,0 +1,285 @@
+.articles-archive{
+    padding: 50px 40px;
+    background-color: var(--white);
+    border-top: 2px solid var(--black);
+
+    .inner{
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        color: var(--black);
+
+        .heading-wrap{
+            margin-bottom: 20px;
+
+            .heading{
+                font-family: "Neue-Black";
+                font-size: 68px;
+                font-weight: 700;
+                line-height: 110%;
+                margin-bottom: 20px;
+
+                @include responsive(xl) {
+                    font-size: 60px;
+                }
+                @include responsive(lg) {
+                    font-size: 56px;
+                }
+                @include responsive(md) {
+                    font-size: 52px;
+                }
+                @include responsive(xs) {
+                    font-size: 48px;
+                }
+            }
+        }
+        .main-wrapper{
+            display: flex;
+
+            .sidebar{
+                min-width: 400px;
+
+                @include responsive(lg){
+                    min-width: 350px;
+                }
+                @include responsive(md){
+                    min-width: 300px;
+                }
+            }
+            .main{
+                width: 100%;
+
+                .featured{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+
+                    .featured-heading{
+                        position: relative;
+                        z-index: 1;
+                        color: var(--black);
+                        font-family: 'Neue-Black';
+                        font-size: 36px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+
+                        @include responsive(lg){
+                            font-size: 32px;
+                        }
+                        @include responsive(md){
+                            font-size: 28px;       
+                        }
+                        @include responsive(sm){
+                            font-size: 24px;  
+                            align-self: center;     
+                        }
+                        @include responsive(xs){
+                            font-size: 20px;       
+                        }
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 14%;
+                            height: 30%;
+                            background: var(--green);
+                            z-index: -1;
+                            top: 60%; 
+                        }
+                    }
+                    .featured-articles{
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .featured-articles-article{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            margin-bottom: 40px;
+
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            
+                            .image-wrap{
+                                width: 100%;
+                                margin-bottom: 20px;
+
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }   
+                            .title{
+                                font-family: "Neue-Black";
+                                font-size: 68px;
+                                font-weight: 700;
+                                line-height: 110%;
+                                margin-bottom: 20px;
+
+                                @include responsive(xl) {
+                                    font-size: 60px;
+                                }
+                                @include responsive(lg) {
+                                    font-size: 56px;
+                                }
+                                @include responsive(md) {
+                                    font-size: 52px;
+                                }
+                                @include responsive(xs) {
+                                    font-size: 48px;
+                                }
+                            }
+                            .short-description{
+                                margin-bottom: 20px;
+                                font-family: 'Mukta';
+                                font-size: 28px;
+                                font-weight: 300;
+                                line-height: 120%;
+
+                                @include responsive(lg){
+                                    font-size: 24px;
+                                }
+                                @include responsive(md){
+                                    font-size: 20px;   
+                                }
+                                @include responsive(sm){
+                                    font-size: 18px;   
+                                }
+                                @include responsive(xs){
+                                    font-size: 16px;   
+                                }
+                            }
+                            .read-more{
+                                font-family: 'Neue-Bold';
+                                font-size: 24px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                color: var(--black);
+                                padding: 15px 30px;
+                                border: 2px solid var(--black);
+                                background: var(--green);
+                                max-width: fit-content;
+                                transition: all 0.4s ease;
+            
+                                &:hover{
+                                    background: var(--white);
+                                }
+                                @include responsive(md){
+                                    font-size: 20px;
+                                }
+                                @include responsive(sm){
+                                    font-size: 18px;
+                                    padding: 10px 20px;
+                                }
+                                @include responsive(xs){
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .all-articles-wrap{
+                    display: flex;
+                    flex-direction: column;
+
+                    .all-heading{
+                        position: relative;
+                        z-index: 1;
+                        color: var(--black);
+                        font-family: 'Neue-Black';
+                        font-size: 36px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 17%;
+                            height: 30%;
+                            background: var(--green);
+                            z-index: -1;
+                            top: 60%;
+                            
+                        }
+
+                        @include responsive(lg){
+                            font-size: 32px;
+                        }
+                        @include responsive(md){
+                            font-size: 28px;       
+                        }
+                        @include responsive(sm){
+                            font-size: 24px;  
+                            align-self: center;     
+                        }
+                        @include responsive(xs){
+                            font-size: 20px;       
+                        } 
+                    }
+                    .all-articles{
+                        display: flex;
+                        gap: 20px;
+                        flex-wrap: wrap;
+                        
+                        .all-articles-article{
+                            width: calc(33.3% - 15px);
+
+                            .image-wrap{
+                                width: 100%;
+                                margin-bottom: 10px;
+
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .categories-assigned{
+                                display: flex;
+                                gap: 10px;
+                                margin-bottom: 15px;
+
+                                .category-tag{
+                                    color: var(--black);
+                                    font-family: 'Mukta';
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    padding: 5px;
+                                    background-color: var(--green);
+                                }
+                            }
+                            .title{
+                                color: var(--black);
+                                font-family: 'Neue-Black';
+                                font-size: 28px;
+                                font-weight: 700;
+                                margin-bottom: 20px;
+                            }
+                            .short-description{
+                                margin-bottom: 20px;
+                                font-family: 'Mukta';
+                                font-size: 22px;
+                                font-weight: 300;
+                                line-height: 120%;
+                                color: var(--black);
+
+                                @include responsive(md){
+                                    font-size: 20px;   
+                                }
+                                @include responsive(sm){
+                                    font-size: 18px;   
+                                }
+                                @include responsive(xs){
+                                    font-size: 16px;   
+                                }
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
