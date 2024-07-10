@@ -6,6 +6,7 @@
             "key": "field_6685abf008023",
             "label": "Heading",
             "name": "heading",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -15,7 +16,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -26,6 +26,7 @@
             "key": "field_6685abfc08024",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -35,7 +36,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -46,7 +46,8 @@
             "key": "field_6685ac0208025",
             "label": "Button",
             "name": "button",
-            "type": "wysiwyg",
+            "aria-label": "",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -56,15 +57,16 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_6685ac1508026",
             "label": "Image",
             "name": "image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -74,7 +76,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "return_format": "url",
             "preview_size": "medium",
             "library": "all",
@@ -104,5 +105,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1720580008
+    "show_in_rest": false,
+    "modified": 1720490214
 }

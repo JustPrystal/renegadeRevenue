@@ -6,6 +6,7 @@
             "key": "field_668496fc51317",
             "label": "Heading",
             "name": "heading",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -15,7 +16,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -26,6 +26,7 @@
             "key": "field_6684970951318",
             "label": "Image",
             "name": "image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -35,7 +36,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "return_format": "url",
             "preview_size": "medium",
             "library": "all",
@@ -51,6 +51,7 @@
             "key": "field_6684971551319",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -60,7 +61,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -71,7 +71,8 @@
             "key": "field_6684971e5131a",
             "label": "Button",
             "name": "button",
-            "type": "wysiwyg",
+            "aria-label": "",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -81,10 +82,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -104,5 +105,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1720580007
+    "show_in_rest": false,
+    "modified": 1720490213
 }
