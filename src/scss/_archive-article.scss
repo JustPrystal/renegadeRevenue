@@ -275,6 +275,7 @@
                                 font-weight: 700;
                                 line-height: 110%;
                                 margin-bottom: 20px;
+                                color: var(--black);
 
                                 @include responsive(xl) {
                                     font-size: 60px;
@@ -296,6 +297,7 @@
                             .short-description {
                                 margin-bottom: 20px;
                                 font-family: 'Mukta';
+                                color: var(--black);
                                 font-size: 28px;
                                 font-weight: 300;
                                 line-height: 120%;

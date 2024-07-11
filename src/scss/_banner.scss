@@ -1,24 +1,13 @@
 .banner{
     position: relative;
     border-bottom: 2px solid var(--black);
-
-    // @media (min-width:2560px){
-    //     &::before{
-    //         content: "";
-    //         background: linear-gradient(90deg, var(--white) 0%, var(--white) 20%, transparent 25%, transparent 75%, var(--white) 80%, var(--white) 100%);
-    //         inset: 0;
-    //         position: absolute;
-    //         z-index: 1;
-            
-    //     }
-    //     @include responsive(lg){
-    //         object-position: -200px center;            
-    //     }
-    //     @include responsive(sm){
-    //         object-position: -250px center;   
-    //     }
-    // }
-
+    margin-top: 158px;
+    @include responsive(md){
+        margin-top: 140px;
+    }
+    @include responsive(sm){
+        margin-top: 100px;
+    }
     .inner{
         height: 75vh;
         max-width: 2560px;
@@ -32,7 +21,7 @@
             height: 80vh;
         }
         @include responsive(xs){
-            height: calc(100vh - 100px);
+            height: 100vh;
         }
         &::before{
             content: "";
@@ -45,16 +34,12 @@
                 padding: 0 20px;           
             }
             @include responsive(sm){
-                background-image: linear-gradient(to top, var(--white) 11%, transparent);
+                background-image: linear-gradient(to top, var(--white) 12%, transparent);
             }
             @include responsive(xs){
                 padding: 0 10px;
-                // height: 80vh;
             }
         }
-        
-    
-    
     
         .background{
             height: 100%;
@@ -77,8 +62,8 @@
                 height: 72vh;  
             }
             @include responsive(xs){
-                object-position: -280px center;   
-                height: 80vh;         
+                object-position: -360px center;   
+                height: 90vh;         
             }
         }
     
@@ -87,15 +72,11 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: flex-end;
             height: 100%;
             position: relative;
             z-index: 2;
-
-            @include responsive(sm){
-                justify-content: flex-end;
-            }
     
             .content-wrap{
                 width: 60%;
@@ -208,9 +189,16 @@
                 flex-direction: column;
                 align-items: flex-end;
                 width: 60%;
+                padding-bottom: 100px;
+                @media (max-width:1920px){
+                    padding-bottom: 40px;
+                }
+                @include responsive(lg){
+                    padding-bottom: 30px;
+                }
                 @include responsive(sm){
                     width: 100%;
-                    margin-bottom: 20px;
+                    padding-bottom: 20px;
                     // align-items: flex-start;
                 }
                 .brands-content{

@@ -84,7 +84,6 @@
           .gform-body {
             .gform_fields {
               row-gap: 30px;
-
               .gfield {
                 display: flex;
                 align-items: center;
@@ -111,6 +110,28 @@
                   }
                 }
                 .ginput_container {
+                  position: relative;
+                  .input-highlighter{
+                    width: max-content;
+                    height: 16px;
+                    bottom: 0;
+                    position: absolute;
+                    background-color: var(--green);
+                    z-index: 0;
+                    left: 17px;
+                    bottom: 6px;
+                    font-family: "Mukta";
+                    font-size: 24px;
+                    color: transparent;
+                    line-height: 110%;
+                    max-width: calc(100% - 26px);
+                    @include responsive(md) {
+                      font-size: 20px;
+                    }
+                    @include responsive(xs) {
+                      font-size: 16px;
+                    }
+                  }
                   .large {
                     color: var(--black);
                     font-family: "Mukta";
@@ -119,13 +140,22 @@
                     border: 0px;
                     border-radius: 0;
                     margin: 0;
-                    background-color: var(--white);
+                    background-color: transparent;
                     border-bottom: 2px solid var(--black);
                     margin-left: 5px;
                     position: relative;
                     z-index: 1;
                     transition: 0s;
-
+                    // &::-webkit-input-placeholder{
+                    //   background-color: var(--green);
+                    //   color: var(--black);
+                    //   overflow: visible !important;
+                    //   height: 20px;
+                    //   position: absolute;
+                    //   width: max-content;
+                    //   visibility: visible !important;
+                    //   display: inline !important;
+                    // }
                     @include responsive(md) {
                       font-size: 20px;
                     }
