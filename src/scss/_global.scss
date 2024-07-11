@@ -93,6 +93,10 @@ body {
 }
 .calendly-trigger{
   cursor: pointer;
+  user-select: none;
 }
-
+*::selection{
+  background-color: var(--green);
+  color: var(--black);
+}
 
