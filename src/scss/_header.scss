@@ -1,4 +1,6 @@
 .desktop-header {
+  position: relative;
+  z-index: 3;
   padding: 0 40px;
   background-color: var(--white);
 
