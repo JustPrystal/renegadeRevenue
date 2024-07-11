@@ -6,10 +6,7 @@
             "key": "field_6684422860e71",
             "label": "Background-Image",
             "name": "background-image",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -19,10 +16,6 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "return_format": "url",
             "preview_size": "medium",
             "library": "all",
@@ -38,10 +31,7 @@
             "key": "field_6684423fa0c07",
             "label": "Heading",
             "name": "heading",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -51,10 +41,6 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -65,10 +51,7 @@
             "key": "field_66844246a0c08",
             "label": "Description",
             "name": "description",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -78,10 +61,6 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "default_value": "",
             "placeholder": "",
             "maxlength": "",
@@ -92,12 +71,8 @@
             "key": "field_6684425da0c09",
             "label": "Button",
             "name": "button",
-<<<<<<< HEAD
-            "type": "wysiwyg",
-=======
             "aria-label": "",
             "type": "text",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -107,26 +82,16 @@
                 "id": ""
             },
             "default_value": "",
-<<<<<<< HEAD
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-=======
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
         },
         {
             "key": "field_668c8b27154cf",
             "label": "Brands",
             "name": "brands",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -136,29 +101,18 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "collapsed": "",
             "min": 0,
             "max": 0,
             "layout": "table",
-<<<<<<< HEAD
-            "button_label": "",
-=======
             "button_label": "Add Row",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_668c8b3b154d0",
                     "label": "Brand Logo",
                     "name": "brand_logo",
-<<<<<<< HEAD
-=======
                     "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -168,10 +122,6 @@
                         "class": "",
                         "id": ""
                     },
-<<<<<<< HEAD
-                    "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -181,12 +131,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-<<<<<<< HEAD
-                    "mime_types": ""
-=======
                     "mime_types": "",
                     "parent_repeater": "field_668c8b27154cf"
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                 }
             ]
         }
@@ -206,20 +152,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-<<<<<<< HEAD
     "active": true,
     "description": "",
-    "modified": 1720580008
-}
-=======
-    "active": 1,
-    "description": "",
-<<<<<<< HEAD
     "show_in_rest": false,
     "modified": 1720490213
 }
-=======
-    "modified": 1720576629
-}
->>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d

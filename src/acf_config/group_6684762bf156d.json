@@ -6,10 +6,7 @@
             "key": "field_668476398734b",
             "label": "heading",
             "name": "heading",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -19,10 +16,6 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -33,10 +26,7 @@
             "key": "field_668483b88734c",
             "label": "Content box",
             "name": "content_box",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -46,29 +36,18 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "collapsed": "",
             "min": 0,
             "max": 0,
             "layout": "table",
-<<<<<<< HEAD
-            "button_label": "",
-=======
             "button_label": "Add Row",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_6684843f8734d",
                     "label": "Box heading",
                     "name": "box_heading",
-<<<<<<< HEAD
-=======
                     "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -78,29 +57,18 @@
                         "class": "",
                         "id": ""
                     },
-<<<<<<< HEAD
-                    "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-<<<<<<< HEAD
-                    "maxlength": ""
-=======
                     "maxlength": "",
                     "parent_repeater": "field_668483b88734c"
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                 },
                 {
                     "key": "field_668484648734e",
                     "label": "Content",
                     "name": "content",
-<<<<<<< HEAD
-=======
                     "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -110,29 +78,18 @@
                         "class": "",
                         "id": ""
                     },
-<<<<<<< HEAD
-                    "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
-<<<<<<< HEAD
-                    "delay": 0
-=======
                     "delay": 0,
                     "parent_repeater": "field_668483b88734c"
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                 },
                 {
                     "key": "field_6686fa037b36a",
                     "label": "Price",
                     "name": "price",
-<<<<<<< HEAD
-=======
                     "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -142,20 +99,12 @@
                         "class": "",
                         "id": ""
                     },
-<<<<<<< HEAD
-                    "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-<<<<<<< HEAD
-                    "maxlength": ""
-=======
                     "maxlength": "",
                     "parent_repeater": "field_668483b88734c"
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
                 }
             ]
         },
@@ -163,10 +112,7 @@
             "key": "field_6684854cd49da",
             "label": "Schedule text",
             "name": "schedule_text",
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -176,10 +122,6 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -190,12 +132,8 @@
             "key": "field_668485efd49db",
             "label": "Button",
             "name": "button",
-<<<<<<< HEAD
-            "type": "wysiwyg",
-=======
             "aria-label": "",
             "type": "text",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -205,17 +143,10 @@
                 "id": ""
             },
             "default_value": "",
-<<<<<<< HEAD
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-=======
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
         }
     ],
     "location": [
@@ -233,20 +164,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-<<<<<<< HEAD
     "active": true,
     "description": "",
-    "modified": 1720580008
-}
-=======
-    "active": 1,
-    "description": "",
-<<<<<<< HEAD
     "show_in_rest": false,
     "modified": 1720490214
 }
-=======
-    "modified": 1720576686
-}
->>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
