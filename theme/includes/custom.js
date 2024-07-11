@@ -57,5 +57,12 @@ $(document).ready(function(){
         $("body").toggleClass('no-scroll')
         $(".sidebar").toggleClass('active')
       })
+      $(".ginput_container:not(.ginput_container_textarea)").append("<span class='input-highlighter'></span>");
+
+      $(".ginput_container:not(.ginput_container_textarea)").find("input").on("input", function(e){
+        const inputText = e.target.value;
+        const inputTextWidth = inputText.length;
+        $(this).parent().find(".input-highlighter").text(inputText);
+      })
 })
 
