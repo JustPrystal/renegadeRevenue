@@ -60,8 +60,8 @@
                                 <div class="featured-heading">Featured</div>
                                 <div class="featured-articles">
                                     <?php foreach($featured_articles->posts as $featured_article){ ?>
-                                        <div class="featured-articles-article">
-                                            <?php if (has_post_thumbnail($featured_article->ID)) {?>
+                                        <a class="featured-articles-article" href="<?php echo $featured_article->guid?>">
+                                            <?php if (has_post_thumbnail($featured_article->ID)) { ?>
                                                 <div class="image-wrap">
                                                     <?php echo get_the_post_thumbnail($featured_article->ID, 'full');?>
                                                 </div>
@@ -72,8 +72,8 @@
                                             <div class="short-description">
                                                 <?php echo $featured_article->post_excerpt?>
                                             </div>
-                                            <a href="<?php echo $featured_article->guid?>" class="read-more">Read More</a>
-                                        </div>
+                                            <div class="read-more">Read More</div>
+                                        </a>
                                     <?php } ?>
                                 </div>
                             </div>

@@ -101,7 +101,7 @@
                             <div class="recommended-articles">
                                 <?php
                                     foreach($recommended_query->posts as $recommended_article){?>
-                                        <div class="recommended-articles-article">
+                                        <a class="recommended-articles-article" href="<?php echo $recommended_article->guid?>">
                                             <div class="image-wrap">
                                                 <?php echo get_the_post_thumbnail($recommended_article->ID);?>
                                             </div>
@@ -118,7 +118,7 @@
                                                     <?php echo $recommended_article->post_excerpt ?>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     <?php }
                                 ?>
                             </div>
