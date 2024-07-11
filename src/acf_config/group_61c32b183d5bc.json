@@ -197,6 +197,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     "active": true,
     "description": "",
@@ -214,3 +215,9 @@
 }
 >>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
 >>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
+=======
+    "active": true,
+    "description": "",
+    "modified": 1720580008
+}
+>>>>>>> Stashed changes
