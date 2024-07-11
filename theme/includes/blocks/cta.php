@@ -8,7 +8,7 @@
                 <?php echo $block['description'] ?>
             </div>
             <div class="button-image-wrap">
-                <div class="button"><?php echo $block['button'] ?></div>
+                <a class="button calendly-trigger" ><?php echo $block['button'] ?> </a>
                 <div class="image-wrap">
                     <img src="<?php echo $block['image'] ?>" alt="image" class="image">
                 </div>

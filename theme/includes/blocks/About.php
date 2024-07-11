@@ -13,7 +13,7 @@
                 <?php echo $block['description'] ?>
             </div>
             <div class="button-wrap">
-                <?php echo $block['button'] ?>
+                <a class="calendly-trigger" ><?php echo $block['button'] ?></a>
             </div>
         </div>
     </div>

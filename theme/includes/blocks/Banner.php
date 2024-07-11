@@ -18,7 +18,7 @@
                     <?php echo $description; ?>
                 </p>
                 <div class="button-wrap">
-                    <?php echo $button; ?>
+                    <a class="calendly-trigger" ><?php echo $button; ?> </a>
                 </div>
             </div>
             <div class="brands-wrap">

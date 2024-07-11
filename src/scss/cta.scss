@@ -87,33 +87,31 @@
 
                 .button{
                     display: flex;
-                    a{
-                        font-family: 'Neue-Bold';
-                        font-size: 24px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        padding: 15px 30px;
-                        color: var(--black);
-                        border: 2px solid var(--green);
-                        background: var(--white);
-                        max-width: fit-content;
-                        transition: all 0.4s ease;
-                        align-self: center;
-        
-                        &:hover{
-                            background: var(--green);
-                        }
+                    font-family: 'Neue-Bold';
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 15px 30px;
+                    color: var(--black);
+                    border: 2px solid var(--green);
+                    background: var(--white);
+                    max-width: fit-content;
+                    transition: all 0.4s ease;
+                    align-self: center;
     
-                        @include responsive(md){
-                            font-size: 20px;
-                        }
-                        @include responsive(sm){
-                            font-size: 16px;
-                            padding: 10px 20px;
-                        }
-                        @include responsive(xs){
-                            font-size: 14px;
-                        }
+                    &:hover{
+                        background: var(--green);
+                    }
+
+                    @include responsive(md){
+                        font-size: 20px;
+                    }
+                    @include responsive(sm){
+                        font-size: 16px;
+                        padding: 10px 20px;
+                    }
+                    @include responsive(xs){
+                        font-size: 14px;
                     }
                 }
                 .image-wrap{

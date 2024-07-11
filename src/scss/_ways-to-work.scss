@@ -209,8 +209,12 @@
       }
       .schedule-wrap {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .schedule {
           color: var(--black);
+          width: 100%;
           font-size: 36px;
           font-family: "Neue-Black";
           margin-bottom: 60px;
@@ -232,33 +236,32 @@
         .button {
           display: flex;
           justify-content: center;
-          a{
-            font-family: "Neue-Bold";
-            font-size: 32px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 15px 30px;
-            color: var(--black);
-            border: 2px solid var(--black);
-            background: var(--green);
-            // max-width: fit-content;
-            transition: all 0.3s ease;
-            &:hover{
-                background: var(--white);
-            }
-            @include responsive(md) {
-              font-size: 26px;
+          font-family: "Neue-Bold";
+          width: max-content;
+          font-size: 32px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 15px 30px;
+          color: var(--black);
+          border: 2px solid var(--black);
+          background: var(--green);
+          // max-width: fit-content;
+          transition: all 0.3s ease;
+          &:hover{
               background: var(--white);
-              &:hover{
-                  background: var(--green);
-              }
+          }
+          @include responsive(md) {
+            font-size: 26px;
+            background: var(--white);
+            &:hover{
+                background: var(--green);
             }
-            @include responsive(sm) {
-              font-size: 24px;
-            }
-            @include responsive(xs) {
-              font-size: 20px;
-            }
+          }
+          @include responsive(sm) {
+            font-size: 24px;
+          }
+          @include responsive(xs) {
+            font-size: 20px;
           }
         }
       }

@@ -67,7 +67,7 @@
                         <h3 class="article-heading"><?php echo $article_heading?></h3>
                         <p class="article-description"><?php echo $article_description?></p>
                         <div class="article-button-wrap">
-                            <?php echo $article_button?>
+                        <a class="calendly-trigger" ><?php echo $article_button ?> </a>
                         </div>
                     </div>
                 </div>
