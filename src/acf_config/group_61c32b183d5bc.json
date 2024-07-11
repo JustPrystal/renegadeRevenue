@@ -6,7 +6,10 @@
             "key": "field_66844573fbb6f",
             "label": "Header",
             "name": "header",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -16,13 +19,20 @@
                 "class": "",
                 "id": ""
             },
+<<<<<<< HEAD
+=======
+            "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_66844584fbb70",
                     "label": "Logo",
                     "name": "logo",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -32,6 +42,10 @@
                         "class": "",
                         "id": ""
                     },
+<<<<<<< HEAD
+=======
+                    "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -47,7 +61,10 @@
                     "key": "field_66870cd754471",
                     "label": "Dark Mode Logo",
                     "name": "dark_mode_logo",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -57,6 +74,10 @@
                         "class": "",
                         "id": ""
                     },
+<<<<<<< HEAD
+=======
+                    "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -72,7 +93,10 @@
                     "key": "field_66844596fbb71",
                     "label": "Header-Links",
                     "name": "header-links",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -82,18 +106,29 @@
                         "class": "",
                         "id": ""
                     },
+<<<<<<< HEAD
+=======
+                    "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "collapsed": "",
                     "min": 0,
                     "max": 0,
                     "layout": "table",
+<<<<<<< HEAD
                     "button_label": "Add Row",
+=======
+                    "button_label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_668445acfbb72",
                             "label": "Link",
                             "name": "link",
+<<<<<<< HEAD
                             "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -103,8 +138,13 @@
                                 "class": "",
                                 "id": ""
                             },
+<<<<<<< HEAD
                             "return_format": "array",
                             "parent_repeater": "field_66844596fbb71"
+=======
+                            "aria-label": "",
+                            "return_format": "array"
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                         }
                     ]
                 },
@@ -112,7 +152,10 @@
                     "key": "field_668c729247f1a",
                     "label": "Book a call button",
                     "name": "book_a_call_button",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -146,8 +189,15 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
+<<<<<<< HEAD
     "active": true,
     "description": "",
     "show_in_rest": false,
     "modified": 1720490214
 }
+=======
+    "active": 1,
+    "description": "",
+    "modified": 1720660611
+}
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32

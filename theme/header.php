@@ -18,6 +18,8 @@
     href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16"
     href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon-16x16.png">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/social/site.webmanifest">
   <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/safari-pinned-tab.svg"
     color="#000000">
@@ -55,7 +57,9 @@ if (user_can($current_user, 'administrator')) {
         <?php foreach ($header['header-links'] as $link) { ?>
           <a href=<?php echo $link['link']['url']; ?> class="link"><?php echo $link['link']['title']; ?></a>
           <?php } ?>
-          <div class="header-button"> <?php echo $header['book_a_call_button'] ?> </div>
+          <div class="header-button">
+            <a href="" class="calendly-trigger" ><?php echo $header['book_a_call_button'] ?> </a>
+          </div>
       </div>
       <div class="menu-wrap" id="menu-wrap" onClick="toggleClasses()">
         <span></span>
@@ -65,28 +69,46 @@ if (user_can($current_user, 'administrator')) {
     </div>
   </header>
   <script>
-    $(".mode").click(function () {
-      $(this).toggleClass("dark");
-      $(".dark-mode-logo").stop().fadeToggle()
-      $(".logo").stop().fadeToggle()
-      if ($(this).hasClass("dark")) {
+      const savedMode = localStorage.getItem('mode');
+
+      // If there's a saved mode, apply it
+      if (savedMode === 'dark') {
+        $('.mode').addClass('dark');
+        $('.dark-mode-logo').show();
+        $('.logo').hide();
         document.documentElement.style.setProperty('--green', '#1596b3');
         document.documentElement.style.setProperty('--white', '#333333');
         document.documentElement.style.setProperty('--black', '#ffffff');
-      } else {
-        document.documentElement.style.setProperty('--green', '#cfdd01');
-        document.documentElement.style.setProperty('--white', '#ffffff');
-        document.documentElement.style.setProperty('--black', '#000000');
       }
-    })
-    $(".menu-wrap").click(function () {
-      $("body").toggleClass("no-scroll");
-    })
-    function toggleClasses() {
-      const links = document.getElementById('header-links');
-      const menu = document.getElementById('menu-wrap');
-      links.classList.toggle('active');
-      menu.classList.toggle('cross');
-    }
+      $(".mode").click(function () {
+        $(this).toggleClass("dark");
+        $(".dark-mode-logo").stop().fadeToggle()
+        $(".logo").stop().fadeToggle()
+        if ($(this).hasClass("dark")) {
+          document.documentElement.style.setProperty('--green', '#1596b3');
+          document.documentElement.style.setProperty('--white', '#333333');
+          document.documentElement.style.setProperty('--black', '#ffffff');
+          localStorage.setItem('mode', 'dark');
+        } else {
+          document.documentElement.style.setProperty('--green', '#cfdd01');
+          document.documentElement.style.setProperty('--white', '#ffffff');
+          document.documentElement.style.setProperty('--black', '#000000');
+          localStorage.setItem('mode', 'light');
+        }
+      })
+      $(".menu-wrap").click(function () {
+        $("body").toggleClass("no-scroll");
+      })
+      function toggleClasses() {
+        const links = document.getElementById('header-links');
+        const menu = document.getElementById('menu-wrap');
+        links.classList.toggle('active');
+        menu.classList.toggle('cross');
+      }
+
+      $(".calendly-trigger").click(function(e){
+        e.preventDefault();
+        Calendly.initPopupWidget({ url: `https://calendly.com/teamlove/revenue-roadmap-intro?primary_color=${$('.mode').hasClass('dark') ? "1596b3" : "cfde00"}&background_color=${$('.mode').hasClass('dark') ? "333333" : "ffffff"}&text_color=${$('.mode').hasClass('dark') ? "ffffff" : "000000"}`})
+      })
   </script>
   <div class="all">

@@ -6,7 +6,10 @@
             "key": "field_668476398734b",
             "label": "heading",
             "name": "heading",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -16,6 +19,10 @@
                 "class": "",
                 "id": ""
             },
+<<<<<<< HEAD
+=======
+            "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -26,7 +33,10 @@
             "key": "field_668483b88734c",
             "label": "Content box",
             "name": "content_box",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -36,18 +46,29 @@
                 "class": "",
                 "id": ""
             },
+<<<<<<< HEAD
+=======
+            "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "collapsed": "",
             "min": 0,
             "max": 0,
             "layout": "table",
+<<<<<<< HEAD
             "button_label": "Add Row",
+=======
+            "button_label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_6684843f8734d",
                     "label": "Box heading",
                     "name": "box_heading",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -57,18 +78,29 @@
                         "class": "",
                         "id": ""
                     },
+<<<<<<< HEAD
+=======
+                    "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
+<<<<<<< HEAD
                     "maxlength": "",
                     "parent_repeater": "field_668483b88734c"
+=======
+                    "maxlength": ""
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                 },
                 {
                     "key": "field_668484648734e",
                     "label": "Content",
                     "name": "content",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -78,18 +110,29 @@
                         "class": "",
                         "id": ""
                     },
+<<<<<<< HEAD
+=======
+                    "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
+<<<<<<< HEAD
                     "delay": 0,
                     "parent_repeater": "field_668483b88734c"
+=======
+                    "delay": 0
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                 },
                 {
                     "key": "field_6686fa037b36a",
                     "label": "Price",
                     "name": "price",
+<<<<<<< HEAD
                     "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -99,12 +142,20 @@
                         "class": "",
                         "id": ""
                     },
+<<<<<<< HEAD
+=======
+                    "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
+<<<<<<< HEAD
                     "maxlength": "",
                     "parent_repeater": "field_668483b88734c"
+=======
+                    "maxlength": ""
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
                 }
             ]
         },
@@ -112,7 +163,10 @@
             "key": "field_6684854cd49da",
             "label": "Schedule text",
             "name": "schedule_text",
+<<<<<<< HEAD
             "aria-label": "",
+=======
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -122,6 +176,10 @@
                 "class": "",
                 "id": ""
             },
+<<<<<<< HEAD
+=======
+            "aria-label": "",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -132,8 +190,12 @@
             "key": "field_668485efd49db",
             "label": "Button",
             "name": "button",
+<<<<<<< HEAD
             "aria-label": "",
             "type": "text",
+=======
+            "type": "wysiwyg",
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -143,10 +205,17 @@
                 "id": ""
             },
             "default_value": "",
+<<<<<<< HEAD
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
+=======
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
         }
     ],
     "location": [
@@ -166,6 +235,11 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
+<<<<<<< HEAD
     "show_in_rest": false,
     "modified": 1720490214
 }
+=======
+    "modified": 1720580008
+}
+>>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
