@@ -1,0 +1,219 @@
+.search-banner{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .wrapper{
+        h2{
+            color: var(--black);
+            font-family: "Neue-Black";
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 110%;
+            margin-bottom: 20px;
+            span{
+              position: relative;
+              z-index: 1;
+              &::before{
+                  position: absolute;
+                  content: "";
+                  width: 100%;
+                  right: 0;
+                  height: 50%;
+                  background-color: var(--green);
+                  bottom: 0;
+                  line-height: 100%;
+                  z-index: -1;
+              }
+          }
+          }
+    }
+}
+.search-container{
+    .inner{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        @include responsive(sm){
+            padding: 0 20px;
+        }
+        .search-result-wrapper{
+            display: flex;
+            gap: 50px;
+            .sidebar {
+                min-width: 300px;
+                margin-bottom: 100px;
+                .search{
+                    position: relative;
+                    .search-icon{
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        top: 6px;
+                        left: 2px;
+                    }
+                }
+                .searchandfilter{
+                    ul{
+                        width: 100%;
+                        li{
+                            padding: 0;
+                            width: 100%;
+                            input[name="ofsearch"]{
+                                width: 100%;
+                                border: 2px solid var(--black);
+                                padding: 10px;
+                                background: transparent;
+                                padding-left: 40px;
+                                font-size: 24px;
+                                color: var(--black);
+                                font-family: "Neue-Bold";
+                                &::placeholder{
+                                    color: var(--black);
+                                }
+                            }
+                        }
+                    }
+                    input[type="submit"]{
+                        display: none;
+                    }
+                }
+                .categories {
+                    .category {
+                        font-size: 24px;
+                        font-family: 'Mukta';
+                        margin-bottom: 16px;
+                        color: var(--black);
+                        width: max-content;
+                        line-height: 100%;
+                        &.active{
+                            position: relative;
+                            z-index: 1;
+                            &::before{
+                                position: absolute;
+                                content: "";
+                                width: 100%;
+                                height: 50%;
+                                background-color: var(--green);
+                                bottom: 0;
+                                line-height: 100%;
+                                z-index: -1;
+                            }
+                        }
+                        @include responsive(md) {
+                            font-size: 22px;
+                        }
+
+                        @include responsive(sm) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .all-search-articles-wrap {
+                display: flex;
+                width: 100%;
+                gap: 45px;
+                flex-wrap: wrap;
+                margin-bottom: 45px;
+
+                .all-articles-article {
+                    width: calc(33.3% - 30px);
+
+                    .image-wrap {
+                        width: 100%;
+                        margin-bottom: 10px;
+
+                        img {
+                            width: 100%;
+                            aspect-ratio: 1.4;
+                            object-fit: cover;
+                            height: auto;
+                        }
+                    }
+
+                    .categories-assigned {
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 5px;
+
+                        .category-tag {
+                            color: var(--black);
+                            font-family: 'Mukta';
+                            font-size: 16px;
+                            position: relative;
+                            line-height: 100%;
+                            font-weight: 600;
+                            z-index: 1;
+                            &::before{
+                                position: absolute;
+                                z-index: -1;
+                                content: "";
+                                width: 100%;
+                                bottom: 0;
+                                height: 50%;
+                                background-color: var(--green);
+                            }
+                        }
+                    }
+
+                    .title {
+                        color: var(--black) !important;
+                        font-family: 'Neue-Black';
+                        font-size: 28px;
+                        font-weight: 700;
+                        margin-bottom: 8px;
+                    }
+
+                    .short-description {
+                        font-family: 'Mukta';
+                        font-size: 22px;
+                        font-weight: 300;
+                        line-height: 120%;
+                        color: var(--black);
+
+                        @include responsive(md) {
+                            font-size: 20px;
+                        }
+
+                        @include responsive(sm) {
+                            font-size: 18px;
+                        }
+
+                        @include responsive(xs) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .no-results{
+                color: var(--black);
+                width: 100%;
+                font-family: "Neue-Black";
+                font-size: 70px;
+                font-weight: 700;
+                line-height: 110%;
+                height: max-content;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                span{
+                    z-index: 1;
+                    position: relative;
+                    text-align: center;
+                    width: max-content;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: calc(100%);
+                        right: 0;
+                        height: 50%;
+                        background-color: $red;
+                        bottom: 0;
+                        line-height: 100%;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
