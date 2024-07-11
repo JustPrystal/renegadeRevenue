@@ -6,10 +6,6 @@
             "key": "field_668496fc51317",
             "label": "Heading",
             "name": "heading",
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -19,10 +15,7 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -33,10 +26,6 @@
             "key": "field_6684970951318",
             "label": "Image",
             "name": "image",
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -46,10 +35,7 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "return_format": "url",
             "preview_size": "medium",
             "library": "all",
@@ -65,10 +51,6 @@
             "key": "field_6684971551319",
             "label": "Description",
             "name": "description",
-<<<<<<< HEAD
-            "aria-label": "",
-=======
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -78,10 +60,7 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
-=======
             "aria-label": "",
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -92,16 +71,7 @@
             "key": "field_6684971e5131a",
             "label": "Button",
             "name": "button",
-<<<<<<< HEAD
             "type": "text",
-=======
-<<<<<<< HEAD
-            "aria-label": "",
-            "type": "text",
-=======
-            "type": "wysiwyg",
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
->>>>>>> 34fa637bef70608940acae8203e017d83df3b09a
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -111,23 +81,10 @@
                 "id": ""
             },
             "default_value": "",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 34fa637bef70608940acae8203e017d83df3b09a
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
-<<<<<<< HEAD
-=======
-=======
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
->>>>>>> 34fa637bef70608940acae8203e017d83df3b09a
         }
     ],
     "location": [
@@ -147,16 +104,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-<<<<<<< HEAD
     "modified": 1720662102
 }
-=======
-<<<<<<< HEAD
-    "show_in_rest": false,
-    "modified": 1720490213
-}
-=======
-    "modified": 1720580007
-}
->>>>>>> e95af54fe6663e888ae2b54d68d15523bb151d32
->>>>>>> 34fa637bef70608940acae8203e017d83df3b09a

@@ -179,12 +179,7 @@
             })
         })
     });
-    $(".icons").click(function () {
-      $(".search-button").stop().fadeToggle()
-      $(".cross-button").stop().fadeToggle()
-      $("body").toggleClass('no-scroll')
-      $(".sidebar").toggleClass('active')
-    })
+
 </script>
 <?php
     get_footer();

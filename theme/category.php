@@ -8,12 +8,18 @@
                 <h1 class="heading"><a href="/articles">Articles</a> / <span><?php echo $term->name ;?></span></h1>
             </div>    
             <div class="main-wrapper">
-                <div class="sidebar">
-                    <div class="search">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="var(--black)" width="800px" height="800px" viewBox="0 0 32 32"><path d="M27 24.57l-5.647-5.648a8.895 8.895 0 0 0 1.522-4.984C22.875 9.01 18.867 5 13.938 5 9.01 5 5 9.01 5 13.938c0 4.929 4.01 8.938 8.938 8.938a8.887 8.887 0 0 0 4.984-1.522L24.568 27 27 24.57zm-13.062-4.445a6.194 6.194 0 0 1-6.188-6.188 6.195 6.195 0 0 1 6.188-6.188 6.195 6.195 0 0 1 6.188 6.188 6.195 6.195 0 0 1-6.188 6.188z"/></svg>
+                <div class="sidebar" id="sidebar">
+                <div class="search">
+                     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="var(--black)" width="800px" height="800px" viewBox="0 0 32 32"><path d="M27 24.57l-5.647-5.648a8.895 8.895 0 0 0 1.522-4.984C22.875 9.01 18.867 5 13.938 5 9.01 5 5 9.01 5 13.938c0 4.929 4.01 8.938 8.938 8.938a8.887 8.887 0 0 0 4.984-1.522L24.568 27 27 24.57zm-13.062-4.445a6.194 6.194 0 0 1-6.188-6.188 6.195 6.195 0 0 1 6.188-6.188 6.195 6.195 0 0 1 6.188 6.188 6.195 6.195 0 0 1-6.188 6.188z"/></svg>
                         <?php
                             echo do_shortcode('[searchandfilter fields="search"]');
                         ?>
+                     </div>
+                    <div class="icons" id="icons">
+                        <div class="search-icon-wrapper">
+                            <svg class="cross-button" xmlns="http://www.w3.org/2000/svg" fill="var(--black)" width="800px" height="800px" viewBox="0 0 1024 1024"><path d="M697.4 759.2l61.8-61.8L573.8 512l185.4-185.4-61.8-61.8L512 450.2 326.6 264.8l-61.8 61.8L450.2 512 264.8 697.4l61.8 61.8L512 573.8z"/></svg>
+                            <svg class="search-button" xmlns="http://www.w3.org/2000/svg" fill="var(--black)" width="800px" height="800px" viewBox="0 0 32 32"><path d="M27 24.57l-5.647-5.648a8.895 8.895 0 0 0 1.522-4.984C22.875 9.01 18.867 5 13.938 5 9.01 5 5 9.01 5 13.938c0 4.929 4.01 8.938 8.938 8.938a8.887 8.887 0 0 0 4.984-1.522L24.568 27 27 24.57zm-13.062-4.445a6.194 6.194 0 0 1-6.188-6.188 6.195 6.195 0 0 1 6.188-6.188 6.195 6.195 0 0 1 6.188 6.188 6.195 6.195 0 0 1-6.188 6.188z"/></svg>
+                        </div>
                     </div>
                     <div class="categories">
                     <?php 

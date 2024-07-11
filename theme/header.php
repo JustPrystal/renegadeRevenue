@@ -61,7 +61,7 @@ if (user_can($current_user, 'administrator')) {
             <a class="calendly-trigger" ><?php echo $header['book_a_call_button'] ?> </a>
           </div>
       </div>
-      <div class="menu-wrap" id="menu-wrap" onClick="toggleClasses()">
+      <div class="menu-wrap" id="menu-wrap">
         <span></span>
         <span></span>
         <span></span>

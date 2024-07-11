@@ -39,6 +39,7 @@ $(document).ready(function(){
       })
       $(".menu-wrap").click(function () {
         $("body").toggleClass("no-scroll");
+        toggleClasses()
       })
       function toggleClasses() {
         const links = document.getElementById('header-links');
@@ -49,6 +50,12 @@ $(document).ready(function(){
       
       $(".calendly-trigger").click(function(){
         Calendly.initPopupWidget({ url: `https://calendly.com/teamlove/revenue-roadmap-intro?primary_color=${$('.mode').hasClass('dark') ? "1596b3" : "cfde00"}&background_color=${$('.mode').hasClass('dark') ? "333333" : "ffffff"}&text_color=${$('.mode').hasClass('dark') ? "ffffff" : "000000"}`})
+      })
+      $(".icons").click(function () {
+        $(".search-button").stop().fadeToggle()
+        $(".cross-button").stop().fadeToggle()
+        $("body").toggleClass('no-scroll')
+        $(".sidebar").toggleClass('active')
       })
 })
 
