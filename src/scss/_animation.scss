@@ -1,9 +1,14 @@
 .animation{
     background: var(--white);
+    padding: 0 40px;
+
+    @include responsive(sm){
+        padding: 0 20px;
+    }
+    
     .inner{
         max-width: 1400px;
         margin: 0 auto;
-        padding: 0 20px;
         .heading{
             font-family: 'Neue-Black';
             font-size: 48px;

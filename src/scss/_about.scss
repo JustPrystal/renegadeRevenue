@@ -38,15 +38,8 @@
                 font-family: 'Neue-Black';
                 font-size: 48px;
                 font-weight: 700;
-                transform: translateX(-10%);
                 color: var(--black);
-
-                @media(max-width:1640px){
-                    transform: translateX(-5%);
-                }
-                @include responsive(xl){
-                    transform: translateX(0);
-                }
+                
                 @include responsive(lg){
                     font-size: 44px;
                 }

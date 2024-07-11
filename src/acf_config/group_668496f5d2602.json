@@ -6,6 +6,7 @@
             "key": "field_668496fc51317",
             "label": "Heading",
             "name": "heading",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -15,7 +16,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -26,6 +26,7 @@
             "key": "field_6684970951318",
             "label": "Image",
             "name": "image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -35,7 +36,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "return_format": "url",
             "preview_size": "medium",
             "library": "all",
@@ -51,6 +51,7 @@
             "key": "field_6684971551319",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -60,7 +61,6 @@
                 "class": "",
                 "id": ""
             },
-            "aria-label": "",
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -71,6 +71,7 @@
             "key": "field_6684971e5131a",
             "label": "Button",
             "name": "button",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -102,7 +103,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1720662102
+    "show_in_rest": false,
+    "modified": 1720490213
 }

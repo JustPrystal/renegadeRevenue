@@ -1,7 +1,6 @@
 .articles-archive {
     padding: 50px 40px;
     background-color: var(--white);
-    border-top: 2px solid var(--black);
     position: relative;
 
     @include responsive(sm) {

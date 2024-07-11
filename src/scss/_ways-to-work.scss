@@ -44,11 +44,7 @@
         }
       }
       .ways {
-        margin-left: 20px;
         margin-bottom: 60px;
-        @include responsive(md) {
-          margin-left: 0px;
-        }
         @include responsive(xs) {
           margin-bottom: 50px;
         }
