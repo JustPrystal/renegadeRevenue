@@ -1,13 +1,7 @@
 .banner{
     position: relative;
     border-bottom: 2px solid var(--black);
-    margin-top: 158px;
-    @include responsive(md){
-        margin-top: 140px;
-    }
-    @include responsive(sm){
-        margin-top: 100px;
-    }
+    
     .inner{
         height: 75vh;
         max-width: 2560px;
