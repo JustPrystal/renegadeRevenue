@@ -234,21 +234,25 @@
                     .images-wrap{
                         display: flex;
                         flex-wrap: wrap;
-                        align-items: baseline;
+                        align-items: center;
                         gap: 20px;
                         @include responsive(lg){
                             gap: 15px;
+                            justify-content: space-around;
                         }
                         @include responsive(xs){
                             gap: 10px;
                         }
-                        @include responsive(md){
-                            justify-content: space-around;
-                        }
                         .image-wrap{
+                            width: 100px;
+                            @include responsive(md){
+                                width: 80px;
+                            }
+                            @include responsive(xs){
+                                width: 60px;
+                            }
                             img{
                                 width: 100%;
-                                display: block;
                             }
                         }
                     }
