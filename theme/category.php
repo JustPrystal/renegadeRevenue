@@ -5,7 +5,7 @@
     <div class="articles-archive">
         <div class="inner">
             <div class="heading-wrap">
-                <h1 class="heading">Articles</h1>
+                <h1 class="heading"><a href="/articles">Articles</a> / <span><?php echo $term->name ;?></span></h1>
             </div>    
             <div class="main-wrapper">
                 <div class="sidebar">
@@ -24,7 +24,7 @@
                                 <?php if ($cat->slug == "uncategorized"){
                                     continue; 
                                 }  else ?>
-                                <a href="<?php echo get_term_link($cat)?>" class="category"><?php echo $cat->name; ?></a>
+                                <a href="<?php echo get_term_link($cat)?>" class="category <?php if ($cat->slug == $term->slug) {echo "active";}?>"><?php echo $cat->name; ?></a>
                             <?php }
                         ?>
                     </div>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="main">
                     <!-- featured articles -->
-                    <?php
+                    <!-- <?php
                         $featured_args = [
                             'post_type' => 'article',
                             'meta_query' => [
@@ -68,7 +68,7 @@
                                     <?php } ?>
                                 </div>
                             </div>
-                    <?php } ?>
+                    <?php } ?> -->
                      <!-- all articles -->
                     <?php
                         $args = [
@@ -96,7 +96,7 @@
                         $articles = new WP_Query($args);
                         if (count($articles->posts) > 0) {?>
                             <div class="all-articles-wrap">
-                                <div class="all-heading">All Articles</div>
+                                <!-- <div class="all-heading">All Articles</div> -->
                                 <div class="all-articles">
                                     <?php foreach($articles->posts as $article){ ?>
                                         <a class="all-articles-article" href="<?php echo $article->guid?>" >

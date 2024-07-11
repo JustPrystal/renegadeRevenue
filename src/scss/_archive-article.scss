@@ -23,7 +23,10 @@
                 font-weight: 700;
                 line-height: 110%;
                 margin-bottom: 20px;
-
+                a{
+                    color: var(--black);
+                    display: inline;
+                }
                 @include responsive(xl) {
                     font-size: 60px;
                 }
@@ -39,6 +42,20 @@
                 @include responsive(xs) {
                     font-size: 48px;
                 }
+                span{
+                    position: relative;
+                    z-index: 1;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 50%;
+                        background-color: var(--green);
+                        bottom: 0;
+                        line-height: 100%;
+                        z-index: -1;
+                    }
+                }
             }
         }
 
@@ -47,14 +64,36 @@
 
             .sidebar {
                 min-width: 300px;
-
+                .searchandfilter{
+                    input{
+                        width: 100%;
+                    }
+                    input[type="submit"]{
+                        display: none;
+                    }
+                }
                 .categories {
                     .category {
                         font-size: 24px;
                         font-family: 'Mukta';
-                        margin-bottom: 10px;
+                        margin-bottom: 16px;
                         color: var(--black);
-
+                        width: max-content;
+                        line-height: 100%;
+                        &.active{
+                            position: relative;
+                            z-index: 1;
+                            &::before{
+                                position: absolute;
+                                content: "";
+                                width: 100%;
+                                height: 50%;
+                                background-color: var(--green);
+                                bottom: 0;
+                                line-height: 100%;
+                                z-index: -1;
+                            }
+                        }
                         @include responsive(md) {
                             font-size: 22px;
                         }
@@ -307,7 +346,7 @@
                             }
 
                             .title {
-                                color: var(--black);
+                                color: var(--black) !important;
                                 font-family: 'Neue-Black';
                                 font-size: 28px;
                                 font-weight: 700;

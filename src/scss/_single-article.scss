@@ -5,7 +5,35 @@
   @include responsive(sm){
     padding: 50px 20px;
   }
-
+  .breadcrumbs{
+    max-width: 1400px;
+    margin: 0 auto;
+    color: var(--black);
+    font-family: "Neue-Black";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 20px;
+    a{
+      color: var(--black);
+      display: inline;
+    }
+    span{
+      position: relative;
+      z-index: 1;
+      &::before{
+          position: absolute;
+          content: "";
+          width: calc(100% - 20px);
+          right: 0;
+          height: 50%;
+          background-color: var(--green);
+          bottom: 0;
+          line-height: 100%;
+          z-index: -1;
+      }
+  }
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -226,7 +254,7 @@
       max-width: 1200px;
       margin: 0 auto;
       background-color: var(--white);
-      border: 1px solid grey;
+      border: 1px solid #99999a;
       .article-cta{
         padding: 20px;
         display: flex;

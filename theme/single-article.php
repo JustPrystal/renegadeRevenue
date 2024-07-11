@@ -7,6 +7,9 @@
 ?>
 
 <section class="single-article">
+    <div class="breadcrumbs">
+        <a href="/articles">Articles</a> <span><?php if(get_the_category()){echo " / " . (get_the_category()[0]->name);} ?></span>
+    </div>
     <div class="container">
         <h2 class="heading">
             <?php echo $post->post_title?>

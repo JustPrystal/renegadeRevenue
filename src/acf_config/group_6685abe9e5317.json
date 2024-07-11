@@ -6,10 +6,6 @@
             "key": "field_6685abf008023",
             "label": "Heading",
             "name": "heading",
-<<<<<<< HEAD
-=======
-            "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -19,10 +15,7 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
             "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -33,10 +26,6 @@
             "key": "field_6685abfc08024",
             "label": "Description",
             "name": "description",
-<<<<<<< HEAD
-=======
-            "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -46,10 +35,7 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
             "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -60,12 +46,7 @@
             "key": "field_6685ac0208025",
             "label": "Button",
             "name": "button",
-<<<<<<< HEAD
             "type": "wysiwyg",
-=======
-            "aria-label": "",
-            "type": "text",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -75,26 +56,15 @@
                 "id": ""
             },
             "default_value": "",
-<<<<<<< HEAD
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
-=======
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
         },
         {
             "key": "field_6685ac1508026",
             "label": "Image",
             "name": "image",
-<<<<<<< HEAD
-=======
-            "aria-label": "",
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -104,10 +74,7 @@
                 "class": "",
                 "id": ""
             },
-<<<<<<< HEAD
             "aria-label": "",
-=======
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d
             "return_format": "url",
             "preview_size": "medium",
             "library": "all",
@@ -135,20 +102,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-<<<<<<< HEAD
     "active": true,
     "description": "",
     "modified": 1720580008
 }
-=======
-    "active": 1,
-    "description": "",
-<<<<<<< HEAD
-    "show_in_rest": false,
-    "modified": 1720490214
-}
-=======
-    "modified": 1720576670
-}
->>>>>>> 73f950a17b4f402daa00ffada1cfdb6d5d731b82
->>>>>>> 55ebb99e2f1d0eff8ac1a1a12a19e85fd21f5b8d

@@ -8,7 +8,11 @@
             </div>    
             <div class="main-wrapper">
                 <div class="sidebar">
-                     
+                     <div class="search">
+                        <?php
+                            echo do_shortcode('[searchandfilter fields="search"]');
+                        ?>
+                     </div>
                     <div class="categories">
                         <?php 
                             $cat_args = array(

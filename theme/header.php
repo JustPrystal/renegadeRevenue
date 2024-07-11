@@ -65,28 +65,41 @@ if (user_can($current_user, 'administrator')) {
     </div>
   </header>
   <script>
-    $(".mode").click(function () {
-      $(this).toggleClass("dark");
-      $(".dark-mode-logo").stop().fadeToggle()
-      $(".logo").stop().fadeToggle()
-      if ($(this).hasClass("dark")) {
+      const savedMode = localStorage.getItem('mode');
+
+      // If there's a saved mode, apply it
+      if (savedMode === 'dark') {
+        $('.mode').addClass('dark');
+        $('.dark-mode-logo').show();
+        $('.logo').hide();
         document.documentElement.style.setProperty('--green', '#1596b3');
         document.documentElement.style.setProperty('--white', '#333333');
         document.documentElement.style.setProperty('--black', '#ffffff');
-      } else {
-        document.documentElement.style.setProperty('--green', '#cfdd01');
-        document.documentElement.style.setProperty('--white', '#ffffff');
-        document.documentElement.style.setProperty('--black', '#000000');
       }
-    })
-    $(".menu-wrap").click(function () {
-      $("body").toggleClass("no-scroll");
-    })
-    function toggleClasses() {
-      const links = document.getElementById('header-links');
-      const menu = document.getElementById('menu-wrap');
-      links.classList.toggle('active');
-      menu.classList.toggle('cross');
-    }
+      $(".mode").click(function () {
+        $(this).toggleClass("dark");
+        $(".dark-mode-logo").stop().fadeToggle()
+        $(".logo").stop().fadeToggle()
+        if ($(this).hasClass("dark")) {
+          document.documentElement.style.setProperty('--green', '#1596b3');
+          document.documentElement.style.setProperty('--white', '#333333');
+          document.documentElement.style.setProperty('--black', '#ffffff');
+          localStorage.setItem('mode', 'dark');
+        } else {
+          document.documentElement.style.setProperty('--green', '#cfdd01');
+          document.documentElement.style.setProperty('--white', '#ffffff');
+          document.documentElement.style.setProperty('--black', '#000000');
+          localStorage.setItem('mode', 'light');
+        }
+      })
+      $(".menu-wrap").click(function () {
+        $("body").toggleClass("no-scroll");
+      })
+      function toggleClasses() {
+        const links = document.getElementById('header-links');
+        const menu = document.getElementById('menu-wrap');
+        links.classList.toggle('active');
+        menu.classList.toggle('cross');
+      }
   </script>
   <div class="all">
