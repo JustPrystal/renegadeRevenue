@@ -130,11 +130,12 @@
       color: var(--black);
       font-family: "Mukta";
       line-height: 120%;
-
+      
       @include responsive(md){
         font-size: 20px;
       }
       @include responsive(sm){
+        padding-left: 0px;
         font-size: 18px;
       }
       @include responsive(xs){
