@@ -171,6 +171,20 @@
                         display: none;
                     }
                 }
+                .category-heading{
+                    font-family: 'Neue-Black';
+                    font-size: 32px;
+                    text-transform: capitalize;
+                    line-height: 110%;
+                    margin: 20px 0;
+
+                    @include responsive(md) {
+                        font-size: 28px;
+                    }
+                    @include responsive(sm) {
+                        font-size: 24px;
+                    }
+                }
                 .categories {
                     .category {
                         font-size: 24px;
