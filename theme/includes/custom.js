@@ -88,5 +88,12 @@ $(document).ready(function () {
     const inputTextWidth = inputText.length;
     $(this).parent().find(".input-highlighter").text(inputText);
   })
+  $(window).scroll(function(){
+    if($(window).scrollTop() >= 250){
+      $(".desktop-header").addClass("scrolled")
+    }else if ($(window).scrollTop() < 200){
+      $(".desktop-header").removeClass("scrolled")
+    }
+  })
 })
 
