@@ -18,9 +18,14 @@
       color: var(--black);
       display: inline;
     }
+    @include responsive(md){
+      font-size: 22px;
+
+    }
     span{
       position: relative;
       z-index: 1;
+      display: inline-block;
       &::before{
           position: absolute;
           content: "";
@@ -47,18 +52,14 @@
       font-weight: 700;
       line-height: 110%;
       margin-bottom: 20px;
-
-      @include responsive(xl) {
-        font-size: 60px;
-      }
       @include responsive(lg) {
         font-size: 56px;
       }
       @include responsive(md) {
-        font-size: 52px;
+        font-size: 36px;
       }
       @include responsive(xs) {
-        font-size: 48px;
+        font-size: 28px;
       }
     }
     .image {
@@ -112,13 +113,13 @@
           }
 
           @include responsive(md){
-            font-size: 26px;
+            font-size: 24px;
           }
           @include responsive(sm){
-            font-size: 22px;
+            font-size: 20px;
           }
           @include responsive(xs){
-            font-size: 20px;
+            font-size: 18px;
           }
         }
       }
@@ -130,11 +131,12 @@
       color: var(--black);
       font-family: "Mukta";
       line-height: 120%;
-
+      
       @include responsive(md){
         font-size: 20px;
       }
       @include responsive(sm){
+        padding-left: 0px;
         font-size: 18px;
       }
       @include responsive(xs){

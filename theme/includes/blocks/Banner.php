@@ -28,7 +28,7 @@
                     </div>
                     <div class="images-wrap">
                         <?php foreach($brands as $brand){?>
-                            <div class="image-wrap">
+                            <div class="image-wrap brand-logo">
                                 <img src="<?php echo $brand['brand_logo']['url'] ?>" alt="">
                             </div>
                             <?php } ?>
