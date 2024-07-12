@@ -1,7 +1,9 @@
 .contact {
   padding: 40px;
   background: var(--white);
-
+  min-height: calc(100vh - 326px);
+  display: flex;
+  align-items: center;
   @include responsive(sm) {
     padding: 40px 20px;
   }
