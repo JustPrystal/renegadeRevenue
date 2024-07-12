@@ -234,6 +234,9 @@
                             }
                             img{
                                 width: 100%;
+                                &.invert{
+                                    filter: invert(1);
+                                }
                             }
                         }
                     }

@@ -41,6 +41,7 @@ $(document).ready(function () {
     document.documentElement.style.setProperty('--green', '#1596b3');
     document.documentElement.style.setProperty('--white', '#333333');
     document.documentElement.style.setProperty('--black', '#ffffff');
+    $(".brand-logo img").toggleClass("invert")
   }
   $(".mode").click(function () {
     $(this).toggleClass("dark");
@@ -50,11 +51,13 @@ $(document).ready(function () {
       document.documentElement.style.setProperty('--green', '#1596b3');
       document.documentElement.style.setProperty('--white', '#333333');
       document.documentElement.style.setProperty('--black', '#ffffff');
+      $(".brand-logo img").toggleClass("invert")
       localStorage.setItem('mode', 'dark');
     } else {
       document.documentElement.style.setProperty('--green', '#cfdd01');
       document.documentElement.style.setProperty('--white', '#ffffff');
       document.documentElement.style.setProperty('--black', '#000000');
+      $(".brand-logo img").toggleClass("invert")
       localStorage.setItem('mode', 'light');
     }
   })

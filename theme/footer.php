@@ -6,7 +6,7 @@
         <section class="inner">
             <div class="content">
                 <div class="copyright-and-name">
-                    <p><?php echo($copyright)?></p>
+                    <p>&copy; Copyright 2024 <span>|</span> <?php echo($copyright)?></p>
                 </div>
                 <div class="links">
                     <?php foreach($links as $link){?>

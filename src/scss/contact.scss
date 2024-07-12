@@ -78,7 +78,7 @@
             padding: 30px 20px;
           }
           @include responsive(xs) {
-            padding: 30px 10px;
+            padding: 30px 0px;
           }
 
           .gform-body {
@@ -87,6 +87,10 @@
               .gfield {
                 display: flex;
                 align-items: center;
+                @include responsive (sm){
+                  align-items: flex-start;
+                  flex-direction: column;
+                } 
 
                 .gform-field-label {
                   color: var(--black);
@@ -105,12 +109,18 @@
                     font-size: 24px;
                   }
                   @include responsive(xs) {
-                    font-size: 22px;
+                    font-size: 16px;
                     margin-bottom: 10px;
+                    width: max-content;
                   }
                 }
                 .ginput_container {
                   position: relative;
+                  flex: 1;
+                  overflow: hidden;
+                  @include responsive (sm){
+                    width: 100%;
+                  }
                   .input-highlighter{
                     width: max-content;
                     height: 16px;
@@ -128,6 +138,11 @@
                     @include responsive(md) {
                       font-size: 20px;
                     }
+                    @include responsive(sm) {
+                      left: 12px;
+                      height: 10px;
+                      bottom: 10px;
+                    }
                     @include responsive(xs) {
                       font-size: 16px;
                     }
@@ -136,6 +151,7 @@
                     color: var(--black);
                     font-family: "Mukta";
                     font-size: 24px;
+                    box-shadow: none;
                     line-height: 110%;
                     border: 0px;
                     border-radius: 0;
@@ -146,18 +162,11 @@
                     position: relative;
                     z-index: 1;
                     transition: 0s;
-                    // &::-webkit-input-placeholder{
-                    //   background-color: var(--green);
-                    //   color: var(--black);
-                    //   overflow: visible !important;
-                    //   height: 20px;
-                    //   position: absolute;
-                    //   width: max-content;
-                    //   visibility: visible !important;
-                    //   display: inline !important;
-                    // }
                     @include responsive(md) {
                       font-size: 20px;
+                    }
+                    @include responsive(sm) {
+                      margin-left: 0;
                     }
                     @include responsive(xs) {
                       font-size: 16px;
@@ -188,23 +197,23 @@
               text-transform: uppercase;
               padding: 15px 30px;
               color: var(--black);
-              border: 2px solid var(--green);
-              background-color: var(--white);
+              border: 2px solid var(--black);
+              background-color: var(--green);
               transition: all 0.4s ease;
 
               &:hover {
-                background: var(--green);
+                background: var(--white);
               }
 
-              @include responsive(md) {
+              @include responsive(md){
                 font-size: 20px;
               }
-              @include responsive(sm) {
-                font-size: 16px;
-                padding: 10px 20px;
+              @include responsive(sm){
+                  font-size: 18px;
+                  padding: 10px 20px;
               }
-              @include responsive(xs) {
-                font-size: 14px;
+              @include responsive(xs){
+                  font-size: 16px;
               }
             }
           }
