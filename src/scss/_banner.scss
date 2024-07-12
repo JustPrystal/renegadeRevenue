@@ -23,13 +23,13 @@
             inset: 0;
             z-index: 1;
             background-image: linear-gradient(to left, var(--white) 40%, transparent);
-            @media(max-width: 1280px) and (max-height: 800px){
-                background-image: linear-gradient(to left, var(--white) 48%, transparent);
-            } 
             @include responsive(md){
                 background-image: linear-gradient(to left, var(--white) 20%, transparent);
                 padding: 0 20px;           
             }
+            @media(max-height: 800px){
+                background-image: linear-gradient(to left, var(--white) 50%, transparent);
+            } 
             @include responsive(sm){
                 background-image: linear-gradient(to top, var(--white) 12%, transparent);
             }
@@ -93,17 +93,14 @@
                     @include responsive(xl){
                         font-size: 64px;
                     }
-                    @media(max-width: 1280px) and (max-height: 800px){
-                        font-size: 42px;
-                    } 
                     @include responsive(lg){
-                        font-size: 60px;
+                        font-size: 52px;
                     }
                     @include responsive(md){
-                        font-size: 56px;   
+                        font-size: 48px;   
                     }
                     @include responsive(sm){
-                        font-size: 52px;
+                        font-size: 46px;
                     }
                     @include responsive(xs){
                         font-size: 42px;
@@ -136,14 +133,11 @@
                     @include responsive(xl){
                         font-size: 36px;
                     }
-                    @media(max-width: 1280px) and (max-height: 800px){
-                        font-size: 24px;
-                    } 
                     @include responsive(lg){
-                        font-size: 32px;
+                        font-size: 28px;
                     }
                     @include responsive(md){
-                        font-size: 28px;   
+                        font-size: 26px;   
                     }
                     @include responsive(sm){
                         font-size: 24px;
@@ -201,14 +195,8 @@
                     @media (max-width:1920px){
                         padding-bottom: 40px;
                     }
-                    @media(max-width: 1280px) and (max-height: 800px){
-                        padding-bottom: 20px;
-                    } 
                     @include responsive(lg){
                         padding-bottom: 30px;
-                    }
-                    @include responsive(sm){
-                        padding-bottom: 20px;
                     }
                     .text-wrap{
                         margin-bottom: 20px;
@@ -218,6 +206,9 @@
                         .text{ 
                             font-family: 'Neue-Black';
                             font-size: 30px;
+                            @include responsive(lg){
+                                font-size: 26px;
+                            }
                             @include responsive(md){
                                 font-size: 22px;
                             }
