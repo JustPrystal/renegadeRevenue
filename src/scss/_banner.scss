@@ -3,7 +3,9 @@
     border-bottom: 2px solid var(--black);
     
     .inner{
-        height: 75vh;
+        display: flex;
+        align-items: flex-end;
+        min-height: 75vh;
         max-width: 2560px;
         margin: 0 auto;
         padding: 0 40px;

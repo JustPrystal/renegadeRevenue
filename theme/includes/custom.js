@@ -91,7 +91,7 @@ $(document).ready(function () {
   $(window).scroll(function(){
     if($(window).scrollTop() >= 250){
       $(".desktop-header").addClass("scrolled")
-    }else if ($(window).scrollTop() < 200){
+    }else if ($(window).scrollTop() < 100){
       $(".desktop-header").removeClass("scrolled")
     }
   })

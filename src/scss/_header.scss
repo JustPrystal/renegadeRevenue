@@ -7,9 +7,12 @@
   border-bottom: 2px solid var(--black);
   &.scrolled{
     .container{
-      padding: 30px 0;
+      padding: 20px 0;
+      @include responsive(sm){
+        padding: 30px 0;
+      }
       .logo-wrap{
-        height: 70px;
+        height: 60px;
         @include responsive(md) {
           max-width: 150px;
           height: 50px;
@@ -69,9 +72,8 @@
       .dark-mode-logo {
         display: none;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        inset: 0;
+        height: 100%;
       }
     }
 
