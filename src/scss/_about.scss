@@ -1,7 +1,10 @@
 .about{
     padding: 0px 40px;
-    background: linear-gradient(180deg, var(--black) 0%, var(--green) 0.1%, var(--green) 58.9%, var(--black) 59%, var(--white) 59.1%, var(--white) 100%);
-
+    
+    // with black border 
+    // background: linear-gradient(180deg, var(--black) 0%, var(--green) 0.1%, var(--green) 58.9%, var(--black) 59%, var(--white) 59.1%, var(--white) 100%);
+    
+    background: linear-gradient(180deg, var(--green) 0%, var(--green) 59%, var(--white) 59%, var(--white) 100%);
     @include responsive(sm){
         padding: 0 20px;
     }
@@ -21,7 +24,7 @@
             flex-wrap: wrap;
         }
         @include responsive(xs){
-            padding: 30px 0;
+            padding: 20px 0;
         }
 
         .image-text-column{
@@ -38,15 +41,8 @@
                 font-family: 'Neue-Black';
                 font-size: 48px;
                 font-weight: 700;
-                transform: translateX(-10%);
                 color: var(--black);
-
-                @media(max-width:1640px){
-                    transform: translateX(-5%);
-                }
-                @include responsive(xl){
-                    transform: translateX(0);
-                }
+                
                 @include responsive(lg){
                     font-size: 44px;
                 }
@@ -127,7 +123,7 @@
             }
             .button-wrap{
                 margin-top: 30px;
-                margin-left: 20px;
+                margin-left: 30px;
                 display: flex;
 
                 @include responsive(sm){

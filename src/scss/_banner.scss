@@ -1,27 +1,11 @@
 .banner{
     position: relative;
-    border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
-
-    // @media (min-width:2560px){
-    //     &::before{
-    //         content: "";
-    //         background: linear-gradient(90deg, var(--white) 0%, var(--white) 20%, transparent 25%, transparent 75%, var(--white) 80%, var(--white) 100%);
-    //         inset: 0;
-    //         position: absolute;
-    //         z-index: 1;
-            
-    //     }
-    //     @include responsive(lg){
-    //         object-position: -200px center;            
-    //     }
-    //     @include responsive(sm){
-    //         object-position: -250px center;   
-    //     }
-    // }
-
+    
     .inner{
-        height: 75vh;
+        display: flex;
+        align-items: flex-end;
+        min-height: 75vh;
         max-width: 2560px;
         margin: 0 auto;
         padding: 0 40px;
@@ -33,7 +17,7 @@
             height: 80vh;
         }
         @include responsive(xs){
-            height: calc(100vh - 100px);
+            height: 100vh;
         }
         &::before{
             content: "";
@@ -45,17 +29,16 @@
                 background-image: linear-gradient(to left, var(--white) 20%, transparent);
                 padding: 0 20px;           
             }
+            @media(max-height: 800px){
+                background-image: linear-gradient(to left, var(--white) 50%, transparent);
+            } 
             @include responsive(sm){
-                background-image: linear-gradient(to top, var(--white) 11%, transparent);
+                background-image: linear-gradient(to top, var(--white) 12%, transparent);
             }
             @include responsive(xs){
                 padding: 0 10px;
-                // height: 80vh;
             }
         }
-        
-    
-    
     
         .background{
             height: 100%;
@@ -78,8 +61,8 @@
                 height: 72vh;  
             }
             @include responsive(xs){
-                object-position: -280px center;   
-                height: 80vh;         
+                object-position: -360px center;   
+                height: 90vh;         
             }
         }
     
@@ -88,15 +71,11 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: flex-end;
             height: 100%;
             position: relative;
             z-index: 2;
-
-            @include responsive(sm){
-                justify-content: flex-end;
-            }
     
             .content-wrap{
                 width: 60%;
@@ -117,13 +96,13 @@
                         font-size: 64px;
                     }
                     @include responsive(lg){
-                        font-size: 60px;
+                        font-size: 52px;
                     }
                     @include responsive(md){
-                        font-size: 56px;   
+                        font-size: 48px;   
                     }
                     @include responsive(sm){
-                        font-size: 52px;
+                        font-size: 46px;
                     }
                     @include responsive(xs){
                         font-size: 42px;
@@ -157,10 +136,10 @@
                         font-size: 36px;
                     }
                     @include responsive(lg){
-                        font-size: 32px;
+                        font-size: 28px;
                     }
                     @include responsive(md){
-                        font-size: 28px;   
+                        font-size: 26px;   
                     }
                     @include responsive(sm){
                         font-size: 24px;
@@ -211,10 +190,16 @@
                 width: 60%;
                 @include responsive(sm){
                     width: 100%;
-                    margin-bottom: 20px;
                     // align-items: flex-start;
                 }
                 .brands-content{
+                    padding-bottom: 100px;
+                    @media (max-width:1920px){
+                        padding-bottom: 40px;
+                    }
+                    @include responsive(lg){
+                        padding-bottom: 30px;
+                    }
                     .text-wrap{
                         margin-bottom: 20px;
                         @include responsive(sm){
@@ -223,6 +208,9 @@
                         .text{ 
                             font-family: 'Neue-Black';
                             font-size: 30px;
+                            @include responsive(lg){
+                                font-size: 26px;
+                            }
                             @include responsive(md){
                                 font-size: 22px;
                             }
@@ -253,6 +241,9 @@
                             }
                             img{
                                 width: 100%;
+                                &.invert{
+                                    filter: invert(1);
+                                }
                             }
                         }
                     }

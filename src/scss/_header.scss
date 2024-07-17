@@ -1,15 +1,42 @@
 .desktop-header {
-  position: relative;
-  z-index: 3;
+  position: sticky;
+  z-index: 101;
+  inset: 0;
   padding: 0 40px;
   background-color: var(--white);
-
+  border-bottom: 2px solid var(--black);
+  &.scrolled{
+    .container{
+      padding: 20px 0;
+      @include responsive(sm){
+        padding: 30px 0;
+      }
+      .logo-wrap{
+        height: 60px;
+        @include responsive(md) {
+          max-width: 150px;
+          height: 50px;
+        }
+        
+        @include responsive(sm) {
+          max-width: 100px;
+          height: 40px;
+        }
+      }
+      .header-links{
+        .link, .header-button a{
+          font-size: 20px;
+        }
+      }
+    }
+  }
   @include responsive(sm) {
     padding: 0 20px;
   }
 
   .container {
     max-width: 1400px;
+    transition: 0.4s ease-in-out;
     padding: 40px 0;
     margin: 0 auto;
     display: flex;
@@ -25,6 +52,7 @@
       max-width: 200px;
       width: 100%;
       height: 78px;
+      transition: 0.4s ease-in-out;
       position: relative;
       // align-content: center;
 
@@ -39,14 +67,13 @@
       }
       
       .logo {
-        width: 100%;
+        height: 100%;
       }
       .dark-mode-logo {
         display: none;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        inset: 0;
+        height: 100%;
       }
     }
 
@@ -54,7 +81,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: all 0.4s ease;
+      transition: all 0.4s ease-in-out;
 
       @include responsive(sm) {
         right: -100%;
@@ -67,7 +94,7 @@
         align-items: center;
         position: fixed;
         top: 100px;
-        z-index: 99;
+        z-index: 101;
         padding-top: 100px;
       }
 
@@ -162,8 +189,9 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-        height: 20px;
-        width: 30px;
+        height: 39px;
+        width: 50px;
+        padding: 10px;
 
         span {
           background-color: var(--black);
@@ -179,8 +207,9 @@
         flex-direction: column;
         justify-content: center;
         cursor: pointer;
-        height: 20px;
-        width: 30px;
+        height: 40px;
+        width: 50px;
+        padding: 10px;
 
         span {
           background-color: var(--black);

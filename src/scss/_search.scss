@@ -1,51 +1,64 @@
-.search-banner{
+.search-banner {
     max-width: 1400px;
     margin: 50px auto;
     padding: 0 40px;
-    @include responsive (sm){
-        padding: 0 20px;
+
+    @include responsive (sm) {
+        padding: 30px 20px;
+        padding-bottom: 0;
     }
-    .wrapper{
-        h2{
+
+    .wrapper {
+        h2 {
             color: var(--black);
             font-family: "Neue-Black";
             font-size: 36px;
             font-weight: 700;
             line-height: 110%;
             margin-bottom: 20px;
-            span{
-              position: relative;
-              z-index: 1;
-              &::before{
-                  position: absolute;
-                  content: "";
-                  width: 100%;
-                  right: 0;
-                  height: 50%;
-                  background-color: var(--green);
-                  bottom: 0;
-                  line-height: 100%;
-                  z-index: -1;
-              }
-          }
-          }
+
+            span {
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    right: 0;
+                    height: 50%;
+                    background-color: var(--green);
+                    bottom: 0;
+                    line-height: 100%;
+                    z-index: -1;
+                }
+            }
+            @include responsive (sm){
+                font-size: 28px;
+            }
+        }
     }
 }
-.search-container{
-    .inner{
+
+.search-container {
+    .inner {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 40px;
-        @include responsive(sm){
+
+        @include responsive(sm) {
             padding: 0 20px;
         }
-        .search-result-wrapper{
+
+        .search-result-wrapper {
             display: flex;
             gap: 50px;
             position: relative;
+
             .sidebar {
                 min-width: 300px;
                 transition: all 0.4s ease-in-out;
+                padding-bottom: 100px;
                 
                 &.active{
                     left: 0;
@@ -59,11 +72,11 @@
                 }
                 @include responsive(xs){
                     background-color: var(--white);
-                    padding: 100px 20px 0;
+                    padding: 0px 20px 0;
                     position: fixed;
-                    top: 0;
+                    top: 100px;
                     left: -70%;
-                    z-index: 2;
+                    z-index: 100;
                     height: 100vh;
                     width: 70%;
                     border-right: 2px solid var(--black);
@@ -72,7 +85,7 @@
                 .icons{
                     position: absolute;
                     left: 100%;
-                    top: 100px;
+                    top: 20px;
                     
                     .search-icon-wrapper{
                         z-index: 99;
@@ -119,11 +132,12 @@
                 padding-bottom: 100px;
                 .search{
                     position: relative;
+                    margin-top: 20px;
                     .search-icon{
                         position: absolute;
                         width: 40px;
                         height: 40px;
-                        top: 6px;
+                        top: 7px;
                         left: 2px;
                     }
                 }
@@ -132,6 +146,7 @@
                         width: 100%;
                         list-style: none;
                         margin-bottom: 14px;
+
                         li{
                             padding: 0;
                             width: 100%;
@@ -139,6 +154,7 @@
                                 width: 100%;
                                 border: 2px solid var(--black);
                                 padding: 10px;
+                                border-radius: 0;
                                 background: transparent;
                                 padding-left: 40px;
                                 font-size: 24px;
@@ -154,7 +170,22 @@
                         display: none;
                     }
                 }
+                .category-heading{
+                    font-family: 'Neue-Black';
+                    font-size: 32px;
+                    text-transform: capitalize;
+                    line-height: 110%;
+                    margin: 20px 0;
+
+                    @include responsive(md) {
+                        font-size: 28px;
+                    }
+                    @include responsive(sm) {
+                        font-size: 24px;
+                    }
+                }
                 .categories {
+                    padding-left: 20px;
                     .category {
                         font-size: 24px;
                         font-family: 'Mukta';
@@ -182,6 +213,7 @@
                     }
                 }
             }
+
             .all-search-articles-wrap {
                 display: flex;
                 width: 100%;
@@ -192,10 +224,11 @@
                 .all-articles-article {
                     width: calc(33.3% - 30px);
 
-                    @include responsive(md){
+                    @include responsive(md) {
                         width: calc(50% - 30px);
                     }
-                    @include responsive(sm){
+
+                    @include responsive(sm) {
                         width: 100%;
                     }
 
@@ -224,7 +257,8 @@
                             line-height: 100%;
                             font-weight: 600;
                             z-index: 1;
-                            &::before{
+
+                            &::before {
                                 position: absolute;
                                 z-index: -1;
                                 content: "";
@@ -243,10 +277,11 @@
                         font-weight: 700;
                         margin-bottom: 8px;
 
-                        @include responsive(md){
+                        @include responsive(md) {
                             font-size: 28px;
                         }
-                        @include responsive(sm){
+
+                        @include responsive(sm) {
                             font-size: 24px;
                         }
                     }
@@ -268,7 +303,8 @@
                     }
                 }
             }
-            .no-results{
+
+            .no-results {
                 color: var(--black);
                 width: 100%;
                 font-family: "Neue-Black";
@@ -279,15 +315,18 @@
                 display: flex;
                 justify-content: center;
                 margin: 50px 0;
-                @include responsive(md){
+
+                @include responsive(md) {
                     font-size: 40px;
                 }
-                span{
+
+                span {
                     z-index: 1;
                     position: relative;
                     text-align: center;
                     width: max-content;
-                    &::before{
+
+                    &::before {
                         position: absolute;
                         content: "";
                         width: calc(100%);
