@@ -1,6 +1,6 @@
 <?php 
-    $copyright = get_field('footer' , 'options')["copyright"];
-    $links = get_field('footer' , 'options')["links"];
+    $copyright = get_field('copyright' , 'options');
+    $links = get_field('links' , 'options');
 ?>
     <footer>
         <section class="inner">

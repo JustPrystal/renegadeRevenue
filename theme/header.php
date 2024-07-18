@@ -27,6 +27,10 @@
   <meta name="theme-color" content="#ffffff">
   <?php wp_head(); ?>
   <meta name="author" content="<?php bloginfo('name'); ?>" />
+  <?php
+    $header_scripts = get_field("header_scripts", "option");
+    echo $header_scripts;
+  ?>
 
 </head>
 
